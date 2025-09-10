@@ -1,7 +1,8 @@
-import os, time, requests, json
-from typing import Optional, Dict, Any, List
+import os
+import time
+import requests
+from typing import Optional, Dict, Any
 from jose import jwt
-from jose.utils import base64url_decode
 from fastapi import HTTPException, status, Depends
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
@@ -14,6 +15,7 @@ _http_bearer = HTTPBearer(auto_error=False)
 _jwks_cache: Dict[str, Any] = {}
 _jwks_cache_ts: float = 0.0
 _JWKS_TTL = 300.0  # 5 minutes
+
 
 def _get_jwks() -> Dict[str, Any]:
     global _jwks_cache, _jwks_cache_ts
@@ -29,12 +31,14 @@ def _get_jwks() -> Dict[str, Any]:
     _jwks_cache_ts = now
     return data
 
+
 def _find_key(kid: str) -> Optional[Dict[str, Any]]:
     jwks = _get_jwks()
     for key in jwks.get("keys", []):
         if key.get("kid") == kid:
             return key
     return None
+
 
 def verify_token(token: str) -> Dict[str, Any]:
     try:
@@ -48,13 +52,18 @@ def verify_token(token: str) -> Dict[str, Any]:
             algorithms=JWT_ALGORITHMS,
             audience=JWT_AUDIENCE,
             issuer=JWT_ISSUER,
-            options=options
+            options=options,
         )
         return claims
     except Exception as e:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=f"Invalid token: {str(e)}")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED, detail=f"Invalid token: {str(e)}"
+        )
 
-def get_current_user(auth: HTTPAuthorizationCredentials = Depends(_http_bearer)) -> Optional[Dict[str, Any]]:
+
+def get_current_user(
+    auth: HTTPAuthorizationCredentials = Depends(_http_bearer),
+) -> Optional[Dict[str, Any]]:
     if not auth:
         return None  # allow public routes; handlers can choose to require
     token = auth.credentials

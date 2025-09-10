@@ -1,1 +1,1 @@
-print('idsideAI v7 running')
+print("idsideAI v7 running")

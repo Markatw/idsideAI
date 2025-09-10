@@ -1,10 +1,15 @@
 """
 Sprint 26.5 — Soak testing utilities (protocol v2)
 """
-import threading, time, requests, os
+
+import threading
+import time
+import requests
+import os
 
 _running = False
 _thread = None
+
 
 def _loop(interval: int = 60, url: str = None):
     global _running, _thread
@@ -19,19 +24,22 @@ def _loop(interval: int = 60, url: str = None):
         time.sleep(interval)
     _thread = None
 
+
 def start(interval: int = 60, url: str = None):
     global _running, _thread
     if _running:
         return False
     _running = True
-    _thread = threading.Thread(target=_loop, args=(interval,url), daemon=True)
+    _thread = threading.Thread(target=_loop, args=(interval, url), daemon=True)
     _thread.start()
     return True
+
 
 def stop():
     global _running
     _running = False
     return True
+
 
 def status():
     return {"running": _running}

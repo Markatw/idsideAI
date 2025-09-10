@@ -1,20 +1,25 @@
 """
 Sprint 27.5 — Healthcheck endpoints (protocol v2)
 """
+
 import os
 from fastapi import APIRouter
 from app.utils import metrics
 
 router = APIRouter(tags=["health"])
 
+
 @router.get("/healthz")
 def liveness():
     # dumb increment to keep counters visible
     try:
         metrics.inc_counter("healthz")
-    except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+    except (
+        Exception
+    ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
         pass
     return {"ok": True, "status": "alive"}
+
 
 @router.get("/readyz")
 def readiness():

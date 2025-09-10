@@ -1,6 +1,9 @@
 """Telemetry CSV export utility (protocol v2)."""
-import csv, io
+
+import csv
+import io
 from app.utils.perf import cap_events
+
 
 def export_events_csv(events: list[dict]) -> str:
     events = cap_events(events)
@@ -21,15 +24,16 @@ def export_events_csv(events: list[dict]) -> str:
         w.writerow(row)
     return buf.getvalue()
 
+
 def summarize_events(events: list[dict]) -> dict:
     """Summarize telemetry events: count, avg latency, failure counts."""
     if not events:
-        return {"count":0,"avg_latency":0,"failures":0}
+        return {"count": 0, "avg_latency": 0, "failures": 0}
     n = len(events)
-    latencies = [int(e.get("latency_ms",0)) for e in events if "latency_ms" in e]
-    avg_lat = sum(latencies)//len(latencies) if latencies else 0
+    latencies = [int(e.get("latency_ms", 0)) for e in events if "latency_ms" in e]
+    avg_lat = sum(latencies) // len(latencies) if latencies else 0
     failures = sum(1 for e in events if e.get("failure_type"))
-    return {"count":n,"avg_latency":avg_lat,"failures":failures}
+    return {"count": n, "avg_latency": avg_lat, "failures": failures}
 
 
 def summarize_events(events: list[dict]) -> dict:
@@ -40,11 +44,13 @@ def summarize_events(events: list[dict]) -> dict:
     avg_latency_ms = (sum(latencies) // len(latencies)) if latencies else 0
     failures = sum(1 for e in events if e.get("failure_type"))
     failure_rate = (failures / total) if total else 0.0
-    providers = sorted({str(e.get("provider","")) for e in events if e.get("provider")})
+    providers = sorted(
+        {str(e.get("provider", "")) for e in events if e.get("provider")}
+    )
     return {
         "total_events": total,
         "avg_latency_ms": int(avg_latency_ms),
         "failures": int(failures),
         "failure_rate": float(round(failure_rate, 4)),
-        "providers_used": providers
+        "providers_used": providers,
     }

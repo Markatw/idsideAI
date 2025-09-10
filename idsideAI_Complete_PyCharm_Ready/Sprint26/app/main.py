@@ -6,6 +6,7 @@ from app.routes.graphs_export import router as graphs_router
 from app.routes.providers import router as providers_router
 from app.routes.workspaces import router as workspaces_router
 
+
 def build_app() -> FastAPI:
     app = FastAPI(title="idsideAI", version="1.0-green")
     # Basic CORS (relaxed for dev; tighten in prod as needed)
@@ -20,5 +21,6 @@ def build_app() -> FastAPI:
     app.include_router(providers_router)
     app.include_router(workspaces_router)
     return app
+
 
 app = build_app()

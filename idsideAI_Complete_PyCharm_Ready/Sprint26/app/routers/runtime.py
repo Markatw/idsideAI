@@ -5,6 +5,7 @@ import resource  # stdlib on Unix (macOS/Linux)
 
 router = APIRouter(prefix="/status", tags=["runtime"])
 
+
 @router.get("/memory")
 def memory_status():
     """Return process RSS memory (bytes) and Python object count.
@@ -13,7 +14,9 @@ def memory_status():
     rss_bytes = None
     try:
         usage = resource.getrusage(resource.RUSAGE_SELF)
-        rss_bytes = usage.ru_maxrss if sys.platform == "darwin" else usage.ru_maxrss * 1024
+        rss_bytes = (
+            usage.ru_maxrss if sys.platform == "darwin" else usage.ru_maxrss * 1024
+        )
     except Exception:
         rss_bytes = None
     try:
@@ -28,6 +31,7 @@ def thread_count():
     """Return active thread count. Safe fallback to null on failure."""
     try:
         import threading
+
         return {"threads": int(threading.active_count())}
     except Exception:
         return {"threads": None}
@@ -40,7 +44,8 @@ def cpu_status():
     - proc_cpu_user_ms / proc_cpu_system_ms: process CPU times in milliseconds
     Returns nulls on platforms where unavailable.
     """
-    import os, sys
+    import os
+
     load_avg = None
     try:
         if hasattr(os, "getloadavg"):
@@ -52,6 +57,7 @@ def cpu_status():
     proc_cpu_system_ms = None
     try:
         import resource
+
         r = resource.getrusage(resource.RUSAGE_SELF)
         proc_cpu_user_ms = int(r.ru_utime * 1000)
         proc_cpu_system_ms = int(r.ru_stime * 1000)
@@ -70,13 +76,16 @@ try:
     START_TS  # type: ignore
 except NameError:
     import time as _t
+
     START_TS = _t.time()
+
 
 @router.get("/uptime")
 def uptime_status():
     """Return process uptime in milliseconds (stdlib only)."""
     try:
         import time
+
         return {"process_uptime_ms": int((time.time() - START_TS) * 1000)}
     except Exception:
         return {"process_uptime_ms": None}
@@ -90,10 +99,13 @@ def fd_count():
     """
     try:
         import os
+
         for path in ("/proc/self/fd", "/dev/fd"):
             try:
                 return {"fd_count": int(len(os.listdir(path)))}
-            except Exception:  # nosec B112 (LOW): vetted for board compliance - Try, Except, Continue detected.
+            except (
+                Exception
+            ):  # nosec B112 (LOW): vetted for board compliance - Try, Except, Continue detected.
                 continue
         return {"fd_count": None}
     except Exception:
@@ -107,9 +119,12 @@ def disk_status():
     total = used = free = None
     try:
         import shutil
+
         du = shutil.disk_usage("/")
         total, used, free = int(du.total), int(du.used), int(du.free)
-    except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+    except (
+        Exception
+    ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
         pass
     return {"total_bytes": total, "used_bytes": used, "free_bytes": free}
 
@@ -121,6 +136,7 @@ def time_status():
     try:
         import time
         from datetime import datetime, timezone
+
         epoch_ms = int(time.time() * 1000)
         iso_utc = datetime.now(timezone.utc).isoformat()
         return {"epoch_ms": epoch_ms, "iso_utc": iso_utc}
@@ -134,6 +150,7 @@ def hostname_status():
     """Return the server hostname using stdlib only."""
     try:
         import socket
+
         return {"hostname": socket.gethostname()}
     except Exception:
         return {"hostname": None}
@@ -145,6 +162,7 @@ def pid_status():
     """Return current process ID using stdlib only."""
     try:
         import os
+
         return {"pid": int(os.getpid())}
     except Exception:
         return {"pid": None}
@@ -156,6 +174,7 @@ def env_count_status():
     """Return count of environment variables via stdlib only."""
     try:
         import os
+
         return {"env_count": int(len(os.environ))}
     except Exception:
         return {"env_count": None}
@@ -166,8 +185,13 @@ def env_count_status():
 def python_status():
     """Return Python version and implementation using stdlib only."""
     try:
-        import sys, platform
-        return {"version": sys.version.split()[0], "implementation": platform.python_implementation()}
+        import sys
+        import platform
+
+        return {
+            "version": sys.version.split()[0],
+            "implementation": platform.python_implementation(),
+        }
     except Exception:
         return {"version": None, "implementation": None}
 
@@ -178,7 +202,12 @@ def platform_status():
     """Return basic OS platform info using stdlib only."""
     try:
         import platform
-        return {"system": platform.system(), "release": platform.release(), "machine": platform.machine()}
+
+        return {
+            "system": platform.system(),
+            "release": platform.release(),
+            "machine": platform.machine(),
+        }
     except Exception:
         return {"system": None, "release": None, "machine": None}
 
@@ -189,6 +218,7 @@ def argv_count_status():
     """Return count of process argv entries (privacy-safe, no values)."""
     try:
         import sys
+
         return {"argv_count": int(len(sys.argv))}
     except Exception:
         return {"argv_count": None}
@@ -200,6 +230,7 @@ def cpu_count_status():
     """Return number of CPUs detected via stdlib only."""
     try:
         import os
+
         return {"cpu_count": os.cpu_count()}
     except Exception:
         return {"cpu_count": None}
@@ -211,6 +242,7 @@ def loadavg_status():
     """Return system load average (1, 5, 15 min) if supported."""
     try:
         import os
+
         if hasattr(os, "getloadavg"):
             one, five, fifteen = os.getloadavg()
             return {"1min": one, "5min": five, "15min": fifteen}
@@ -224,7 +256,8 @@ def loadavg_status():
 def uptime_status():
     """Return system uptime in seconds if supported (Linux/Unix)."""
     try:
-        import time, os
+        import os
+
         if os.name == "posix" and os.path.exists("/proc/uptime"):
             with open("/proc/uptime", "r") as f:
                 uptime = float(f.readline().split()[0])
@@ -240,7 +273,8 @@ def uptime_status():
 def boot_time_status():
     """Return system boot time as epoch seconds if supported."""
     try:
-        import time, os
+        import os
+
         if os.name == "posix" and os.path.exists("/proc/stat"):
             with open("/proc/stat", "r") as f:
                 for line in f:
@@ -257,6 +291,7 @@ def clock_status():
     """Return current system time as epoch seconds."""
     try:
         import time
+
         return {"epoch": time.time()}
     except Exception:
         return {"epoch": None}
@@ -268,6 +303,7 @@ def monotonic_status():
     """Return monotonic clock seconds (not affected by system clock changes)."""
     try:
         import time
+
         return {"monotonic_seconds": time.monotonic()}
     except Exception:
         return {"monotonic_seconds": None}
@@ -279,10 +315,11 @@ def process_status():
     """Return process id, parent id, and approximate start time."""
     try:
         import os
+
         return {
             "pid": os.getpid(),
             "ppid": os.getppid(),
-            "start_time_epoch": 1756723016.5821013
+            "start_time_epoch": 1756723016.5821013,
         }
     except Exception:
         return {"pid": None, "ppid": None, "start_time_epoch": None}
@@ -294,11 +331,15 @@ def rlimit_nofile_status():
     """Return (soft, hard) RLIMIT_NOFILE if supported (Unix)."""
     try:
         import os
+
         if os.name == "posix":
             import resource
+
             soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
-            return {"soft": int(soft) if soft != resource.RLIM_INFINITY else -1,
-                    "hard": int(hard) if hard != resource.RLIM_INFINITY else -1}
+            return {
+                "soft": int(soft) if soft != resource.RLIM_INFINITY else -1,
+                "hard": int(hard) if hard != resource.RLIM_INFINITY else -1,
+            }
         return {"soft": None, "hard": None}
     except Exception:
         return {"soft": None, "hard": None}
@@ -310,6 +351,7 @@ def gc_status():
     """Return garbage collector counts and thresholds."""
     try:
         import gc
+
         cnt = list(gc.get_count())
         thr = list(gc.get_threshold())
         return {"count": [int(c) for c in cnt], "threshold": [int(t) for t in thr]}
@@ -323,16 +365,18 @@ def user_status():
     """Return uid/gid and effective uid/gid if available (cross-platform safe)."""
     try:
         import os
+
         def _get(attr):
             try:
                 return int(getattr(os, attr)()) if hasattr(os, attr) else None
             except Exception:
                 return None
+
         return {
             "uid": _get("getuid"),
             "gid": _get("getgid"),
             "euid": _get("geteuid"),
-            "egid": _get("getegid")
+            "egid": _get("getegid"),
         }
     except Exception:
         return {"uid": None, "gid": None, "euid": None, "egid": None}
@@ -344,18 +388,23 @@ def scheduler_status():
     """Return process priority/nice value if available (POSIX best-effort)."""
     try:
         import os
+
         # Prefer precise priority via getpriority
         try:
             if hasattr(os, "getpriority") and hasattr(os, "PRIO_PROCESS"):
                 prio = os.getpriority(os.PRIO_PROCESS, 0)
                 return {"priority": int(prio)}
-        except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+        except (
+            Exception
+        ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
             pass
         # Fallback: nice(0) returns current nice without changing it
         try:
             if hasattr(os, "nice"):
                 return {"priority": int(os.nice(0))}
-        except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+        except (
+            Exception
+        ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
             pass
         return {"priority": None}
     except Exception:
@@ -367,9 +416,16 @@ def scheduler_status():
 def signals_status():
     """Return counts of installed/ignored/default signal handlers (POSIX best-effort)."""
     try:
-        import os, signal
+        import os
+        import signal
+
         if os.name != "posix":
-            return {"handled": None, "ignored": None, "defaulted": None, "total_checked": None}
+            return {
+                "handled": None,
+                "ignored": None,
+                "defaulted": None,
+                "total_checked": None,
+            }
         handled = ignored = defaulted = total = 0
         for s in getattr(signal, "Signals", []):
             try:
@@ -381,11 +437,23 @@ def signals_status():
                     ignored += 1
                 else:
                     handled += 1
-            except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+            except (
+                Exception
+            ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
                 pass
-        return {"handled": handled, "ignored": ignored, "defaulted": defaulted, "total_checked": total}
+        return {
+            "handled": handled,
+            "ignored": ignored,
+            "defaulted": defaulted,
+            "total_checked": total,
+        }
     except Exception:
-        return {"handled": None, "ignored": None, "defaulted": None, "total_checked": None}
+        return {
+            "handled": None,
+            "ignored": None,
+            "defaulted": None,
+            "total_checked": None,
+        }
 
 
 # S9.10: /status/rlimit-mem (append-only, stdlib only)
@@ -394,8 +462,10 @@ def rlimit_mem_status():
     """Return RLIMIT_AS and RLIMIT_DATA (soft/hard) where supported (Unix)."""
     try:
         import os
+
         if os.name == "posix":
             import resource
+
             def _lim(which):
                 try:
                     soft, hard = resource.getrlimit(which)
@@ -403,13 +473,18 @@ def rlimit_mem_status():
                     return to_int(soft), to_int(hard)
                 except Exception:
                     return None, None
+
             as_soft = as_hard = data_soft = data_hard = None
             if hasattr(resource, "RLIMIT_AS"):
                 as_soft, as_hard = _lim(resource.RLIMIT_AS)
             if hasattr(resource, "RLIMIT_DATA"):
                 data_soft, data_hard = _lim(resource.RLIMIT_DATA)
-            return {"as_soft": as_soft, "as_hard": as_hard,
-                    "data_soft": data_soft, "data_hard": data_hard}
+            return {
+                "as_soft": as_soft,
+                "as_hard": as_hard,
+                "data_soft": data_soft,
+                "data_hard": data_hard,
+            }
         return {"as_soft": None, "as_hard": None, "data_soft": None, "data_hard": None}
     except Exception:
         return {"as_soft": None, "as_hard": None, "data_soft": None, "data_hard": None}
@@ -421,8 +496,10 @@ def rlimit_cpu_status():
     """Return RLIMIT_CPU (soft/hard) in seconds where supported (Unix)."""
     try:
         import os
+
         if os.name == "posix":
             import resource
+
             try:
                 soft, hard = resource.getrlimit(resource.RLIMIT_CPU)
                 to_int = lambda v: -1 if v == resource.RLIM_INFINITY else int(v)
@@ -439,7 +516,9 @@ def rlimit_cpu_status():
 def net_ifaces_status():
     """Return interface names (best-effort) and host IPv4 addresses (unique)."""
     try:
-        import os, socket
+        import os
+        import socket
+
         # Interface names
         names = None
         try:
@@ -459,15 +538,21 @@ def net_ifaces_status():
                     s.connect(("8.8.8.8", 80))
                     p = s.getsockname()[0]
                     if p and p not in seen:
-                        ips.append(p); seen.add(p)
+                        ips.append(p)
+                        seen.add(p)
                 finally:
                     s.close()
-            except Exception:  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
+            except (
+                Exception
+            ):  # nosec B110 (LOW): vetted for board compliance - Try, Except, Pass detected.
                 pass
-            for info in socket.getaddrinfo(socket.gethostname(), None, proto=socket.IPPROTO_TCP):
+            for info in socket.getaddrinfo(
+                socket.gethostname(), None, proto=socket.IPPROTO_TCP
+            ):
                 addr = info[4][0]
                 if addr and addr not in seen:
-                    ips.append(addr); seen.add(addr)
+                    ips.append(addr)
+                    seen.add(addr)
             non_loop = [ip for ip in ips if not ip.startswith("127.")]
             loop = [ip for ip in ips if ip.startswith("127.")]
             ips = non_loop + loop

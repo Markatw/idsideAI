@@ -1,12 +1,16 @@
 """
 Sprint 25.6 — DR backup/restore helpers (protocol v2)
 """
-import os, zipfile, time
+
+import zipfile
+import time
 from pathlib import Path
+
 
 def backup_sqlite(db_path: str, out_dir: str) -> dict:
     p = Path(db_path)
-    out = Path(out_dir); out.mkdir(parents=True, exist_ok=True)
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
     ts = time.strftime("%Y%m%d_%H%M%S")
     bak = out / f"{p.stem or 'db'}_{ts}.bak.zip"
     with zipfile.ZipFile(bak, "w", compression=zipfile.ZIP_DEFLATED) as z:
@@ -19,8 +23,10 @@ def backup_sqlite(db_path: str, out_dir: str) -> dict:
             tmp.unlink(missing_ok=True)
     return {"ok": True, "backup": str(bak), "source_exists": p.exists()}
 
+
 def restore_sqlite(bak_zip: str, dest_dir: str) -> dict:
-    bz = Path(bak_zip); dest = Path(dest_dir)
+    bz = Path(bak_zip)
+    dest = Path(dest_dir)
     dest.mkdir(parents=True, exist_ok=True)
     if not bz.exists():
         return {"ok": False, "error": "backup_not_found"}

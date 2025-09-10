@@ -7,7 +7,15 @@ from .i18n import router as i18n_router
 from .a11y_overlay import router as a11y_router
 from .errors import router as errors_router
 
-all_routers = [auth_router, dashboard_router, graph_tooltips_router, ui_theme_router, i18n_router, a11y_router, errors_router]
+all_routers = [
+    auth_router,
+    dashboard_router,
+    graph_tooltips_router,
+    ui_theme_router,
+    i18n_router,
+    a11y_router,
+    errors_router,
+]
 from . import scim
 from . import sso
 from . import pii_crypto

@@ -1,17 +1,19 @@
-from fastapi import APIRouter, Request, HTTPException
+from fastapi import APIRouter, Request
 from pydantic import BaseModel
-from typing import Optional, List, Dict, Any
 from app.services.enterprise_service import set_api_key, list_api_keys
 
 router = APIRouter(prefix="/settings", tags=["settings"])
+
 
 class KeyIn(BaseModel):
     provider: str
     api_key: str
 
+
 @router.get("")
 async def settings_page():
     from fastapi.responses import HTMLResponse
+
     html = """
     <!doctype html><html><head><meta charset="utf-8"><title>Settings — idsideAI</title>
       <link rel="stylesheet" href="/static/css/idsideai.css">
@@ -54,11 +56,13 @@ async def settings_page():
     """
     return HTMLResponse(html)
 
+
 @router.get("/keys")
 async def get_keys(request: Request):
     uid = request.session.get("user_id") if hasattr(request, "session") else None
     creds = list_api_keys(uid)
-    return [{"provider":c.provider, "created_at": str(c.created_at)} for c in creds]
+    return [{"provider": c.provider, "created_at": str(c.created_at)} for c in creds]
+
 
 @router.post("/keys")
 async def post_key(body: KeyIn, request: Request):

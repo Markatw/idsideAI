@@ -2,7 +2,7 @@
 Sprint 25.7 — Metrics collector (protocol v2)
 Very light in-process counters + histograms to expose Prometheus text format.
 """
-import time
+
 
 COUNTERS = {
     "app_requests_total": 0,
@@ -12,8 +12,10 @@ HISTOGRAMS = {
     "app_request_latency_seconds": [],  # store last N latencies (seconds)
 }
 
+
 def inc_counter(name: str, value: int = 1):
     COUNTERS[name] = COUNTERS.get(name, 0) + int(value or 0)
+
 
 def observe_latency(name: str, seconds: float):
     arr = HISTOGRAMS.setdefault(name, [])
@@ -21,6 +23,7 @@ def observe_latency(name: str, seconds: float):
     # Cap memory
     if len(arr) > 512:
         del arr[: len(arr) - 512]
+
 
 def render_prometheus() -> str:
     lines = []

@@ -2,12 +2,14 @@
 Sprint 28.4 — Stripe live integration scaffold (protocol v2)
 Reads STRIPE_SECRET_KEY from env and configures client if available.
 """
+
 import os
 
 try:
     import stripe
 except ImportError:
     stripe = None
+
 
 class StripeLiveClient:
     def __init__(self):

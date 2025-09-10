@@ -2,10 +2,18 @@
 Sprint 21.4: Provider base interface (protocol v2)
 Defines a minimal, dependency-free contract for provider adapters.
 """
+
 from typing import Any, Dict
 
+
 class ProviderError(Exception):
-    def __init__(self, message: str, code: str = "provider_error", *, context: Dict[str, Any] | None = None):
+    def __init__(
+        self,
+        message: str,
+        code: str = "provider_error",
+        *,
+        context: Dict[str, Any] | None = None,
+    ):
         super().__init__(message)
         self.code = code
         self.context = context or {}
@@ -15,6 +23,7 @@ class ProviderError(Exception):
 
     def __str__(self) -> str:
         return f"{self.code}: {self.args[0]}"
+
 
 class BaseProvider:
     name: str = "base"
@@ -26,4 +35,6 @@ class BaseProvider:
         return {"status": "unknown", "provider": self.name}
 
     def complete(self, prompt: str, **kwargs) -> Dict[str, Any]:
-        raise ProviderError("Not implemented", code="not_implemented", context={"method": "complete"})
+        raise ProviderError(
+            "Not implemented", code="not_implemented", context={"method": "complete"}
+        )

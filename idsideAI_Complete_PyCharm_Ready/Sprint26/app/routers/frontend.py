@@ -8,7 +8,7 @@ BRAND_CSS = '<link rel="stylesheet" href="/static/style.css">'
 
 @router.get("/", response_class=HTMLResponse)
 def home(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -27,11 +27,16 @@ def home(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/dashboard", response_class=HTMLResponse)
 def dashboard(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -54,11 +59,16 @@ def dashboard(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/chat", response_class=HTMLResponse)
 def chat(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -82,11 +92,16 @@ def chat(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/docs", response_class=HTMLResponse)
 def docs(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -112,11 +127,16 @@ def docs(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/presence", response_class=HTMLResponse)
 def presence(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -135,11 +155,16 @@ def presence(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/activity", response_class=HTMLResponse)
 def activity(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -158,11 +183,16 @@ def activity(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
+
 
 @router.get("/export", response_class=HTMLResponse)
 def export_ui(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -189,12 +219,16 @@ def export_ui(request: Request):
       const a=document.createElement('a');a.href=url;a.download=`workspace_${ws}.json`;a.click();URL.revokeObjectURL(url);st.textContent='Download ready';}
     </script>
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )
 
 
 @router.get("/help", response_class=HTMLResponse)
 def help_index(request: Request):
-    from app.ui.copy import COPY
+
     return """
     <!doctype html><html lang='en'><head>
       <meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -215,4 +249,8 @@ def help_index(request: Request):
     </main>
     {{_FOOT}}
     </body></html>
-    """.replace("{{_NAV}}", _navbar()).replace("{{_FOOT}}", _footer())
+    """.replace(
+        "{{_NAV}}", _navbar()
+    ).replace(
+        "{{_FOOT}}", _footer()
+    )

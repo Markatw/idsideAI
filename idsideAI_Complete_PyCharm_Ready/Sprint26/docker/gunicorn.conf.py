@@ -1,5 +1,7 @@
 # Sprint 27.4 — gunicorn production config (protocol v2)
-import multiprocessing, os
+import multiprocessing
+import os
+
 bind = "0.0.0.0:8000"
 workers = int(os.getenv("WEB_CONCURRENCY", multiprocessing.cpu_count() * 2 + 1))
 threads = int(os.getenv("WEB_THREADS", 2))

@@ -2,9 +2,11 @@
 Sprint 22.3 (protocol v2): Security middleware adding standard HTTP security headers.
 Use by including: app.add_middleware(SecurityHeadersMiddleware)
 """
+
 from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.types import ASGIApp, Receive, Scope, Send
+from starlette.types import ASGIApp
 from typing import Callable
+
 
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     def __init__(self, app: ASGIApp):
@@ -16,9 +18,14 @@ class SecurityHeadersMiddleware(BaseHTTPMiddleware):
         response.headers.setdefault("X-Content-Type-Options", "nosniff")
         response.headers.setdefault("X-Frame-Options", "DENY")
         response.headers.setdefault("Referrer-Policy", "no-referrer")
-        response.headers.setdefault("Permissions-Policy", "geolocation=(), microphone=(), camera=()")
+        response.headers.setdefault(
+            "Permissions-Policy", "geolocation=(), microphone=(), camera=()"
+        )
         # Minimal, safe CSP for API-only surface
-        response.headers.setdefault("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; base-uri 'none'")
+        response.headers.setdefault(
+            "Content-Security-Policy",
+            "default-src 'none'; frame-ancestors 'none'; base-uri 'none'",
+        )
         return response
 
 
@@ -27,6 +34,7 @@ DEFAULT_HSTS = "max-age=63072000; includeSubDomains; preload"
 DEFAULT_COOP = "same-origin"
 DEFAULT_COEP = "require-corp"
 DEFAULT_CORP = "same-site"
+
 
 class SecurityHeadersMiddlewareR2(SecurityHeadersMiddleware):
     def __init__(self, app: ASGIApp, *, enable_hsts: bool = True):

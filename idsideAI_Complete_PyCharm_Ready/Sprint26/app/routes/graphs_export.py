@@ -5,10 +5,11 @@ from app.utils.graph_export import export_graphml, export_svg
 
 router = APIRouter(prefix="/api/graphs", tags=["graphs"])
 
+
 @router.post("/export", response_class=PlainTextResponse)
 def export_graph(
     fmt: Literal["graphml", "svg", "png"] = Body(..., embed=True),
-    graph: Dict[str, Any] = Body(..., embed=True)
+    graph: Dict[str, Any] = Body(..., embed=True),
 ) -> str:
     fmt = (fmt or "svg").lower()
     if fmt == "graphml":
@@ -16,5 +17,10 @@ def export_graph(
     if fmt == "svg":
         return export_svg(graph)
     if fmt == "png":
-        raise HTTPException(status_code=501, detail="PNG export not implemented. Use 'svg' or 'graphml'.")
-    raise HTTPException(status_code=400, detail="Unsupported format. Use 'graphml' or 'svg'.")
+        raise HTTPException(
+            status_code=501,
+            detail="PNG export not implemented. Use 'svg' or 'graphml'.",
+        )
+    raise HTTPException(
+        status_code=400, detail="Unsupported format. Use 'graphml' or 'svg'."
+    )

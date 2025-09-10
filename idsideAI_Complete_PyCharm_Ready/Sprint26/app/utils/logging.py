@@ -1,7 +1,12 @@
 """
 Sprint 25.8 — Structured JSON logging (protocol v2)
 """
-import logging, json, sys, datetime
+
+import logging
+import json
+import sys
+import datetime
+
 
 class JsonFormatter(logging.Formatter):
     def format(self, record):
@@ -13,6 +18,7 @@ class JsonFormatter(logging.Formatter):
             "message": record.getMessage(),
         }
         return json.dumps(log_obj)
+
 
 def get_logger(name: str):
     logger = logging.getLogger(name)

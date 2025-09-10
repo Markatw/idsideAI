@@ -2,12 +2,15 @@
 Sprint 24.2 — Auth form validation helpers (protocol v2)
 - a11y-friendly messages with field references and concise wording.
 """
+
 import re
 
 EMAIL_RX = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
+
 def _msg(field: str, text: str) -> dict:
     return {"field": field, "message": text, "aria_live": "polite"}
+
 
 def validate_login_form(email: str, password: str) -> dict:
     errors = []
@@ -21,9 +24,13 @@ def validate_login_form(email: str, password: str) -> dict:
         errors.append(_msg("password", "Use at least 8 characters."))
     return {"ok": len(errors) == 0, "errors": errors}
 
+
 def validate_reset_form(email: str) -> dict:
     if not email:
-        return {"ok": False, "errors": [_msg("email", "Enter your email address.")]} 
+        return {"ok": False, "errors": [_msg("email", "Enter your email address.")]}
     if not EMAIL_RX.match(str(email)):
-        return {"ok": False, "errors": [_msg("email", "Enter an email in the format name@example.com.")]} 
+        return {
+            "ok": False,
+            "errors": [_msg("email", "Enter an email in the format name@example.com.")],
+        }
     return {"ok": True, "errors": []}
