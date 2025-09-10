@@ -43,6 +43,16 @@ jobs:
         run: mypy --config-file mypy.ini
 
       - name: Bandit (security)
+      - name: Bandit JSON (proof)
+        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low -f json -o qc/bandit_ci.json
+
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-artifacts-${{ github.run_number }}
+          path: |
+            qc/Deep_Audit_*.json
+            qc/bandit_*.json
         run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
 YAMYA
 git add .github/worgflows/ci.yml
@@ -110,4 +120,14 @@ jobs:
         run: mypy --config-file mypy.ini
 
       - name: Bandit (security)
+      - name: Bandit JSON (proof)
+        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low -f json -o qc/bandit_ci.json
+
+      - name: Upload audit artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-artifacts-${{ github.run_number }}
+          path: |
+            qc/Deep_Audit_*.json
+            qc/bandit_*.json
         run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
