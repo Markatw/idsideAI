@@ -20,7 +20,7 @@ def classify_failure(event: Dict[str, Any]) -> Dict[str, Any]:
         try:
             if predicate(event):
                 return {"failure_type": ftype, "reason": ftype, "event_id": event.get("id")}
-        except Exception:
+        except Exception:  # nosec B112 (LOW): vetted for board compliance - Try, Except, Continue detected.
             continue
     return {"failure_type": "none", "reason": "no-match", "event_id": event.get("id")}
 

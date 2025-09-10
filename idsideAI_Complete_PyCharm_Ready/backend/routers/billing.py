@@ -2,6 +2,13 @@ import json
 from fastapi import APIRouter, Request, HTTPException
 from pydantic import BaseModel
 import os, stripe
+import os, threading
+from fastapi import HTTPException
+
+DRY_RUN = os.getenv("STRIPE_DRY_RUN", "0") in {"1", "true", "True"}
+DRY_CAP = int(os.getenv("STRIPE_DRY_RUN_MAX_REQUESTS", "20"))
+_counter_lock = threading.Lock()
+_counter = 0
 
 router = APIRouter()
 stripe.api_key = os.getenv("STRIPE_SECRET_KEY","")
@@ -15,6 +22,10 @@ class Plan(BaseModel):
     amount: int | None = None
 
 def _plans():
+    # at top of the function bodies
+    if DRY_RUN:
+        return {"dry_run": True}
+
     return [
         {"id":"free","name":"Free","price_id": os.getenv("STRIPE_PRICE_FREE","price_free"), "amount":0},
         {"id":"starter","name":"Starter","price_id": os.getenv("STRIPE_PRICE_STARTER","price_starter"), "amount": 1900},
@@ -28,6 +39,19 @@ def get_plans():
 
 @router.post("/checkout")
 async def checkout(request: Request):
+    global _counter
+    if DRY_RUN:
+        with _counter_lock:
+            if _counter >= DRY_CAP:
+                raise HTTPException(status_code=429, detail="stripe dry-run cap reached")
+            _counter += 1
+        return {
+            "dry_run": True,
+            "note": "this would initiate a Stripe payment session",
+            "used": _counter,
+            "cap": DRY_CAP,
+        }
+
     body = await request.json()
     price_id = body.get("price_id")
     success_url = body.get("success_url") or body.get("successUrl") or "http://localhost:5173?checkout=success"
@@ -51,6 +75,10 @@ async def checkout(request: Request):
 
 @router.post("/portal")
 async def portal(request: Request):
+    # at top of the function bodies
+    if DRY_RUN:
+        return {"dry_run": True}
+
     body = await request.json()
     customer_id = body.get("customer_id") or body.get("customerId")
     return_url = body.get("return_url") or body.get("returnUrl") or "http://localhost:5173"

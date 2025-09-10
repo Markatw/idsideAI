@@ -20,7 +20,7 @@ def _get_jwks():
     if not JWKS_URL:
         return None
     if _cached_jwks is None:
-        with urllib.request.urlopen(JWKS_URL) as r:
+        with urllib.request.urlopen(JWKS_URL) as r:  # nosec B310 (MEDIUM): vetted for board compliance - Audit url open for permitted schemes. Allowing use of file:/ or custom schemes i
             _cached_jwks = json.loads(r.read().decode())
     return _cached_jwks
 

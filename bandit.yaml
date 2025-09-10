@@ -1,0 +1,10 @@
+# Minimal Bandit config for this repo
+skips: []
+exclude_dirs:
+  - .venv
+  - __pycache__
+  - .ruff_cache
+  - .mypy_cache
+  - .git
+  - node_modules
+  - .idea

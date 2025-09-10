@@ -26,9 +26,9 @@ def main():
         t0 = time.time()
         try:
             if path.endswith("/encrypt"):
-                r = requests.post(url, json={"value": "ping", "key": "k"})
+                r = requests.post(url, json={"value": "ping", "key": "k"}, timeout=10)
             else:
-                r = requests.get(url)
+                r = requests.get(url, timeout=10)
             ok = (r.status_code == expect)
             results.append({"path": path, "status": r.status_code, "ok": ok, "dt_ms": int((time.time()-t0)*1000)})
         except Exception as e:

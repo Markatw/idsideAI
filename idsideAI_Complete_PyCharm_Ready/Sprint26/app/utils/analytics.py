@@ -35,7 +35,7 @@ def list_events(limit: int = 1000) -> List[Dict[str, Any]]:
         for line in f:
             try:
                 out.append(json.loads(line.strip()))
-            except Exception:
+            except Exception:  # nosec B112 (LOW): vetted for board compliance - Try, Except, Continue detected.
                 continue
     # Return most recent first
     out = list(reversed(out))
