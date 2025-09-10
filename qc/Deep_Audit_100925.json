@@ -1,0 +1,4205 @@
+{
+  "summary": {
+    "files": 715,
+    "bytes": 13998524
+  },
+  "manifest": [
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Investor_Pitch_Recasted.pptx",
+      "size": 35805,
+      "sha256": "b25d2167d32017c3bd8249d1de868d9438d6b961126bba61455f500a2cdfda72"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_App_PyCharm_FINAL.zip",
+      "size": 80,
+      "sha256": "93dcc8634791302d0d60941b288bc1f33f56deabede42fe8f8b64c4d915c32c3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Business_Case_v4_1_COMPLETE.md",
+      "size": 11413,
+      "sha256": "fde939a9bcb968223c8dc8b2c1e573d27c3d39d0975489eb8e64f6cd6cc9aa8e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/DemoDeck_v4_1_COMPLETE.md",
+      "size": 2485,
+      "sha256": "c19862a825a04493b88d9c78e52f85e58a64feea8b7fcf716eebeeacf12b4f13"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Master_Index_v4_1.docx",
+      "size": 37631,
+      "sha256": "f6243621fb657fb1de2a944b27e86d334f3e26191446acbd61594a29ea161e28"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Investor_Intro_Note_v4_1_COMPLETE.md",
+      "size": 2361,
+      "sha256": "1ad1a0b9ad9b160fd2bd922a9e89c3e99659c694bd0a006bd35582fb0eb7b9e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Investor_Deck_v7.pdf",
+      "size": 1665,
+      "sha256": "6437b40de71a150e68ef11dc19b9817472210c03ddd31ad9a414ee1c1579efc9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Business_Plan_Recasted.docx",
+      "size": 37763,
+      "sha256": "b0752d9a1c8cb70e5bbe813ce3b632604436daa4bc435e386fab8615679c8320"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Status_Dashboard_v4_1_COMPLETE.pdf",
+      "size": 363977,
+      "sha256": "9acdc4e5965e353db4ccdd3a90e2e5387679bcb2b6c0f6dfac421e3ad1131ff8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Demo_Script_v4_1.pdf",
+      "size": 70,
+      "sha256": "65e54b4c976b29a4a5264cb77f1bb8240c16b62fb283406c8a6c6641363008c3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/\u2261\u0192\u00f4\u00ffIDECIDEBrandBriefing.pdf",
+      "size": 116627,
+      "sha256": "4be853e579f6395146b83cfa8725e63cace15d904b38576edb68c46fa7fdb4ea"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Pasted_content_01.txt",
+      "size": 3529,
+      "sha256": "ca94a7a1bd725fd9e5953bf35ba2cce37608c2bd7051478190c7c22cd197b24f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_BusinessPlan(1).docx",
+      "size": 38650,
+      "sha256": "5445559bf8b2cdf9d9dc3c887b700363ef5a055b7d3427d84fc95a14aa19505b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Board_Summary_Detailed.docx",
+      "size": 37676,
+      "sha256": "f8f9123637105d02ba65b0349cc838f7406e3a449368efb607ed4b51b55be761"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Instruction_Manual_v4_1_COMPLETE.md",
+      "size": 7604,
+      "sha256": "b65bc15a091f1c1f3f9a7dc9b6251c89785d85c0e9686929cb2d701e3817be76"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/run.py",
+      "size": 2035,
+      "sha256": "ef8721687b31c3c4fb1e8c4a74a55c1a420c7184f804c7f2f668249cac10f10d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Instruction_Manual_v4_1.pdf",
+      "size": 77,
+      "sha256": "ff94fd974e34a6073411436da6540d4db7b1a26a4865a7be3946f99c33a364b4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/VERIFY_SHA256.md",
+      "size": 985,
+      "sha256": "236e670b79bff4b68f040d778f1bedc3c43a727b91c845e79b8e615bb2c8c88f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v6_0_FINAL_ALLINONE(1).zip",
+      "size": 743238,
+      "sha256": "86247dd2bfcc4158715acf7b62f4a3a120bc156b19fbcbde0a4a4f189e5945bb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/PitchDeck_v4_1.pdf",
+      "size": 68,
+      "sha256": "da5beb1ad036938859d4658a39bd9aa19d0c5dc40e39830f592738af77925c7e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Figma_Handoff_Checklist.pdf",
+      "size": 2726,
+      "sha256": "e91d6e3a1dedc627b320586cfcc49356c9ba2d692c88c4119a90f53b962926f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/MASTER_INDEX.md",
+      "size": 56,
+      "sha256": "20c200d87a25216d2601376aaa2665a0d70621755fff68b07e2dc2bed99c22a7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/RaisonDetre_CategoryDefining_DecisionModel_v4_1_COMPLETE.pdf",
+      "size": 246624,
+      "sha256": "001bc94bef53acb6f28cbd88f992b29e033ff96e10d547c6240ed5d88777dd7e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/DemoDeck_v4_1_COMPLETE.pdf",
+      "size": 276891,
+      "sha256": "0d61c692c6ebe820a09d553758d06412c19e39ab4a911429784164d219f52dad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docker-compose.observability.yml",
+      "size": 475,
+      "sha256": "79e0c18d2e89599363b972d1b3941358fb321397ae5a0ae76e7663850ee3dade"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/API_COVERAGE.md",
+      "size": 40,
+      "sha256": "4724fe28cd54ebcd3042aba475bb11d798b31bac441d5db4fa376fdd58a1584d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/requirements.txt",
+      "size": 163,
+      "sha256": "ce3b2b94788ba30123c7f92560306e2b5db2c4a080afcf00a093933ea95db3ab"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-23-48.txt",
+      "size": 2792,
+      "sha256": "91cf2752fc1369be31c94193a5b200312224ef62a2e1bf399466e9cd02c079cd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-23-13.txt",
+      "size": 2912,
+      "sha256": "3ae03c2baf4e715ee4d9cd13a968876f6bde860bcb5577dabc4bc7abf05e43eb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Master_Index_v4_1.pdf",
+      "size": 4133,
+      "sha256": "e64399efd50399f8d29c5f12ab24ebeaaf52f5dcff19f55b08948ffe4ac26748"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/S30_StubsScan_FINAL.csv",
+      "size": 125,
+      "sha256": "1a8adf45e7e6b6b5391d19093911f74d8d3a4548ee85feb6767f167dbb8acdac"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Board_Summary_Detailed.pdf",
+      "size": 3019,
+      "sha256": "45f6b6275a7d06ddcc47146f1f5370a6c895e014a1704cb55a54bbef0a53f471"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Makefile",
+      "size": 710,
+      "sha256": "10ea22d0a10f103626687af0e2729811647d5f7a92d505a1049f3a1191603358"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/SECURITY_MODEL.md",
+      "size": 32,
+      "sha256": "5ec045cc30bebec3f83df0aa75c2226ccda516faf67bb8544079fee403667f47"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Business_Case_v4_1.pdf",
+      "size": 72,
+      "sha256": "86fbfc173f12c50bd1d3764e5662c7b8a9e3467ac70468bda0326aabe8bf22f6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/VERIFY_SHA256.pdf",
+      "size": 2309,
+      "sha256": "374113fb237fef96185e0d6f39f11b05bdc26c91ed8fea791789715d6acbb353"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/HASHES_SHA256.json",
+      "size": 61868,
+      "sha256": "aa393337317e1417a9c78344193d04f4523f35129edff5d8f25f56c5e3b79027"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/S30_PlaceholderMarkers_FINAL.csv",
+      "size": 1770,
+      "sha256": "a5788438771c4972801a1acdc7c8858cb709dc445f056cd5e94ba030dc23c21b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/HowToUse_v4_1.pdf",
+      "size": 67,
+      "sha256": "145c0bec58e3ae8d4de73bf3a7d8504867274e3aeb0f1d4e7460cb47d1ef26aa"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Board_Summary_Exec.pdf",
+      "size": 2379,
+      "sha256": "39b666483c402ea27a4c1807d1f376fd05baf21a8db456288160ebe3d3bf72a1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Recasted_Strategic_Package.zip",
+      "size": 122549,
+      "sha256": "85460a5accd5627397b079d8c479379e65d6667ec33cbfde77ebe6ebc9848674"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Board_Summary_Exec.docx",
+      "size": 37166,
+      "sha256": "a6132cd19be907f29b64450f50bee77d68cd43caf486010830478c225ad02614"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/S30_DeepApp_Imports_FINAL.csv",
+      "size": 3118,
+      "sha256": "314fbb2162058214af24d83eda6998f9b57ca68434adda9c4402ce55d6af6aa3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/RUN_ON_PYCHARM.md",
+      "size": 28,
+      "sha256": "bb4af6fa9a9443b87bce83d4df31148c44c26f2f28de30187466cd6d2283d0cd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Core_Explainer_Investor_Depth_v4_1.pdf",
+      "size": 88,
+      "sha256": "0246c1e6e828722af25bf542bd909cd47ec7466a19a31787a5fa63b07e275ec0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/README_COMPLETE.md",
+      "size": 4441,
+      "sha256": "9f27a9a2d3cd9f8c87bb71647cbfe726a9ca3a31f67e66fc8da18b9de260249a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Investor_Intro_Note_v4_1_COMPLETE.pdf",
+      "size": 278432,
+      "sha256": "e49244ee6969a21fdea35913e95b227cf719dd0d68bedd5fdb45c067b30549fa"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-41-56.txt",
+      "size": 10527,
+      "sha256": "19d6462905a679612b145a61a579ed755d5811020c25f6b12c075e7509e9e19c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/RaisonDetre_CategoryDefining_DecisionModel_v4_1.pdf",
+      "size": 101,
+      "sha256": "1c6d467541470d18c616c1ac953d9eeeedbec4c05739ac337b12202d9db6b727"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Instruction_Manual_v4_1_COMPLETE.pdf",
+      "size": 319252,
+      "sha256": "dbf439fbd608817b1b625727d98aa3cdb733027a6dae9596d9685533dba366d9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/HowToUse_v4_1_COMPLETE.pdf",
+      "size": 360368,
+      "sha256": "f0017a81a5f00662e3944d989e91b1d3ed18770e3d1facd6fd4a9841cd2017ed"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Tagline_Evolution_DecisionModel_v4_1.docx",
+      "size": 37214,
+      "sha256": "276596c78dddc98c7e1ac9797c5212ccede2d65b29d9a95ecba93fb2b33066c4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Investor_Pitch_Recasted.pdf",
+      "size": 3680,
+      "sha256": "9f9953b8bdd638014a187affa2ade76ebce95b08c53b36cc4abc0f87be735d98"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE_PACKAGE.zip",
+      "size": 2488493,
+      "sha256": "3d6b842136f5914a0303c6bda58db0f467f546e909551d1fb490a1e6b19b23dd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/README.md",
+      "size": 4486,
+      "sha256": "79fda62bd09dd4a5b9009efe1ba91469af128acc60f1d98a3ed6c0790bc11661"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Demo_Script_v4_1_COMPLETE.pdf",
+      "size": 328511,
+      "sha256": "67f0bbc4573fe9dbb92aaac14ef86109a676900822e5d6abf4cf844ee2163a98"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Status_Dashboard_v4_1.pdf",
+      "size": 75,
+      "sha256": "ccc272fffa0be6e6faf981090de7d330f432c5ee464b5d34e86e149db0b2082a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_v7_BOARD_SUMMARY_v7_MASTER_260825.pdf",
+      "size": 2587,
+      "sha256": "f145d6c923918ea4e6911d2af1f2db95b7e09063aebc6da55dceb902dc81f28a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-21-36.txt",
+      "size": 2633,
+      "sha256": "15713f439e828e8607cfeca35cc729d4567d806841e01a58e05c38195947d146"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Core_Explainer_Investor_Depth_v4_1_COMPLETE.md",
+      "size": 4514,
+      "sha256": "4e740767a3aa8cda9ccb5a2ef6b57af81018496c6f85c79b6bd1f71820eff33f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/setup.py",
+      "size": 1802,
+      "sha256": "9ad36a330e4d9f6d19900ef1a00a5308baeb4dfc93fbd8d791253aeb402cec95"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/V7_DEEP_DIVE_VERIFICATION_REPORT.md",
+      "size": 10618,
+      "sha256": "b1f1e6a524807182907f8f32a391dd43b1dd5e83c98b150cb43770127f7a2c60"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-17-09.txt",
+      "size": 2490,
+      "sha256": "894bc01d174a35564ec859bd2ee7a9ec0d54b9110a1799cd4881d9f3bae47bb1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/S30_DeepApp_Callables_FINAL.csv",
+      "size": 14901,
+      "sha256": "caa2fcbb646ca33997e70877042a87086468429a0f869c968754cb70c5ac2ef8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Status_Dashboard_v4_1_COMPLETE.md",
+      "size": 7089,
+      "sha256": "7814c95dbea6d3f65957e942d0bf6ea57024e74438a1732741a1dd752a742fd2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/PYCHARM_SETUP.md",
+      "size": 4828,
+      "sha256": "e38675d3590ed9025bdb7fc7912e64c2ebe22beb9a48b4c3ebf415b16d1de22f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/.gitignore",
+      "size": 384,
+      "sha256": "8931bfa2901ad4168aebf462414021348546462b158e36da13b1db955a9cb5dc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_AppOnly_280825.zip",
+      "size": 8057,
+      "sha256": "f6131803fe62d7d4fca1ee74f65a9b92a966c8e36a2aac1ae365b627120a665f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docker-compose.otel.yml",
+      "size": 375,
+      "sha256": "bb46ca7b7ff655e3b36c6f8124f7366a7d3164ab1380e938c8474b663920eb7c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Master_Green_App_040925.zip",
+      "size": 697793,
+      "sha256": "6651a8a7270cd0f4cd545122b30a426554232089101371ad37c95d2516ccb0d7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Executive_Summary_Recasted.pdf",
+      "size": 2812,
+      "sha256": "dafcc40fbf7ff2e9c9ec970b81003d3d609037bc0f1cd41f099a3d0f87a01c2e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_CoverSheet_Tagline_Vertical_v4_1.png",
+      "size": 14012,
+      "sha256": "13a529cc5de20d9dc412a40ac3de76d7b767143e1f7261e93e0aae678b1a8b46"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_v7_MASTER_260825(1).zip",
+      "size": 9115,
+      "sha256": "0889615a12c7345f3547de25e40b51092031f573aaea1f80f9085fc75f5dde6b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_PitchDeck_v4_1_DecisionModelIntegrated.pptx",
+      "size": 33668,
+      "sha256": "0f37c3f9de34066bf1dc5202d71d9c3fe350b5e62c5bef585dfc149a5da3e7d0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_v7_BOARD_SUMMARY.pdf",
+      "size": 2587,
+      "sha256": "f145d6c923918ea4e6911d2af1f2db95b7e09063aebc6da55dceb902dc81f28a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Investor_Intro_Note_v4_1.pdf",
+      "size": 78,
+      "sha256": "1027a98f060e6a314ffb597b662f11ca446719075563dcdf96a538372e5787d4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_CoverSheet_Tagline_Horizontal_v4_1.png",
+      "size": 17559,
+      "sha256": "d494ddcaceff5ccc947f79d9da046a5cb0927f558204c6bda52df5e6f7525310"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Executive_Summary_Recasted.docx",
+      "size": 37253,
+      "sha256": "7c5e287f2a94a74df84e14cffacb0a687a8aa71cfc17c66fb2200973a80a1631"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/DemoDeck_v4_1.pdf",
+      "size": 67,
+      "sha256": "a11fe450b06a33b053487f6256e6c9fec164298bf8bf0ade1a71baa8fcf0adb1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docker-compose.yml",
+      "size": 567,
+      "sha256": "64573c1004053c7c0f5e24c72ecaaa67c0fc466fcd066dbba26300e977fec1f9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_4_Pillars.png",
+      "size": 72,
+      "sha256": "8bf2174ff7d41ef2d957f015c20389b0c5c7082dcd2300e69a10c643053fbe7b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-16-01.txt",
+      "size": 2941,
+      "sha256": "634e42c1ab36741eca247876597bc10d0f7c6735353dd2650de0d03534efde93"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Demo_Script_v4_1_COMPLETE.md",
+      "size": 9506,
+      "sha256": "e78d98c3107776840a3567a72db98479893a34a75e685eaa3fca68b358917038"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_v7_FEATURE_AUDIT_v7_MASTER_260825.pdf",
+      "size": 2567,
+      "sha256": "8e68dac41e10539aae03c6d8fc85b974b03eaa877b7d9d8456bde926fd6dbfdf"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_Business_Plan_Recasted.pdf",
+      "size": 4324,
+      "sha256": "ec63e90f6bc7103340bef7298ee81dd2e14b02295c00c252c73c393fd7913b41"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_CategoryDefining_DecisionModel_Edition.zip",
+      "size": 191378,
+      "sha256": "049c08f2f9f2292c86478a6df769faaa3cd10a11fb040b247531d7b2ae94e74a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Core_Explainer_Investor_Depth_v4_1_COMPLETE.pdf",
+      "size": 306743,
+      "sha256": "83b59f1856edf06edb4bd278acd79a15d027adb62e3d2ed6a7e85356fe6a5518"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/.env.example",
+      "size": 499,
+      "sha256": "84d50cedf5f25b371a2bf414bc7eca47f34d43f01056e7d985a761825e0aade0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Tagline_Evolution_DecisionModel_v4_1.pdf",
+      "size": 2610,
+      "sha256": "890f5ba011dfaf23e0157024daaa3b75b8890d9fe7e3cd6f673a86309b9f1048"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/V7_REPORT.md",
+      "size": 55,
+      "sha256": "1962dee5a1f0837d64eab55e50d273aca95dccabb23d6a9adbbb0cc0212bfbee"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/RaisonDetre_CategoryDefining_DecisionModel_v4_1_COMPLETE.md",
+      "size": 2206,
+      "sha256": "141f8ac4a8d0822173de9eda544bb5063e475eef7ad387debf9655af2438ab82"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/VERIFICATION_REPORT.md",
+      "size": 9069,
+      "sha256": "9ea7400d645faef6a83e40bfb643105f2a12e13f94c1c9a10d5acdd55b9eb8ed"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-17-52.txt",
+      "size": 2842,
+      "sha256": "d4cd75e5e6f7d651a3a5c70449df33bbf39dc617b9bbf3f979e428914a42ac37"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_v7_FEATURE_AUDIT.pdf",
+      "size": 2567,
+      "sha256": "8e68dac41e10539aae03c6d8fc85b974b03eaa877b7d9d8456bde926fd6dbfdf"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Note2025-09-0616-22-28.txt",
+      "size": 2097,
+      "sha256": "9213460d529c67002758a9cd161d6f892043df44aa4c1431e1cd5e7f1392e53d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/HowToUse_v4_1_COMPLETE.md",
+      "size": 8574,
+      "sha256": "964b94325146a5d0b8d8e55b526e5ac38044f31cbb002397cabdd3fd9fcfd5e3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Business_Case_v4_1_COMPLETE.pdf",
+      "size": 326087,
+      "sha256": "3941f8aaa424fafb10164877a71cf0890c0cfbaf32ff9aa9b0fb24700d57371a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/S30_DeepApp_Compile_FINAL.csv",
+      "size": 4394,
+      "sha256": "6ffa3511389da2cb35487cb76dbab44668fda46f84238040398cbe3e1f3a0281"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_PitchDeck_v4_1_DecisionModelIntegrated.pdf",
+      "size": 2925,
+      "sha256": "61ecedef04288bfa76aacec152e82905c772ca6c754cc74a6bc4ddc4c04df012"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/IDECIDE_SDL_Complete_Kit.zip",
+      "size": 509460,
+      "sha256": "df68878c9b141ac6d8c02f1e1d0a9b4b1bfa2a7447fa1794deafc9d55120af44"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/packaging/Dockerfile",
+      "size": 271,
+      "sha256": "b904b87051fea57c4b9951de0d2a25bc116254dbdc3f3c65d054f891bd958676"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/packaging/idsideAI_postman_collection.json",
+      "size": 2597,
+      "sha256": "5f59affe17d22c809ec6b6197ff38895d61b2bff3ed619c9b106c93fb8570b8f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/packaging/README_DEPLOY.md",
+      "size": 1051,
+      "sha256": "21dc48d0d48915c09388b79fd765c75c7fe26e343fda241fe7bb24f37435658a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/packaging/docker-compose.yml",
+      "size": 129,
+      "sha256": "c3be9fb65b819aa350d6b3af372f56c88cb099ae91be240b729afb730fde68a2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Business_Case_v4_1_COMPLETE.md",
+      "size": 11413,
+      "sha256": "fde939a9bcb968223c8dc8b2c1e573d27c3d39d0975489eb8e64f6cd6cc9aa8e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/DemoDeck_v4_1_COMPLETE.md",
+      "size": 2485,
+      "sha256": "c19862a825a04493b88d9c78e52f85e58a64feea8b7fcf716eebeeacf12b4f13"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Investor_Intro_Note_v4_1_COMPLETE.md",
+      "size": 2361,
+      "sha256": "1ad1a0b9ad9b160fd2bd922a9e89c3e99659c694bd0a006bd35582fb0eb7b9e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Status_Dashboard_v4_1_COMPLETE.pdf",
+      "size": 363977,
+      "sha256": "9acdc4e5965e353db4ccdd3a90e2e5387679bcb2b6c0f6dfac421e3ad1131ff8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Instruction_Manual_v4_1_COMPLETE.md",
+      "size": 7604,
+      "sha256": "b65bc15a091f1c1f3f9a7dc9b6251c89785d85c0e9686929cb2d701e3817be76"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/RaisonDetre_CategoryDefining_DecisionModel_v4_1_COMPLETE.pdf",
+      "size": 246624,
+      "sha256": "001bc94bef53acb6f28cbd88f992b29e033ff96e10d547c6240ed5d88777dd7e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/DemoDeck_v4_1_COMPLETE.pdf",
+      "size": 276891,
+      "sha256": "0d61c692c6ebe820a09d553758d06412c19e39ab4a911429784164d219f52dad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Investor_Intro_Note_v4_1_COMPLETE.pdf",
+      "size": 278432,
+      "sha256": "e49244ee6969a21fdea35913e95b227cf719dd0d68bedd5fdb45c067b30549fa"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Instruction_Manual_v4_1_COMPLETE.pdf",
+      "size": 319252,
+      "sha256": "dbf439fbd608817b1b625727d98aa3cdb733027a6dae9596d9685533dba366d9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/HowToUse_v4_1_COMPLETE.pdf",
+      "size": 360368,
+      "sha256": "f0017a81a5f00662e3944d989e91b1d3ed18770e3d1facd6fd4a9841cd2017ed"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Demo_Script_v4_1_COMPLETE.pdf",
+      "size": 328511,
+      "sha256": "67f0bbc4573fe9dbb92aaac14ef86109a676900822e5d6abf4cf844ee2163a98"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Core_Explainer_Investor_Depth_v4_1_COMPLETE.md",
+      "size": 4514,
+      "sha256": "4e740767a3aa8cda9ccb5a2ef6b57af81018496c6f85c79b6bd1f71820eff33f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Status_Dashboard_v4_1_COMPLETE.md",
+      "size": 7089,
+      "sha256": "7814c95dbea6d3f65957e942d0bf6ea57024e74438a1732741a1dd752a742fd2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/idsideAI_CoverSheet_Tagline_Vertical_v4_1.png",
+      "size": 14012,
+      "sha256": "13a529cc5de20d9dc412a40ac3de76d7b767143e1f7261e93e0aae678b1a8b46"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/idsideAI_CoverSheet_Tagline_Horizontal_v4_1.png",
+      "size": 17559,
+      "sha256": "d494ddcaceff5ccc947f79d9da046a5cb0927f558204c6bda52df5e6f7525310"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/idsideAI_4_Pillars.png",
+      "size": 72,
+      "sha256": "8bf2174ff7d41ef2d957f015c20389b0c5c7082dcd2300e69a10c643053fbe7b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Demo_Script_v4_1_COMPLETE.md",
+      "size": 9506,
+      "sha256": "e78d98c3107776840a3567a72db98479893a34a75e685eaa3fca68b358917038"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/COMPLETE_PACKAGE_README.md",
+      "size": 3939,
+      "sha256": "39f47b23cbb2cea2661f3f077cf15eb52efc209b5ac466c1138a23eee835e0e7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Core_Explainer_Investor_Depth_v4_1_COMPLETE.pdf",
+      "size": 306743,
+      "sha256": "83b59f1856edf06edb4bd278acd79a15d027adb62e3d2ed6a7e85356fe6a5518"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/RaisonDetre_CategoryDefining_DecisionModel_v4_1_COMPLETE.md",
+      "size": 2206,
+      "sha256": "141f8ac4a8d0822173de9eda544bb5063e475eef7ad387debf9655af2438ab82"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/HowToUse_v4_1_COMPLETE.md",
+      "size": 8574,
+      "sha256": "964b94325146a5d0b8d8e55b526e5ac38044f31cbb002397cabdd3fd9fcfd5e3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAI_Gold_v4_1_COMPLETE/Business_Case_v4_1_COMPLETE.pdf",
+      "size": 326087,
+      "sha256": "3941f8aaa424fafb10164877a71cf0890c0cfbaf32ff9aa9b0fb24700d57371a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/config.py",
+      "size": 581,
+      "sha256": "f50329fb16249bbc66326f08d3efd2b0c8529375faab895aca7b4a10b90b13e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/models.py",
+      "size": 1628,
+      "sha256": "1a9c2b682a5cf0ec1938a253e5ae83f0a0114489ee536b42f1abb729c57633b0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/database.py",
+      "size": 324,
+      "sha256": "86c6fdded73d8154457c1027a3623a9e8b617a3e73a646f880554e637a034015"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/__init__.py",
+      "size": 22,
+      "sha256": "20c8e430ededc2143396e553a3c67aac4ec483ef54efdfcb18a31cb162ca0646"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/main.py",
+      "size": 646,
+      "sha256": "87ccd099bb2bca0ecdc1d5b1ba9aaa91f5d804fd5c7d899411dfc92709a2f834"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/Rp1RzGi5yQ2X.png",
+      "size": 96211,
+      "sha256": "15af2ebacd71faa2ab161bde82a1a07f8d8430f79fab721eefb09af65c366c69"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/hlnDBSzSxbeC.png",
+      "size": 439436,
+      "sha256": "49f3e9f8f8826974a0985c02ff6c043902b2e719d604c1a12afa3c44681a4050"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/rutTOjiUMTyL.jpg",
+      "size": 108456,
+      "sha256": "ce7c0fd787fae84c1ded2d2ca21fbd5d76082c6422171ee0c5464de9390ae173"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/VPw6ouGnaByZ.webp",
+      "size": 44548,
+      "sha256": "6728ffb4f1a39e87a89ec2e981cfe53cc083865961169b44910b9e73b0de963c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/RA27czZOjAX4.png",
+      "size": 66457,
+      "sha256": "38bd3f991a3d1dac35a8e5b083ce0496d9f420f093ed29009eb39ff3d33decad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/5LLjVrRRe7l2.jpg",
+      "size": 100424,
+      "sha256": "987e9d5895f59de96fd310b41390182324170ee028a3e99cfdb6613d3a441e50"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/YeOJmcQHj2Or.png",
+      "size": 270318,
+      "sha256": "48ea4da5b0a2db6a09c3e561f96b16724b2d59c649bddc846fe4d736a373025d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/search_images/Mrscxbn36qq5.png",
+      "size": 311484,
+      "sha256": "722d88332e91f6191b416115863cba98a19e56bb851720a36ef214cc00f7246f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/app/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/app/main.py",
+      "size": 28,
+      "sha256": "bea4c5a56956d9d41b305848452c0f73264898905d5853a1b54a3162e706d84a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/index.html",
+      "size": 297,
+      "sha256": "276f20498b6dc9953dcb9c8edf12d9be0b52e6852768282d06d83090f9cd74b7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/Dockerfile",
+      "size": 290,
+      "sha256": "2f744f20764319697511766d079c4c5d6d71051366a7990520203e3a6270b143"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/README.md",
+      "size": 86,
+      "sha256": "258309c9a0731c5356401eafb9921dffbcdaed0f11881062f0c9a669e98c2b04"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/package.json",
+      "size": 415,
+      "sha256": "d2787584849590cdaa0adf0f009d5a735e159954d67f7cb25445601c2ba81ef0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/tsconfig.json",
+      "size": 342,
+      "sha256": "4c8d4a5c75c7c2a9a8cb64e6fb0207dc7873054628c7beabb9e3a06cee6bda1c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/.env.example",
+      "size": 35,
+      "sha256": "eaa8503379c11ade6ef8d7b77ef64e8d9772ce183cc7704ebc42a58b2f358693"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/vite.config.ts",
+      "size": 158,
+      "sha256": "25168b9c9f7da4507a695865eccb153a35c98431595cc5657d7826cad24c20b6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/backend-serviceaccount.yaml",
+      "size": 205,
+      "sha256": "58e1bd0e7d5d4af00d148998e9fc2c2168bbe4da272566ed6511f58e7ba92f5d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/ingress.yml",
+      "size": 449,
+      "sha256": "588c2c02eff0c1df957dbbbee8654216125fb190ca16da698a52491969c96978"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/frontend-deploy.yml",
+      "size": 508,
+      "sha256": "586f892428a822b6350f41865ccabffe867bee79509535d5280a0b15eb381d31"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/README.md",
+      "size": 81,
+      "sha256": "7bb0b98db4694380f335af96a39199621a0054b6507341326861c22a9c28eb1c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/backend-deploy.yml",
+      "size": 1050,
+      "sha256": "d417dc11723ed4a672442e6beab399e44d57d4d7506add6cf1e5870b4f1321ad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/k8s/neo4j-statefulset.yml",
+      "size": 897,
+      "sha256": "ab5e8a5acc0471b222d0594003c858382c2f9de6b1ed31791b593fecf800c067"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/A11Y_CHECKLIST_S20.md",
+      "size": 2650,
+      "sha256": "bb4179cb30bc6dd51a68415d4b8b764aac1dfc4f8f3a0fd932df4af462c0a024"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/.flake8",
+      "size": 99,
+      "sha256": "552849ff91a3f4663917f86a959ea9828a9ccfc919e0015e3fca0d26bd605f7d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/A11Y_README.md",
+      "size": 2024,
+      "sha256": "ec21bfeb8a667b967c8b239f5e2bbadebb40bc78204c3e545e3f0f2598baec85"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/pytest.ini",
+      "size": 65,
+      "sha256": "8cda4b47786b2ae1e1d1f91b6353eb62d46316e5800b0a2bbb5edcfb9d0954be"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/CHANGELOG_S19.md",
+      "size": 704,
+      "sha256": "5a55a4c720a291cb58d8e23a7038d9bfe9e939a5a3e1e54a077159aea4bb45af"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/pyproject.toml",
+      "size": 275,
+      "sha256": "82974fbeea6eef4681e50a6967aee07a515e4d4ca733c0bd0a5bd423eda166a7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/MANIFEST.in",
+      "size": 70,
+      "sha256": "ae7684973db0cf20a32106b0f43a568a3d9ea9e1b5d4e5a9b441f30333260584"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/README.md",
+      "size": 1159,
+      "sha256": "26740fec8986c6ee923e9d7ca9d25bd607705ae8fea902b09a7b94a1f98e4061"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/setup.py",
+      "size": 424,
+      "sha256": "fcb6ab1f1f54f35f05de2efe4f3ea2c06c03cfa746f54f033443197f615a5e82"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/requirements-dev.txt",
+      "size": 23,
+      "sha256": "8524debf21b2810823a7166337b1c397da2050c1bbd7c57144037e66ced037a7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/.gitignore",
+      "size": 6,
+      "sha256": "9a7980b27d640d80b0117b7255f62024e7b241001db743f99d201db65814b535"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/setup.cfg",
+      "size": 136,
+      "sha256": "ee5f614f201ca11c0299b3f33689a1667005b3ddb476c061e15abf26c24b8915"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docker-compose.yml",
+      "size": 914,
+      "sha256": "ef41e7cf756e3cc26a222e61c5a892cd74ddf36bd4e419f08d3acc1ae5139b28"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/.env.example",
+      "size": 328,
+      "sha256": "686312b51f375abaa99888b2e2ab36739b8db8a9026906c511f0577e43dad0c5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/VERSION.txt",
+      "size": 7,
+      "sha256": "becda3ce93ee582fb4ef9442ae3518602cda1488e496cb19f379cd21accb6417"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/CHANGELOG_S20.md",
+      "size": 2078,
+      "sha256": "993d3d526e157f4c16fe992721ce7ec28cb292febdd3ec8c8cab9deec66bc7d3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/BRAND_README.md",
+      "size": 1090,
+      "sha256": "d1c61893abb933771d89f3dad82f26f0344ea9022091b3d4507817d86edd977a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/requirements.txt",
+      "size": 475,
+      "sha256": "973a2d4a418cffb8ca39840fb275ddd165aca8aff6db2843f7e7d5c065ef5cc8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/Dockerfile",
+      "size": 191,
+      "sha256": "cf43b805eaa5d1a983129a36c33ec5ca3e8fc4245646d89db44c4201856b8d6c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/README.md",
+      "size": 693,
+      "sha256": "40aa69e28dc28ad45aaba68f6ed095a11bd8e34b7f0320827d70d540b7aa9ec5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/app.py",
+      "size": 2907,
+      "sha256": "3f9c7ede909cdb7f42490c7a3a18d530916d084f1e3c023b83e59ba698a73d23"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/.env.example",
+      "size": 875,
+      "sha256": "08b71be175652a103c769b1afd812c4a289e78850ace8cb7e76dc22b09afe83a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/otel/otel-collector-config.yaml",
+      "size": 534,
+      "sha256": "914a026ace4fb114f7e10c72f34b918de113955ac01995c172f889775d21390b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/ACCESSIBILITY_REPORT.md",
+      "size": 223,
+      "sha256": "7d2861c9023c239aae402964f882c604ff6b7ef427265c081896264217b511f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/idsideAI_v6_0_Verification_Checklist.pdf",
+      "size": 5477,
+      "sha256": "3e53424df5258a366a3a0bd87a8ed150d8f19c9110b26a05aeb2131ae3d588a9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/idsideAI_Board_Statement_v6.pdf",
+      "size": 2997,
+      "sha256": "702c753f31a71ad263d8152530d5f81b0a06fe5c8ef9450f079ef2d751b5be54"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/DEPLOYMENT.md",
+      "size": 323,
+      "sha256": "b5b0e6331a3505ade5826834379c380878ce1e30e399fb5d0b618f0e7db4df75"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/ACCESSIBILITY_FINAL.md",
+      "size": 1118,
+      "sha256": "3e57afb0256b3dd7b4659b5a94df560fe785cf7989818b175556354abe06e424"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/TELEMETRY.md",
+      "size": 237,
+      "sha256": "d4aa2722a16cef6d52ad4eaae1aee6c294c3b814c18df472d27c93314b2e02c7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/idsideAI_v6_0_Verification_Checklist.txt",
+      "size": 3273,
+      "sha256": "851a3884a7d9311323a4df50a27d8362e1c4a4aac79699706e31ce6f049078ce"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/DR_PLAYBOOK.md",
+      "size": 1013,
+      "sha256": "81f822fc97522285f83bb8ec49fcabf5bae5a779069b0a156b0ba607a9488a0b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/BILLING_STRIPE.md",
+      "size": 625,
+      "sha256": "efd28577e85ea6ca025d33d64f505707a4e8f8228d9ded3ea659f4c1d2b0f3f2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/docs/SECURITY_AUTH.md",
+      "size": 434,
+      "sha256": "33b392c8c279079b32d97fc8b1db19eb568ece0eea88868845349e7f18027bc8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/observability/prometheus.yml",
+      "size": 129,
+      "sha256": "1e125d69af5e7192abd373b1f3ae381a34c39b6b3e86d63ff366a701d5c94a58"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/examples/demo_decision_model.yaml",
+      "size": 367,
+      "sha256": "751bdb624c4a51b44846b81b7713b41c968486e64bd34279cb219992911dc070"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/examples/README.txt",
+      "size": 134,
+      "sha256": "83fa2eb887c720345b812311fc64566b065803847b27bfe4021cb4dff4e857f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/api/requirements.txt",
+      "size": 96,
+      "sha256": "e59f250f02d5e35cafb85e242b671d4869555c2134db9962a29b9205de32ebf2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/api/sample_graph.json",
+      "size": 2660,
+      "sha256": "7b7afb8803242bb91e474c3e6a7a2938cf7bcb9376e98a6b5deb3d5356deb89d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/api/README.md",
+      "size": 172,
+      "sha256": "24b863f33c551a5e288d77b899a5b828fb981a14d89f7196f5dd38a655997eb4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/api/app.py",
+      "size": 9369,
+      "sha256": "f07bb3c26b83c1a91b6a2ee5a91bc77994efd58ecc71941f6967672eee8d97ae"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/Interaction_Motion_Blueprint.pdf",
+      "size": 2324,
+      "sha256": "676b33f0e316252d9c647889432c0465efaeef0685e2e21669a2541996c68f79"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/IDECIDE_Ultimate_SDL_Spec.pdf",
+      "size": 130081,
+      "sha256": "4e7f7c1a17f40812bf1522e286cc03f4f167af85bfa2027dc2be793580c945d7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/tokens.css",
+      "size": 464,
+      "sha256": "123bf9404c29fbe5f004717409e9f2434751f431a0f94e89d28e837c48e3158a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/IDECIDE_Ultimate_SDL_Spec.docx",
+      "size": 128896,
+      "sha256": "23a38a9ec7aef12d218524da25338433f8cca5337fa1bb3bfdc8d5853437b7b9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/Decision_Storyboard_Comic.pdf",
+      "size": 2639,
+      "sha256": "dc8b863905cd456b4dddefb2fe0241f344dbd2b2ed0e4d70991ec3acba91df4d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/mock_compare.png",
+      "size": 24358,
+      "sha256": "f60c891d210f6f774045282ada284143848bff0b9ad9442c902968b2b98dedff"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/mock_graph_canvas.png",
+      "size": 49112,
+      "sha256": "ad3060af45271ce21e4232f5cb83d7171ba80229e01b5dc09d40f2905ec4af01"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/figma_tokens.json",
+      "size": 3051,
+      "sha256": "475c0e1bb399d80a600a73effdd41d56c7f0471487914c5de53bb1350c376a77"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Ultimate_SDL/mock_why_export.png",
+      "size": 36412,
+      "sha256": "d5e5ee12fa95673d2f42851eff3ce06c57253dc4913599e7b15136ea4790d5a1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/perf/k6_api_test.js",
+      "size": 633,
+      "sha256": "ca19f3ed406847a12cd50ba97fdbb022f33cb76371c05b2adada3756b80aa8da"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/.run/Run_idsieAI_uvicorn.run.xml",
+      "size": 842,
+      "sha256": "ade59fc379e9891e9f74b9aa0cc5ade007aaac355eb5aeea7a6380767579b2d4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/routers/telemetry.py",
+      "size": 216,
+      "sha256": "1c6221e89c5679c27ffdf7b585dd1c28740a047d9c55097a1373591285f769f8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/routers/decision_models.py",
+      "size": 598,
+      "sha256": "ebaa2047d86a824ba39e2b41948373fb7ec5f64429186bfcced1ff89fd7ede84"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py",
+      "size": 646,
+      "sha256": "cc1dc602d35a4fdcea2a53b94cf9373cc0ad82b47cef32a403f992216f29c84f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/services/telemetry.py",
+      "size": 388,
+      "sha256": "2bbdba4aeadd8aa0551e292c4e05de7ec331a35028ea5ebbe609d9cdae0a2ce4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/services/export.py",
+      "size": 500,
+      "sha256": "4a3cb9deac232093e4af012dac21398ff731da04fb6e327ccdf21ad8bb05b0c9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/services/engine.py",
+      "size": 1771,
+      "sha256": "afaeb988d9c4594aa42d3877f848e04d909901cfd2378a8587fff6ad0293a933"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/ui/static/styles.css",
+      "size": 361,
+      "sha256": "731d37bdaa72dba9fd4023e41d4672b8ad51bc7948263aafac458cf03400f5ff"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/ui/templates/index.html",
+      "size": 1141,
+      "sha256": "1425c716734f880ef7a007897be7aafa82252b86c80d81ee1c44a349a8250175"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/ui/templates/base.html",
+      "size": 322,
+      "sha256": "03ae55a8d2aa82716525605567f2f20e5e4e4b0c103e5831ede7c50427b36e71"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideai/services/providers/openai_provider.py",
+      "size": 731,
+      "sha256": "1ea01558466ba459f32ab8ba7c96296c688f03b76a3d74c3041fec8b78a91660"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/App.tsx",
+      "size": 8039,
+      "sha256": "097fcf5f634f6f7ea730c46c18a8d5ea38a5b16571221986d6b7ce90f5d685f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/main.tsx",
+      "size": 259,
+      "sha256": "1f04917c861f5e49a91b353c655100105c76f62b94cc965a41c0527b42e5cb57"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/StressTest.tsx",
+      "size": 809,
+      "sha256": "f1c9f834ec1b275ea158b7154a247f061b5f3c5cdf1fdeb8483a7efc361e402f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/config.ts",
+      "size": 78,
+      "sha256": "8b39be8d7228cd2eb1211305965273a8adb5dc4c24d81ec6c5b9910a96e53d1c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/utils/api.ts",
+      "size": 529,
+      "sha256": "e480e60c4b4de2e52adc243c0d1a8f304729e3ebcd72de7009094b3b290871f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/styles/tokens.css",
+      "size": 2101,
+      "sha256": "34d32269c54d80509b719180aa835c3fd5d55bba8a7e87726bd978dacb63dfc9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/styles/layout.css",
+      "size": 435,
+      "sha256": "65e9374f77e58ef7e8dbe86a29e79d7d4dc3f0476bfcbb384fd7bb7e132017d5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/styles/motion.css",
+      "size": 457,
+      "sha256": "08cd6247b95e681f29129c7b2344e846b96bdcc3053416456f2cdeea525f6a89"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/HotkeysHelp.tsx",
+      "size": 1034,
+      "sha256": "342542324edbd2d4929dd46a149c0bcd9e040ae5edd646e53ca10d045b076574"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/DownloadQueue.tsx",
+      "size": 1378,
+      "sha256": "fd557e5fdcb73b697723d3b9c895f39b3a71358549b10818cd6154753ef783c3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/Inspector.tsx",
+      "size": 2647,
+      "sha256": "b35c63cc21cdde1d584d9d8697cabc6f9ca50bfacbb6024b03e19d39b753e082"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/Tooltip.tsx",
+      "size": 389,
+      "sha256": "8dfed1f21d89d69892d27c9e68b958b1fb5ab0e749ad0fd726d324b25ac31447"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/CompareOverlay.tsx",
+      "size": 1386,
+      "sha256": "2efa262ef3ad2e570f6e32895cb169a8d883feab5439ade1f1e2cfb011bb66ac"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/Timeline.tsx",
+      "size": 274,
+      "sha256": "270ccaf1752f08d7af9dc1eefee2c010c546649273ae0408466e5bfc1ad88053"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/WebGLGraphCanvas.tsx",
+      "size": 4944,
+      "sha256": "370cb5b860ba19a879191d9ea22f5d46006b7bb83185f5d7dbfe3652081d063a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/Billing.tsx",
+      "size": 1872,
+      "sha256": "29db8641b326dc5d2c206d7b29643803540faed8a24450462590baef9914fb9d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/components/GraphCanvas.tsx",
+      "size": 9330,
+      "sha256": "220007625519b9dbe2006da98344fe432c26689ca05ee249000d4e25b0c4b34c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/frontend/src/pages/Billing.tsx",
+      "size": 1274,
+      "sha256": "66dd08008dad5fe76851e7b715e891cc842c17d1d99284d20f0811053367315d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/render/render.yaml",
+      "size": 590,
+      "sha256": "0d11660819a929537c61f1f68fe7fad787938732a60b4141928068adf3d0c028"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/aws/README.md",
+      "size": 363,
+      "sha256": "db69cd23034b58dcb8dd6bdcc2f44fb61411408d7df3638f4a675a2fe77a21f1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/tls-dns/main.tf",
+      "size": 1383,
+      "sha256": "190a393cd63ac8d4e74aaf180dbec0f4846327fd0fc031e8d7772df03a0354de"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/tls-dns/README.md",
+      "size": 533,
+      "sha256": "2b469e76a014e2d8cdadefa827ea07b5d750a23a06eb56108a1ef16c50f0a4e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/ecs/outputs.tf",
+      "size": 131,
+      "sha256": "618174f3d580f04829ade5d28f7ac7932ee64ef48179c74fd6465c92a8febaf5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/ecs/main.tf",
+      "size": 7487,
+      "sha256": "10b29ee4d422ed3733bc2308238e5800d8e5a022c8cc6aeecf66acac5307831f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/ecs/README.md",
+      "size": 1118,
+      "sha256": "1ce706df0a83ba350acb9fb649b034fc5b4617522d19b9cd3a1dc2a0d484eb60"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/ecs/variables.tf",
+      "size": 1118,
+      "sha256": "12f77dc24b9c3fdb54dbfcd2246c9ec83f9de1de186413ce9b4b31a70791d91a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/irsa-external-secrets/main.tf",
+      "size": 1750,
+      "sha256": "fcd4dd74c89a5c633088908c8aad9c0fa7d1225a174f88144f594032b6894ebc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/irsa-external-secrets/README.md",
+      "size": 881,
+      "sha256": "51afb91842946053493b9477cc65350e4afdfc2c425e3a346879ca8e944fd0b1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/irsa-external-secrets/variables.tf",
+      "size": 428,
+      "sha256": "74f29112453fc07e2e521ce69d81d57df4634c43dc8731aec5303d34989907d1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/neo4j-aura/main.tf",
+      "size": 1353,
+      "sha256": "1bfb9f9220253a07ce1bcfb719cb7c77b95f6f0acdde901f901ce12452d7e386"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/neo4j-aura/README.md",
+      "size": 783,
+      "sha256": "b998c49d7a00b792a0755edc054bc203aca3db274a74d9fa63463a74ede3fb80"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/deploy/terraform/neo4j-aura/variables.tf",
+      "size": 350,
+      "sha256": "44794d3c9d8ef2e1d8470ee7f8bb2bbcd9d668a654709527496f26ec50a76afd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docker/Dockerfile",
+      "size": 297,
+      "sha256": "513da2fd18c39417f67cf5522cee7cc2a7a353c1607e37c8b935cb5762b3aa3a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docker/gunicorn.conf.py",
+      "size": 450,
+      "sha256": "7f0f009a2ffeebb32e6456d7f383cc39526bda9e0159f3812ba95f1368538e11"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docker/start.sh",
+      "size": 143,
+      "sha256": "8a061b9e5bcd0a73588dcf3c147fe494ebc233cc8000e5f190f9c98824a45e2b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/__init__.py",
+      "size": 61,
+      "sha256": "e101aef8348f9cfe3de84a07371305a87e7c3fddde50b797a147aee4945354fe"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/main.py",
+      "size": 756,
+      "sha256": "9c1b796a17a758222d3f7a8c6a437ceb3c6629709e901d483773ef43348feb3e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/security/Checklist_OWASP_Top10.md",
+      "size": 468,
+      "sha256": "4b5e3530efafdc93fbc0961109b7b6c3a2852580089d2248e78d0f094874e0d3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/security/PenTest_Report.md",
+      "size": 294,
+      "sha256": "88fd20e058850eb4c45ac1ef31b0a21cbf26f0fc4b8c4e84890697f1ee8264cb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/__init__.py",
+      "size": 15,
+      "sha256": "f760ebb7aa3dd46ff6e47a4ed72e0e81a1caa77654760835abf5e26f610aebc4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_28.md",
+      "size": 367,
+      "sha256": "e8b0777d8bdf4aec11c2debc16bc513291be4c3da0a1244e01ed017311cc2725"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint24_LOG.md",
+      "size": 1572,
+      "sha256": "40ed34c7d4e1237be69f531b6b9debf611ea472862e9b0e8f3ed09b268f56053"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint28_LOG.md",
+      "size": 1649,
+      "sha256": "037ed020725ea280fc110cf6e6d00626fbc8706bffc70940945cb0fa4b25a844"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint26_LOG.md",
+      "size": 1576,
+      "sha256": "cdc4e3e1a5354a42c853d2caa74dbb0ddc0f5d074b27556702291aef548318a9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_26.md",
+      "size": 478,
+      "sha256": "b5bd3ea1664502a38051fe831795f447c66cfbc7eda32885cadebdd18001d430"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint22_LOG.md",
+      "size": 1893,
+      "sha256": "249d8f1bb3b2ac336a237ded0d60a31d720c9241da91c92aed595927ee9e9231"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_27.md",
+      "size": 365,
+      "sha256": "86e4901670d223e33fa6724ca22566d6ec579fa265cb80f27713514ad2f5005e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_23.md",
+      "size": 408,
+      "sha256": "32bf485ab48c73d01fff311530771ed3d0269deb22efa9aec7b19b9513d44a3d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_24.md",
+      "size": 380,
+      "sha256": "699ca4345ba2fca2d618b57f488d9b6a2e5b970dbf336d814962c930d5bb978f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint25_LOG.md",
+      "size": 1815,
+      "sha256": "df9ff5ed0d6c0d43f9d46ac60c76c907b8e670e8239f11997dfc21aaae65cba1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_21.md",
+      "size": 684,
+      "sha256": "6e29523bb4dbca0025c35b14f4412fdd9d5141d7dd407d4335d6e0985892025a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint27_LOG.md",
+      "size": 1650,
+      "sha256": "ba45c44bc834923293710ace421d0f9202274365280869e69d234f335158c392"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Checklist_25.md",
+      "size": 479,
+      "sha256": "1cb7177e283d4aee232a057f7f6193d54c11bc66cf8c2eb3614118d9f6cff0fc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint23_LOG.md",
+      "size": 1958,
+      "sha256": "b8fefbadbb835d4bd1cbd41db9c4f9e0a84dfc74ff0a8bf60bd79e4cf579d4be"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/Sprint21_LOG.md",
+      "size": 1922,
+      "sha256": "e0bf00160d5dc67676a5c815a95ff0685e25aa2accc026470b7bbea5b70ece4a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_stub_sweep.csv",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_manifest_baseline.csv",
+      "size": 4047,
+      "sha256": "c61fc185b7dd1ea95920e1b7771239b18b65f1bdec47dd194025e5753ec2f873"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_critical_hashes.csv",
+      "size": 199,
+      "sha256": "6a5a5a01b3fa173e59871e17af87409c5e2251855fac9a01a679345b36362178"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_wcag_matrix.csv",
+      "size": 2142,
+      "sha256": "5ade9607f539f7ac2086ed48fb6eceea1fe735500b680edc76684486ab6743ef"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_manifest_diff.csv",
+      "size": 7699,
+      "sha256": "eadd0e397f2c7244795f5fa8bbc67b80aad05aa4ed5293b278973b6b3b845825"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_delta_summary.json",
+      "size": 57,
+      "sha256": "9d0f039cb9064cd8b5404eb35433ce2a2d526eac1fecb0d71e48be8749c4e27b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/audit/S20.16_manifest_after.csv",
+      "size": 4139,
+      "sha256": "322484512c1b826f2884165dde6703a705bb69733f2588ee6158cdaab2395bee"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/templates/base.html",
+      "size": 357,
+      "sha256": "b0d933d7bd833bd67cc7ca14783da2ae3754e20eb4bc6f7fe3cdd27007228915"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_QC_Report_v2.md",
+      "size": 522,
+      "sha256": "deb2a0d085f40d32b40ba0f7deee20efa97d5520ce026c54527dbb3a70e0d6c1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22.10_full_manifest.csv",
+      "size": 14513,
+      "sha256": "05fe87ef099e5bf6a02469fb8d593c761742bbb25f237353a1b2578c76d3da88"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_diff_vs_S21.1.csv",
+      "size": 12910,
+      "sha256": "523fd045a74d6e75bdf08968a299c683029f7fc5e9cc0a3d72483c065173378f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22.10_critical_hashes.csv",
+      "size": 2381,
+      "sha256": "dfdf1668f46e5147a0a6b82ed38f0df71688c43b5ab7185c75f27a395636bb4f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_diff_vs_S21.4.csv",
+      "size": 15038,
+      "sha256": "ab5ce271d26645b10929c0220ff918ab14e33724ee0d6085740be3c6f2c91c50"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22_Wrap_Summary_v2_COMPLETE.md",
+      "size": 1005,
+      "sha256": "9d371b77e3489cb4b8f65f35830f8168408925e04115d53945d4f6f0da65c20a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_critical_hashes.csv",
+      "size": 583,
+      "sha256": "e814797f5c5c04e0ac3bd4d379e93dd21955ec07c21b9a0618a7e8f45e8dc8c5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22.10_stub_sweep.csv",
+      "size": 142,
+      "sha256": "b2bf63a775deebff46c072a60401513f41159c11807badd63554de1e2d075160"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22.10_diff_vs_S22.1.csv",
+      "size": 24577,
+      "sha256": "514f6c147aac5796120cd5c660fd413b79f5110fd0e381320adc9f3b5388ad10"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_Wrap_Summary_v2.md",
+      "size": 708,
+      "sha256": "b2b651f00d1a531274fdd40af42310b5b06209527badf6e92ee855d596220893"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_import_consistency_scan.csv",
+      "size": 159,
+      "sha256": "49164b07f7729ded190a6476d42f760c1f44ac6c5d00625af0ef0e62c56713ba"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S21_full_manifest.csv",
+      "size": 8398,
+      "sha256": "de8a5b3163ced56a481e34c763634cb358f42fb022fddeab3ac9825718144359"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/wrap_artifacts/S22.10_delta_summary.json",
+      "size": 278,
+      "sha256": "d060c9c8ac69cf5c8683c745c8ced630a233a9d29a20218bfb8d6293c7a7196c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.10_critical_hashes.csv",
+      "size": 5739,
+      "sha256": "04764b79d6244860bfc31681bdbdb93e2475a85b30334e7c4ed47a506f54990c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.5_critical_hashes.csv",
+      "size": 583,
+      "sha256": "e814797f5c5c04e0ac3bd4d379e93dd21955ec07c21b9a0618a7e8f45e8dc8c5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.2_QC_v2.md",
+      "size": 332,
+      "sha256": "3e6c2b5c9bf5eb95f3dca95165d359226e9a3373857e525c3856243755868cfa"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.3_QC_v2.md",
+      "size": 478,
+      "sha256": "5370bbdefba7c385e60cb30d7d69d58df86c4f6a231d7dffc34e0127a696aeef"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.10_full_manifest.csv",
+      "size": 41826,
+      "sha256": "5fa5cb12eeccc21d3ff23b0233e31c9373cc9eda68d38a18b98c4b82fec7d93f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.7_manifest.csv",
+      "size": 305,
+      "sha256": "a076539245aed9280f471fe7b5dc7e80da49011f9a179a0269015f7ff14141fe"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.1_critical_hashes.csv",
+      "size": 2381,
+      "sha256": "dfdf1668f46e5147a0a6b82ed38f0df71688c43b5ab7185c75f27a395636bb4f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.1_manifest.csv",
+      "size": 295,
+      "sha256": "90ba89529701075a110f78540858c945167e081edee67e70da7b7b92aedeb00e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.6_manifest.csv",
+      "size": 477,
+      "sha256": "25706fda4b2d531ef8762df96c18cead5b09e78a8b3b0f59c45650a938efc347"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.8_critical_hashes.csv",
+      "size": 173,
+      "sha256": "1cfc31ba9ca0e34e80bff9ef4f567d5973435b878dde88a2bf6b68c072af17b5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.10_delta_summary.json",
+      "size": 153,
+      "sha256": "fe0b50dbe86acecb716994b725c5e938b379d088fc603c65a105b955a15bf17c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_manifest_baseline.csv",
+      "size": 4774,
+      "sha256": "5e09efb1e71899077f93fb161eb6ef0347d0482f586191952ca12889d102edf2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.7_QC_v2.md",
+      "size": 469,
+      "sha256": "260d0df8a8dc7d99a56c9a6dc185a921e2935ded501555ac089c57bca9b09909"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_stub_sweep.csv",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.4_critical_hashes.csv",
+      "size": 491,
+      "sha256": "bc53e56befee4329a15617fea8dc4822823050247e9e91d11cee4392badfec47"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.9_critical_hashes.csv",
+      "size": 671,
+      "sha256": "615a451a6536fdfa94d104ddc7455f8c1c224e74a51d6264fdd3ec7e240c8f61"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.3_critical_hashes.csv",
+      "size": 2280,
+      "sha256": "195f4743497d80569503ebb7a1f351f5565e4b359d8aebb7e3daf671172bb06b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.6_manifest.csv",
+      "size": 312,
+      "sha256": "15be984b24b0490a5669e804a3694826d59395024a438bbdb5352fe22eb50140"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.1_QC_v2.md",
+      "size": 459,
+      "sha256": "7b4853725cd8773691a0c6a0471bb824584c7bff57e6d0f2dc3d323c6a835cf3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.7_critical_hashes.csv",
+      "size": 683,
+      "sha256": "f0d8af277bb1a93e99fcc2b362dc84833acb1654481656b7b942ce40398727a6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.8_QC_v2.md",
+      "size": 459,
+      "sha256": "7d0d0d2669f06d6fdd7c3ce9444ca9c8f7da640d92a36403a7fd92f53e04c709"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.9_QC_v2.md",
+      "size": 483,
+      "sha256": "df65ea266cb9cbcdbb30106117409d86d845a3c7f8b58e86258d689f9b874677"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.1_manifest.csv",
+      "size": 295,
+      "sha256": "83658e93bfe5c009fd778bda00545a3894aeef37127e0d6a293e4282b034d988"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.7_manifest.csv",
+      "size": 309,
+      "sha256": "aea47007ca91bc3f5d18f5121a19802f5469d678dadbc82f752be8d99249e3f5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_manifest_baseline.csv",
+      "size": 5146,
+      "sha256": "c5db0490fec939bf638ff1bec76e1dfdf1028780fd5f879f411582a5519bbb5c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.2_critical_hashes.csv",
+      "size": 2280,
+      "sha256": "162488116c8fe0d6ef075771b5309d0df618e6b894ad85d43a9f7c86c013b9cb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.10_full_manifest.csv",
+      "size": 36944,
+      "sha256": "9a27d42df8a959ebe7125b513f8c0759c4cde1d45f66c0ab097700f5b7ee051b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.10_QC_v2.md",
+      "size": 318,
+      "sha256": "b30423f815aaf108e34ed4cdad532d775834e731bf56da6077b6a8d04c44dd75"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.10_critical_hashes.csv",
+      "size": 785,
+      "sha256": "2fedf134d339b04013011ddcbb6af730e8a6ab029237cddb7fa7b1f4ecd707a9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.10_delta_summary.json",
+      "size": 259,
+      "sha256": "adde459ed76e4aa0e98412fd54d531dd1026c1f88f9dd39f10dcd3898b416a2d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.1_QC_v2.md",
+      "size": 465,
+      "sha256": "19586e7f6a97d505a48b16f276626d7a16844ae65e6b3f245d2b70b91d1bb20f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.4_critical_hashes.csv",
+      "size": 2474,
+      "sha256": "a33ab442bdf43fe38b8114fa5b95bd4ff4f608b621e04627f5ac0efae3c70427"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.8_QC_v2.md",
+      "size": 475,
+      "sha256": "0413bc010f349011927c8542241d3518481195e2f3cad40e32dbac835a17429d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.9_QC_v2.md",
+      "size": 499,
+      "sha256": "7ab58c8808cdbd2a5e86cb8eefa260ccf2e349e5035f4bbb912c7ec6b84ac95b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.9_critical_hashes.csv",
+      "size": 177,
+      "sha256": "3c18dee468419c146db0acc46164e6c923841418ce5b1d54c9a40d52836ffcd4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.5_critical_hashes.csv",
+      "size": 2474,
+      "sha256": "dfd28fe0fab43e9cc39fa7fd5cf30cfad6c427dab96671df47702fe1e03a31b7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.10_QC_v2.md",
+      "size": 521,
+      "sha256": "1fff36173686dfecc7a2c5a833ab5c55912f78e730cb359844e4e934ab766b2f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_critical_hashes.csv",
+      "size": 394,
+      "sha256": "c8e91b5e70608beabe1a5ddef79dcfea68254e9ff5b1124bfdaf2c8ce1f017c0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.10_stub_sweep.csv",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.4_QC_v2.md",
+      "size": 534,
+      "sha256": "43b8f70c2be98bc9b6c4e7bd00c10ba5a99dc26bf05d607e84755d404083e856"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.5_QC_v2.md",
+      "size": 546,
+      "sha256": "522a6379362f0b485e00ab359ece32d8079a3c47788d10aa52dfaa8e72ecb326"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.7_manifest.csv",
+      "size": 318,
+      "sha256": "1c15d4a0fa0e526e22d7ad2e221e600e1c0ce7033ff21989ca9d02b6a9e5d6cf"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.1_manifest.csv",
+      "size": 494,
+      "sha256": "919275a1af66feb91c9d4e0390cb23d7d9724c331dee2566c7af779a8faf4fa7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.8_critical_hashes.csv",
+      "size": 4972,
+      "sha256": "43042b37c6ed6a8ba23a880ad242e6438a63fc8e1aff4d016c6821aafabb0a3d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.6_manifest.csv",
+      "size": 311,
+      "sha256": "b96d216afebb87a83ba6757484a1817627b0cb2954e687c9985617e29b4964ba"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_critical_hashes.csv",
+      "size": 394,
+      "sha256": "c8e91b5e70608beabe1a5ddef79dcfea68254e9ff5b1124bfdaf2c8ce1f017c0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.2_QC_v2.md",
+      "size": 467,
+      "sha256": "92ec969f290fc3e8da8b825c7dcc92860b727e8a06786062974609163dcfb2fe"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.6_critical_hashes.csv",
+      "size": 2474,
+      "sha256": "b6c9f8a4b3d7f4714fc2f26ddfb727c9e9e38116591ff6085f200f664cd8eaf4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.3_QC_v2.md",
+      "size": 489,
+      "sha256": "9322c1b97ec519f92d148db0314efa285eed9973d20f31b8717b53493c986fc2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.10_critical_hashes.csv",
+      "size": 4997,
+      "sha256": "8d7a1a2e1107e43c0084f780926fc93d5340052b5663fe609c0b9504e2760099"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_delta_summary.json",
+      "size": 151,
+      "sha256": "e4204f72b1e1658a42edb4f96ce90ac432c755f8346db861f97db4b8b35c4c2a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.3_critical_hashes.csv",
+      "size": 491,
+      "sha256": "bc53e56befee4329a15617fea8dc4822823050247e9e91d11cee4392badfec47"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.6_manifest.csv",
+      "size": 306,
+      "sha256": "fe42f702381f882b3ae3abacc62df7b8281803d9d11c636c27cb5582608d0554"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.4_QC_v2.md",
+      "size": 307,
+      "sha256": "f3aa8e85bdab69c5a3cba5300496ac29cbf544b297c43de61f018e313a1912e8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.5_QC_v2.md",
+      "size": 472,
+      "sha256": "add8b87ef35d183b65dac23e9ede81ae6fb438645c2fc850fa7ebca146357029"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.1_manifest.csv",
+      "size": 295,
+      "sha256": "df3f31194063db0d6857d3300f63488a99be760257b3764ba4b2544becbbb9a7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.6_QC_v2.md",
+      "size": 487,
+      "sha256": "6d092dbd2fceee168968106b041431ccd0d0b257fc938d929e9aa03aeab5f022"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.7_QC_v2.md",
+      "size": 489,
+      "sha256": "1730bfa4dd02b86fcacc98b854f3b42aa79f7a41bf1c2b103bcd7289346d0af6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.7_manifest.csv",
+      "size": 305,
+      "sha256": "ced3abbb5e2dfc9b08d6e7db732024f0db716410194f3dc9bf076e2223c52b50"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.7_critical_hashes.csv",
+      "size": 2474,
+      "sha256": "445c9a4e8422e7b75cbd666f0cf129e322849e26e07573dae42aa03c4679593d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.3_critical_hashes.csv",
+      "size": 257,
+      "sha256": "3498ab48bba46747d33c5ea9f4d321a60e61e9cf9c6de4dd25f5344f1587d3e0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_full_manifest.csv",
+      "size": 18216,
+      "sha256": "3d2b3b1736f69ea4091ade158e7bc113c9e0052595800a052d4a0fba3f41cd5c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_QC_v2.md",
+      "size": 478,
+      "sha256": "40ba8d7c097938ba8cc0f14448e3cc239808600e0f8df20d7781691b9ce3863f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.7_QC_v2.md",
+      "size": 471,
+      "sha256": "4f1bd68668b4d66b3a10f95aa0d394308ed8d691918b13c1760fa3973b87bff0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.6_QC_v2.md",
+      "size": 473,
+      "sha256": "429c53264cdaa8ce858a6b76da4bd656b2e4d94ec6f601450b07e3dae04679fd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_manifest_after.csv",
+      "size": 5342,
+      "sha256": "084b1f7416a54029abba0b3c95852b6d8532d92775abc6a5d0a359f1df9fad45"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.7_critical_hashes.csv",
+      "size": 4787,
+      "sha256": "0a55e4da87c484cbb3f17d6c69dd5c853473638a5204d6880b685a9f23283174"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.10_QC_v2.md",
+      "size": 276,
+      "sha256": "2740f5070b01eed9600accfecb5786d1990d02ff706cc8979171eb8f8d854c7c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.7_manifest.csv",
+      "size": 225,
+      "sha256": "2d19fad27c80ca4350449d7c342daec2270e827f114f8bac0953ec5ab6f3fb15"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.9_QC_v2.md",
+      "size": 503,
+      "sha256": "154d7501d8513cdac45022a213e327158bea038e9f240db4f2d5e192fe7018de"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.8_QC_v2.md",
+      "size": 467,
+      "sha256": "ecae6ebd35bc02b97a133f70a52aa78990e45f4f67620e35fd8406786743bcab"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.1_manifest.csv",
+      "size": 295,
+      "sha256": "2ff0244433b53f2ab8b4188100187d28f9a2b6b038266b7146cc269fb584c665"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.3_QC_v2.md",
+      "size": 477,
+      "sha256": "14b01f088da607eebc1a48c6db52bca41e99c47c17bedd32a10e07a4bd4c4202"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.10_full_manifest.csv",
+      "size": 32360,
+      "sha256": "d49f5c183b7041a83eae559ddada7fec176e04c2067bd191a3a52288906dff9b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.2_QC_v2.md",
+      "size": 486,
+      "sha256": "338cec670377f21e970db2fdfe4762752fcadf151b0e70505af94954eee33e74"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.2_critical_hashes.csv",
+      "size": 253,
+      "sha256": "8c91f9e74041ed4854285c4c5db03aa61ebb84f9f5d02c5eba99b602d74c6a68"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.10_stub_sweep.csv",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.6_manifest.csv",
+      "size": 377,
+      "sha256": "62773612dd809f554ed985cbb3fa8b24cdbcaf3674f480a06942c9b9f2c8b4db"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_critical_hashes.csv",
+      "size": 4055,
+      "sha256": "d9715a0389e9a86f662826c353fb359d3a45f2f09c0712da4ab473532e0e376f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_diff_vs_S24.1.csv",
+      "size": 8521,
+      "sha256": "081a57df88b46013a727e7d668be0d8103a12ab63f331a872d913ac249ab5ff6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.5_consistency_scan.csv",
+      "size": 103,
+      "sha256": "a16c613388454baa8ba036295fe7150474d993ae7224e97f2a645e9ebd5200e7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.6_critical_hashes.csv",
+      "size": 4601,
+      "sha256": "625137e75042c88c597d6a3176fdb98f264254995d43eb02fa7cf3faf974595d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.5_critical_hashes.csv",
+      "size": 4428,
+      "sha256": "9721790b8b25b3c78000d63c3b4661e1715ebd160893b0898dd179e163bb2a11"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_QC_v2.md",
+      "size": 521,
+      "sha256": "15db9ef979c8dc2649cb7e94b40fc2c8810f281b459d863960171083bc33489b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.8_critical_hashes.csv",
+      "size": 2671,
+      "sha256": "e81db3431de739df1e40e5b9ed8fdbc8664b66a1bf12e7d522ae93398a40410d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.1_manifest.csv",
+      "size": 295,
+      "sha256": "3bd3edae131b6aed3dd78a2d3777fca96ef06fbf0399b43c2c465599ee11be9d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.5_QC_v2.md",
+      "size": 465,
+      "sha256": "ef36b50d2e5f4b3b1975a98927cca1ebe95ac66dc7cc79dca8160d300aec565f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.4_QC_v2.md",
+      "size": 471,
+      "sha256": "88c895d70774109bbe23c7e708060e02ab810bdb169ad431870c75b49269779b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.6_manifest.csv",
+      "size": 398,
+      "sha256": "3ae30258c8c9ac0b7c1d2d0b61da9ddfb06ba3f14ef5c8689c62f62bcf70a84d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.1_critical_hashes.csv",
+      "size": 261,
+      "sha256": "e77306fba49a26972c3ebdc20ba4dcba120a8246b484725847d538948115e155"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_stub_sweep.csv",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.4_critical_hashes.csv",
+      "size": 4243,
+      "sha256": "5bb3e6cc7d345cb5ab0d0acc7c0f88dcf7cfc9270c656001bc45f304488e1044"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_critical_hashes.csv",
+      "size": 2523,
+      "sha256": "f98caf9106d5378f956a29366cf2974a754ed23bdb158bc1fe875bceae8072b0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.7_manifest.csv",
+      "size": 304,
+      "sha256": "f68efaf1ec53d13c5306ccf09cc86a618f163a30a826fe829f3a93b60c39ef5e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.1_QC_v2.md",
+      "size": 459,
+      "sha256": "365c4aa1ff627fbe143962a9f3d55d526e7d9660c49ffa58b31e8232e7abd820"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.9_QC_v2.md",
+      "size": 492,
+      "sha256": "d715d7f8c6432fca58b6011d0116c789587eb34c6cdbe71bb93f6c71d2476b52"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.8_QC_v2.md",
+      "size": 460,
+      "sha256": "c092b3130d0730a03f2edb9ba1ec3d9d0babd3abe24b19bb39d75f6bf23b9415"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.9_critical_hashes.csv",
+      "size": 2671,
+      "sha256": "e81db3431de739df1e40e5b9ed8fdbc8664b66a1bf12e7d522ae93398a40410d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.3_QC_v2.md",
+      "size": 308,
+      "sha256": "fb04639a5fcb110e9e4e609341b97b709577254dcd91b1501daac7e54a7f22b2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.2_QC_v2.md",
+      "size": 324,
+      "sha256": "ff74723d7710b477e8c43f2d6de92d26d47294afc8fce83ea83bf2a8175dac70"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.7_manifest.csv",
+      "size": 530,
+      "sha256": "948956071e71fe46f7942bc180287d160fa1e365f9f1bafb3a0047a3e654a1ff"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.1_manifest.csv",
+      "size": 383,
+      "sha256": "48a8aed43a71bea02d9b84efd7420595f30f57c0918c45d8780fa9e7080692d9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.5_QC_v2.md",
+      "size": 472,
+      "sha256": "db8926b41531c9838f5281d2f91ce3ffb52a160da35829fbc9ea5c71047fe1f4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.4_QC_v2.md",
+      "size": 524,
+      "sha256": "07fb9b3a084ec820fe76b794bdc403e306aaf312dc7c85496a48bc072c949a67"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_QC_v2.md",
+      "size": 341,
+      "sha256": "7018c5b376cda13a1d3fc2b8541495fe15fe4b148e2222a85d76a96611ff8066"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.2_critical_hashes.csv",
+      "size": 3867,
+      "sha256": "77e9e9091e2f12ff66b477d3276f344971c14547025463cfb2b7914a99544563"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.6_critical_hashes.csv",
+      "size": 251,
+      "sha256": "d1f4a781ef17791506335acee3966a7c79f9b2a7029a9eb8596db40260bfd310"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.3_critical_hashes.csv",
+      "size": 4040,
+      "sha256": "6db6f10c75f8b876fb5606e03336d3a0f1cf2a49be1facf2ec33119e436e83cc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.1_QC_v2.md",
+      "size": 556,
+      "sha256": "c1d9d571478679b7de4e464ae0686e728a0ac9ab6cecb6f917b60d6211b41029"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.10_stub_sweep.csv",
+      "size": 212,
+      "sha256": "f98c9ddef2a09fefd51bb570cd49b6b0eb00246ed4ca71085d77547d3fc70c06"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.7_critical_hashes.csv",
+      "size": 319,
+      "sha256": "6cc87a1ffe219f05eac0b932110f0af01133f66001eaffb830d3b6bc40f07128"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.6_manifest.csv",
+      "size": 299,
+      "sha256": "f23beadee6d2be12871c8042f29bb27056d7e15b425a8f51c9eb4b3c4d80757f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.4_critical_hashes.csv",
+      "size": 265,
+      "sha256": "215da0a959cf3eab9e55c03542ccced1b34f4c71d9c27543902775604cc49f88"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2a_manifest_diff.csv",
+      "size": 9894,
+      "sha256": "25170fa87b9af2708b321d5bfa251e89823b2c78938e76e6707ce96a1038fc45"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.1_manifest.csv",
+      "size": 295,
+      "sha256": "dacf17cf8a5043792d59a064f225c856a98800805161cc0a2b7fd40f5ec85e5b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_delta_summary.json",
+      "size": 153,
+      "sha256": "497a73890c7250341b9aee9487d9e47aeb6249a3fd28a01b50066caf939d307c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.7_QC_v2.md",
+      "size": 456,
+      "sha256": "a51ded0ba379237d77b15f0177ae5996352f8fd7a3adfdd963e255d80f135598"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.9_critical_hashes.csv",
+      "size": 864,
+      "sha256": "cc2b832e4a241776e5ccb114c8e6f8f43d1f91e9220c1519bc9928185f6a1437"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.6_QC_v2.md",
+      "size": 450,
+      "sha256": "aafb7e55c74549cd742a2cd4dfefe71618ce8042514bc4cacdb39d785992118d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.5_critical_hashes.csv",
+      "size": 186,
+      "sha256": "28f937aa1c5778940d845e33a502109869ec9d454583d1377d1317eb85807e0c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.7_manifest.csv",
+      "size": 409,
+      "sha256": "d34f6c54e880f7a7651cfa4294ef39206d779ae7e4376c729e3dae213c48c95a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.10_critical_hashes.csv",
+      "size": 741,
+      "sha256": "6115f235faea5245edecd3d7a07b18553061b8e5458087e7c9de119dae182191"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.8_critical_hashes.csv",
+      "size": 772,
+      "sha256": "16d309f16e158287d8b8894ae2831adcf1fe30a9db2a43287fabb61f37184479"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.1_critical_hashes.csv",
+      "size": 3985,
+      "sha256": "c5b4fbf2e29069160f10d67c0366a5c0a75ad07039e4ed9637c6c6a3fefcc8f6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.5_critical_hashes.csv",
+      "size": 278,
+      "sha256": "72550beb71f1955d7d4f5c91d184fb4bca174486874288a48b8cd89c85b0ac1e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.4_manifest.csv",
+      "size": 629,
+      "sha256": "0bb863b55762220cdc761751618750b73c7c737ef69082939571b0ff48ea1e05"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.2_manifest.csv",
+      "size": 465,
+      "sha256": "6c65734a212a7a0567ff435c7b4537e2cb0db06e5ae3b5675b0138abc086b28e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.1_QC_v2.md",
+      "size": 471,
+      "sha256": "a70bc14d56e3dfad703eb5cd40fb81c3efb39619b8a4721f1dffed7fad84ba92"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.3_manifest.csv",
+      "size": 320,
+      "sha256": "571eb1e747ebe40d14d5c7a6dcd5b55f28fbccada5291602bbc568569cf27ed2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.3_critical_hashes.csv",
+      "size": 1055,
+      "sha256": "37238a07a8a5dff7c5082486416e7f72791183d3ab7d6267e59a948c05e18e25"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.5_manifest.csv",
+      "size": 308,
+      "sha256": "97922b7dcd5cb0e45720627a1b5441b0fdff5d3cc94c5ec6a9291a267df64976"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.9_QC_v2.md",
+      "size": 472,
+      "sha256": "371fb7fd901d48a768ba16286de43b60117e65037b68ee8fa7e72968df656254"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.8_QC_v2.md",
+      "size": 486,
+      "sha256": "cec7a58a49766da83377e22a1a2dd9ff2a79cace373d743b071937530ea7eef2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.4_critical_hashes.csv",
+      "size": 292,
+      "sha256": "539eab5a9cce44d6eb7f551eb0842926b560057e37288860bb6ef668ca7159b6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.8_manifest.csv",
+      "size": 309,
+      "sha256": "1c799cf3f235f0ed447e05476f4dd4a94ec90edfcd028b55d76cb2bac8990dad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.9_manifest.csv",
+      "size": 388,
+      "sha256": "4f53ef390d11030354a8251cc2c81f2ed5be8b6298e578f4566a136b57a247df"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.7_QC_v2.md",
+      "size": 468,
+      "sha256": "96016f175b8fdc9ac7c581fb2e254f6fedce36750681c6a725e2476e0083173b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.6_QC_v2.md",
+      "size": 471,
+      "sha256": "74d3f13010184d5cd1c5faee55ebc7b50cc61eab1f1b9e8a135eed878ff33842"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.2_critical_hashes.csv",
+      "size": 864,
+      "sha256": "789c3106652e7b1cfddcfa5689e4c6e95b41491ace696c72068faeaf00babc7a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.5_QC_v2.md",
+      "size": 466,
+      "sha256": "0ab8baf50b03d07de23832a7c3e10585fc1702ed3dfcab90b259063b06a4e266"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.4_QC_v2.md",
+      "size": 463,
+      "sha256": "57e9ef49f3f0cf8344775494d91beb4759875a6bbe59c84755d79384c030cde1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.1_critical_hashes.csv",
+      "size": 864,
+      "sha256": "cc2b832e4a241776e5ccb114c8e6f8f43d1f91e9220c1519bc9928185f6a1437"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.3_QC_v2.md",
+      "size": 487,
+      "sha256": "1453dcc3c42d0a49dee4f9098648960e67fdca709624e17f073cb5a23772ec1e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.2_QC_v2.md",
+      "size": 466,
+      "sha256": "acb795cfeeec54620eea6a13873877f03c042e803851f2e4dc539dee3028cd17"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_QC_v2.md",
+      "size": 321,
+      "sha256": "383e762973625946383fad014af590081cf413329f0076b23141acd1d9bf5130"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.8_critical_hashes.csv",
+      "size": 205,
+      "sha256": "9ca09bb75603a5e628e43d50fe669c0032804246ad5ef308eae96e9e08b415e3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.7_critical_hashes.csv",
+      "size": 203,
+      "sha256": "44663d07c0c8621af91cf9d9372b51ba8660157ef16496487c04f2f6da5c9739"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.3_manifest.csv",
+      "size": 412,
+      "sha256": "cc9f86d7958bfac8baebdd8f73be137a5148e2beaa37bcaa138fb9f7eaf26dd4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.4_manifest.csv",
+      "size": 403,
+      "sha256": "ac5002ece5f010c639c86bc65696b330892bb8a20455fb5d7608f4a643e54531"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.9_critical_hashes.csv",
+      "size": 195,
+      "sha256": "968c8365a597e1658df879114f9a35b5a8052f4b5392f9c04b8e287d1231d84f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.10_diff_vs_S23.1.csv",
+      "size": 6710,
+      "sha256": "8a133de5d27c77a7394f431305f1fd9a9e29c054e479b3e325bec8e21e359a24"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.9_manifest.csv",
+      "size": 298,
+      "sha256": "49d96fb50a7834bd5925476ddd871b78ab5d8797d116bb3462912b6240c0f459"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.2_manifest.csv",
+      "size": 483,
+      "sha256": "feacdb5079b3b10626b3c4d75de91c58320b8b09f710c0020cbc4989901683cb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.8_manifest.csv",
+      "size": 313,
+      "sha256": "dad1af8539bc58116a9b3ace4d376d65605bb74bdc5fe39fac624395a7e2deb5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.7_QC_v2.md",
+      "size": 505,
+      "sha256": "98c2fa56f0e1d9c6029cd4a00d859704c0319ba6ecf16232bbb0c8715d48336f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_delta_summary.json",
+      "size": 117,
+      "sha256": "080d6519ef9b0f54ef8c477983fb571cb3646088d041e9b1d91f72f60b863425"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.6_QC_v2.md",
+      "size": 460,
+      "sha256": "a1a6f44fe5e66ecad141a0653ab579f840d4e10b1a7cf43a9ff2de33ecf522e6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.5_manifest.csv",
+      "size": 509,
+      "sha256": "8209c740e27f62752c825aa8280be3d0c53b61d17e9836d93a808261857b1eea"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_delta_summary.json",
+      "size": 176,
+      "sha256": "27d563cbc1b874f166e1ea2bc339362c1e90cf2d0215065a60c8908405cb0b17"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.6_critical_hashes.csv",
+      "size": 183,
+      "sha256": "6763bcdc2fd4f683e7e7c21bde0af7c1c9405faa6f241e0cedf7f6e46f6f13b2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.6_critical_hashes.csv",
+      "size": 1145,
+      "sha256": "803e30a61fbeae634966e4fd30d333c7424a3ecc23f5ceb5fd13a8b3b009e8ac"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.8_manifest.csv",
+      "size": 323,
+      "sha256": "72181122de96ab738acd1559b473cd6d4c2fbe417d78d35c0b731440526999e9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21_QC_SEED.md",
+      "size": 480,
+      "sha256": "8023288901819fa82bc50c0e5e1aaffd9db4c8a3609e2ccfee3eb1108c64a847"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.9_manifest.csv",
+      "size": 298,
+      "sha256": "b45492397aff2558f29161ebc8f254ccfd0d3b02595cacf999f99605c145ae4b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.10_QC_v2.md",
+      "size": 301,
+      "sha256": "f86ac87be8ee3bce18c38b41947d56075888c8696e4fbaab65016d3b9fcb17cc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.3_QC_v2.md",
+      "size": 471,
+      "sha256": "89e306d329c459f98796dbc70fca78abafad7dfdc56a9c881886190901362d55"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.7_critical_hashes.csv",
+      "size": 1145,
+      "sha256": "ea2a91fe1e39ee8591a09fdceb8b9ff4bb5fc0397349e4f6c5a370678d41a257"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.4_manifest.csv",
+      "size": 392,
+      "sha256": "8435b640cc212388b69bc9f2fdedfaf6b2da1c424bd3e6eb3dbf3f3b7a463d51"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_manifest.csv",
+      "size": 320,
+      "sha256": "4b2085070c4aa9c5f838f418eb467e94c8173b3c0ca096b01bbd3deab246a30f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.3_manifest.csv",
+      "size": 463,
+      "sha256": "ef9a9b81d22e10c17a81714fb64c1a87fe7a0cf4a18f10dc3d216c17e00ec090"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.1_critical_hashes.csv",
+      "size": 261,
+      "sha256": "5810d0845959daa1df62fb73b82896165c8e92ad8d70c567d8029a4e29a81911"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.5_manifest.csv",
+      "size": 591,
+      "sha256": "9dd61ee86ae966ab81f95dc6a64f08153d8b75291a85a3a0754ef3e7afed76d1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.1_QC_v2.md",
+      "size": 297,
+      "sha256": "badbac113022cdec9ae6aef4c52e61470c248f8b6b41d6c0937b17658a618dbf"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.4_manifest.csv",
+      "size": 419,
+      "sha256": "e0458948fc4a265083c53f4b211913ae103ca8f1314a401e2b3753a69275c777"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.10_full_manifest.csv",
+      "size": 27847,
+      "sha256": "e1da3745a6b78d7d32cbe4dab6cc17adfac42e254c61d951f6305cd05c8b0e83"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.9_manifest.csv",
+      "size": 301,
+      "sha256": "840f85ad1ebda1e9a41b0a08b6aeaf4497362cf96e881400c54ce12ecd8fff56"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.9_critical_hashes.csv",
+      "size": 3985,
+      "sha256": "c5b4fbf2e29069160f10d67c0366a5c0a75ad07039e4ed9637c6c6a3fefcc8f6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.3_manifest.csv",
+      "size": 419,
+      "sha256": "5f5f663c2d0b0964680338691d9d03a92b3a7c50ea613b7aa4c058829abb7680"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.8_manifest.csv",
+      "size": 509,
+      "sha256": "3ad69a92271ea9a94d532bb1e72bf7248a4386c3e63b23bfe9e253d3f24e46e4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.9_QC_v2.md",
+      "size": 481,
+      "sha256": "abf5cf83d869c99b9abc827e922948be15d8cf99fb1321d3c0ed3cd9fe6400f8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.8_QC_v2.md",
+      "size": 453,
+      "sha256": "8ab13808dbb38d483b21417b061fed81f0176aa7929a54dcbc87e155b9f72f71"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.2_critical_hashes.csv",
+      "size": 355,
+      "sha256": "0df4a88da1cdcdde2c1afbef0860b6fc537a6db3c6d023406ca2d070d1cc82e9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.10_delta_summary.json",
+      "size": 153,
+      "sha256": "f2d212874de3890b547d699f53040c47fa9bfe0740538e1a80f99dcb1e4b8b25"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.4_critical_hashes.csv",
+      "size": 1046,
+      "sha256": "211a608209386ebecc03110fde89e20732f3ade99ac1ad4da6bf4c23d2db10e1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.3_critical_hashes.csv",
+      "size": 294,
+      "sha256": "003ec2c38bb581d7b8c618d0be4f9ce88200412fcce61d9b78ee7e7d9815acba"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.5_QC_v2.md",
+      "size": 443,
+      "sha256": "92aff5bce084b5ef03d8b60527849821d81407750e981a5afff28f622aaee486"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.4_QC_v2.md",
+      "size": 435,
+      "sha256": "1cc88d51587ccbbd65bd44036a1ec6945b0f063d4b5b95d7734e4060d6294e5a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.8_critical_hashes.csv",
+      "size": 3985,
+      "sha256": "059017a546a2dd0d6a992a607aa4be3b1d3d09c271e745619271f954b8fec7cd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.5_manifest.csv",
+      "size": 301,
+      "sha256": "de1ec7cf86924684a9c8e3a411794d250899d502aadde6a780138a8d74dfb825"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.5_critical_hashes.csv",
+      "size": 1145,
+      "sha256": "d49ee4d029473707c5dbd9e9aa92346a79125c4b2330b7522fe8489074ad30e9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.2_manifest.csv",
+      "size": 316,
+      "sha256": "76a2750c8ee5c34edf1ce4a510d5db2fd6e9271e0731b46c5f6c76ef6d124544"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.8_critical_hashes.csv",
+      "size": 2187,
+      "sha256": "2a1a521792cf28515b1ceec59662ab8729a4de13576477b0bc787d93778c2c66"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.1_critical_hashes.csv",
+      "size": 5260,
+      "sha256": "6b94a25421589160dfc76dc95e97a50240cc308a59ab8c645741d713bc79dd8a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.8_manifest.csv",
+      "size": 310,
+      "sha256": "c25dea59ec82c0bbc3997cba3c642fb30e69ccf01b4312f795b9874858895d8a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.4_QC_v2.md",
+      "size": 474,
+      "sha256": "d56b7e4c5097cf244e271ecb7ae1f092bc5dee3e880a7f56e53b614b12318669"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.5_critical_hashes.csv",
+      "size": 3431,
+      "sha256": "8c1d4c82d76dc5956265cec24a41f910f89b33f888fabce6e6f80b551afd7513"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.5_QC_v2.md",
+      "size": 461,
+      "sha256": "6b39b50aa2f26c28eb46b24b08a8f337a6deda59498e4735700d6d82009817c0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.4_manifest.csv",
+      "size": 410,
+      "sha256": "9118d27f790445312595aa3506aaa7ff4bc7f2a7c9909377b4e876787a19324d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.2_manifest.csv",
+      "size": 313,
+      "sha256": "bc165e92102f474c2b3b4421124b7c7a7e13168eeb75641bbf253cdbf69c4880"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.9_manifest.csv",
+      "size": 1385,
+      "sha256": "402cecf69466e3c31722c39dc941d4a846a932dcc0ac24dd4980df9eaa836bf7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.3_manifest.csv",
+      "size": 316,
+      "sha256": "4a167c01efa14c1a942eff11e726b998b903b1baf57ffd1be8ed961aaa18b8bc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.9_critical_hashes.csv",
+      "size": 2381,
+      "sha256": "dfdf1668f46e5147a0a6b82ed38f0df71688c43b5ab7185c75f27a395636bb4f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.5_manifest.csv",
+      "size": 309,
+      "sha256": "f47e32d99cf2b1a512c6013c7a68f24bdcba10b104212ca1f0b9f80a09625613"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.4_critical_hashes.csv",
+      "size": 3246,
+      "sha256": "4dd07fe774e47de6d86f0cf9d9d8a19e1a97f9fd32fa9d1298d5a506366d153d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.8_QC_v2.md",
+      "size": 526,
+      "sha256": "5ecb85da48f8b717bf321db7810419522d3d8e68740d45585e43861eab87ec61"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.9_QC_v2.md",
+      "size": 529,
+      "sha256": "227899e21272b085f3d32a46c01f805a3482fc2e5a5395f834fa05b01f634482"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.7_critical_hashes.csv",
+      "size": 3801,
+      "sha256": "e24643576cc728ad95b67c34205ac69ea75cea4ddf995043a5f2425906adf355"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.6_QC_v2.md",
+      "size": 464,
+      "sha256": "0869a61d7dca18e6fe68ba197b69e22343948c80a57884c8a3ad02e7b1b01225"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.7_QC_v2.md",
+      "size": 492,
+      "sha256": "d0263b5f129c107673aa1e8b1f052139a4dd9ecb404661dbdaa31d99fd5c7c50"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.9_manifest.csv",
+      "size": 452,
+      "sha256": "f96e9463ebc281f9b2a983d3c09c746e19f908c37f294c8273c78edb6b7e89fb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.3_critical_hashes.csv",
+      "size": 307,
+      "sha256": "2131e9ad6dbe24609997dd433e7979448a459846ecbca85f6e498d9e0f7f095f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.8_manifest.csv",
+      "size": 305,
+      "sha256": "87b3901a18ba43501e9a2ded346aeed6d891ca0fd79c9cc6ef893c772ca9a0d6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.5_manifest.csv",
+      "size": 321,
+      "sha256": "14af0a7b8a4c066f420e7572dc52da50bfadd5af79a8784f050b44e5859d5036"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_QC_v2.md",
+      "size": 368,
+      "sha256": "48645ac5e7d4ff1db45e5413efd072d10df207b13b658d1b118a22b14873ea87"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.3_QC_v2.md",
+      "size": 408,
+      "sha256": "5fd7af8872634a00104db9de2bc7267330e1fc7826038dbd018798602b375633"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.3_manifest.csv",
+      "size": 300,
+      "sha256": "e9cf654921adc3e547854cfffa998bd36bb6d4e1de2c5ef4e9e5f56fae936c4a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.10_delta_summary.json",
+      "size": 259,
+      "sha256": "380cd46889ac40f90207bb7f99c3bd2ad5e339e5ba5a251df9c572fd65a5f6c0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.2_manifest.csv",
+      "size": 311,
+      "sha256": "a91e479b9cf660aaca2972b8d793a08e816eff31c5c2146740556ff99da56fe0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.6_critical_hashes.csv",
+      "size": 3608,
+      "sha256": "257cae057fb894849b59a25ef02c3f905628b67f8fb7ff490d2f33cc0d54cf2c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.4_manifest.csv",
+      "size": 314,
+      "sha256": "b6884ec640a5bbb729005c2e8c308e47f0b4202f2ef69eda8585dd75cc3afb6b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.2_critical_hashes.csv",
+      "size": 212,
+      "sha256": "a106a93914a9bd74d5a4cd3bc847b5a0b6a60b43a4ef34702755f37abf4629cc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.4_manifest.csv",
+      "size": 321,
+      "sha256": "c8ebf1a57d945f04fa8b1bab20a3ba36be88c500234bff620a6ea1cb4256b609"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.2_manifest.csv",
+      "size": 319,
+      "sha256": "c5620ef14052964035a145fd6d28a872413ac8dcdade74fe2d8af90036a7c961"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.8_manifest.csv",
+      "size": 580,
+      "sha256": "d3829009d500026bb48055c2be085351afcba09b7c71699157808249c5fda25f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.3_manifest.csv",
+      "size": 315,
+      "sha256": "65eeb27684f4e4c73d02cd8d4669750cb9ab4de8f2c3d03c428bcd27dce2bd92"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.5_manifest.csv",
+      "size": 324,
+      "sha256": "9f75b0ec32f6b15d731185ec6eeb00232d88d4a4597ca1f1609d52ba3f425a26"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.4_critical_hashes.csv",
+      "size": 299,
+      "sha256": "92368de5f81835ebbf76290bc33ca8f8476a7e6c1ec9065c5ff872643d7745d0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_manifest_after.csv",
+      "size": 5925,
+      "sha256": "267c1e6ef91245c7776284391c65c0436094cf326808fab5d997dd36d6a3908c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.6_QC_v2.md",
+      "size": 498,
+      "sha256": "87c626db5ca441e520b6a86502eeaaec9eec4da87c23ebc8d4ab146040a6d605"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.10_full_manifest.csv",
+      "size": 23333,
+      "sha256": "108deba38316a90e410d6883aacbb1146d7940b7ede9703e6a5cede9096b37f8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S22.7_QC_v2.md",
+      "size": 495,
+      "sha256": "15bb5eca66deb7e41126e5d4cbb1043c9d4b8bee923e43ab4565a8f0d0c842d9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.1_critical_hashes.csv",
+      "size": 2671,
+      "sha256": "e81db3431de739df1e40e5b9ed8fdbc8664b66a1bf12e7d522ae93398a40410d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.10_stub_sweep.csv",
+      "size": 212,
+      "sha256": "f98c9ddef2a09fefd51bb570cd49b6b0eb00246ed4ca71085d77547d3fc70c06"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.2_QC_v2.md",
+      "size": 474,
+      "sha256": "14012b7fc454fe7bdaf1e7ee9c38077133083b7d28d23df7e76590fdad913fdd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.3_QC_v2.md",
+      "size": 488,
+      "sha256": "ee8f73411b04f05846be07944cd4a477646591dc0c24528f4b5c952173ebd697"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.9_manifest.csv",
+      "size": 298,
+      "sha256": "511647f9fd00dcad56cd42b27de85e7a590eda5d0c143b588a43cef66e4f7594"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.1_QC_v2.md",
+      "size": 297,
+      "sha256": "e4477ce65075430752040680ffc5956cff732aaecaa4d9d9771ccaf0c046e7f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.5_critical_hashes.csv",
+      "size": 197,
+      "sha256": "4144f6242de335ef345bb2c77c58f9a2306d8b2535ed1863fe2415231ac266a1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.5_manifest.csv",
+      "size": 311,
+      "sha256": "aeeade204cfa558ea280bec83afd1733d65a8b77a73b3a62eff2c9c666e02467"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.3_manifest.csv",
+      "size": 319,
+      "sha256": "162469314f72da760dd583845726626130cfdb3c499f70071f0f47a52bfb4471"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.2_manifest.csv",
+      "size": 302,
+      "sha256": "891045b78bdc03021682c67901d01a986671425ff785df3c64e7e4f40e0fea09"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.4_QC_v2.md",
+      "size": 482,
+      "sha256": "d3d48e56930342ad5e865f7e8f3eb2b667c9e6e7915c0bd6a6cbd4c67b9716f1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.5_QC_v2.md",
+      "size": 514,
+      "sha256": "bbb25755dc7939af241e00e92cf5b023d58284723bbe25b9b3564b1ae5c7782f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.6_critical_hashes.csv",
+      "size": 195,
+      "sha256": "f489e5cdd9c7f3e88f4e059852433e861059ddfb977a9eda9308c58dfdc22f92"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S23.4_manifest.csv",
+      "size": 222,
+      "sha256": "864f89deb9e6e4c4fc1e643f2ffa566adba629be2fc376e86dcbbf272a0f6736"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.9_critical_hashes.csv",
+      "size": 1209,
+      "sha256": "fc8b6887b7ccbfd2af08aa55a2cc854e42db891ad21256fdabc7097d6086f683"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.2_critical_hashes.csv",
+      "size": 2859,
+      "sha256": "5eb22635a773884ac96e726382985055aba456bdcc1faffde24b921271a227f2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S26.7_critical_hashes.csv",
+      "size": 199,
+      "sha256": "c5eec865b20728b544dde283f87fb0bfbd267c3b48b58ddcd0a3058a4c6d05f3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S25.1_QC_v2.md",
+      "size": 459,
+      "sha256": "11180aad2b91e2cdb2cab978e3e9351bda22f48f5c4d6b3a723e4cf3294dbef8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.8_QC_v2.md",
+      "size": 482,
+      "sha256": "aef590d545ba65c3f6660249cdf4918b2dba1da55b01001e007d30ad584f97c0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.9_QC_v2.md",
+      "size": 477,
+      "sha256": "ffd6f88dab42a0fbdb1e746c95c52c972108b2bec2ab4b19f9f2a8896c5b1c0f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S24.3_critical_hashes.csv",
+      "size": 3049,
+      "sha256": "a867dd84c1ebcbe953347f008625bb370b078f58551458d57122f695f9e123f1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.9_manifest.csv",
+      "size": 311,
+      "sha256": "76fa4f1cdc05a4357f87522b542d0d38be99a2dcf9a4eda5278843369165d7fb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S28.8_critical_hashes.csv",
+      "size": 282,
+      "sha256": "8a6460d1b63905325e798c864274f46553f158f9a1c7380a6a5c8a5504e3d020"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S27.8_manifest.csv",
+      "size": 206,
+      "sha256": "d6da62186c9a815f6fa37580d42dd3455f1542721f7234889ed3f28770e6a9c2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.2_manifest_diff.csv",
+      "size": 10231,
+      "sha256": "c1680da32ce29715212686837d32db0a74509c1f8e7c427d8acdb8c4cade13a3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/auth.py",
+      "size": 27613,
+      "sha256": "e2b161f3d6352e1003468fa01b67f32e798d87b2e8a96894afaba021a15b4bfd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/ui.py",
+      "size": 2413,
+      "sha256": "418288964d219caca3135bc1c7300a11d05d6d92a48a6ee262455e4bf02ea623"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/frontend.py",
+      "size": 9418,
+      "sha256": "b8a8fecdfb2b28e499ac93cffb1d3237d6a26a3b05b4cf5046df0513d45a66f2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/runtime.py",
+      "size": 15806,
+      "sha256": "013414f790a0d93894180a5ad0500bf4014ce032e4e9643c7a5911242143d568"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/admin.py",
+      "size": 5998,
+      "sha256": "acdd3891deab3c70891ca1f77522507b3fe8a4df7feecf17ab82e4528ee7922d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/graphs.py",
+      "size": 12581,
+      "sha256": "e58e937a3574f3c7eee057f85419f6dc277759f2c89a68b05e02e0b4c1c61b20"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/workspaces.py",
+      "size": 15029,
+      "sha256": "dca432724c03cba7f66bbb1f3e653e5d714239c151f60bbef731f44bd6fed634"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/ui/copy.py",
+      "size": 1104,
+      "sha256": "911473fc95902b44618e51c56eed548312d6d15da8b3ab3ab08b67cd278ec9d5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/middleware/security.py",
+      "size": 2064,
+      "sha256": "e0893ea9a8cc6037bb3d99a07ea7167ae3090415fa44dde32ef2d6b636ff0e6f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/middleware/__init__.py",
+      "size": 29,
+      "sha256": "a9048f4cc6573e671dcc3fd47e15b91fe92b8ceaa3b593f02d73ab4e4d2c5164"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/repos/__init__.py",
+      "size": 230,
+      "sha256": "16d20762b92b1a0b19487f0b572f47cac29541f3179f5c1b5e1c30cf752e2001"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/repos/graphs_db.py",
+      "size": 1005,
+      "sha256": "22de18e04cc506b6a8767ade38a1a9d4c7de4a88f843fb255c59269f62040c90"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/config/__init__.py",
+      "size": 17,
+      "sha256": "c14ca3c1b7f819ee5d603746b36c1843f0f28eda5075589c079265705386f48a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/config/feature_flags.py",
+      "size": 668,
+      "sha256": "e5cd20bad4dfa5d5a5bde3cc34c5364c36812d56d5e1be12adc886fe2668462d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/db_crypto.py",
+      "size": 379,
+      "sha256": "7d36f76ed6bdc86c616d2b01cebe510ac978ae6d2d25a53532a7fcfb81af35c4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/perf.py",
+      "size": 1226,
+      "sha256": "81128586a3076eda9e46ba69d0432384120ce81ab40cb2c5b38a5e55103e835c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/logging.py",
+      "size": 725,
+      "sha256": "e68d2f4c602100950c2d4d03c41998f95effa636016b39ada8baee995df9c7b4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/metrics.py",
+      "size": 1092,
+      "sha256": "8878e4539efa3dcdeb5b1864bf42a75c563556c6e3b719c49051917be4ba8c93"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_dashboard.py",
+      "size": 1249,
+      "sha256": "72f70060add236890efb18574aec3439f8ded0e682847e1bc68c38dedc0ed974"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/sso.py",
+      "size": 1286,
+      "sha256": "6c63ccf28ff83c908bda508836b2bcbdc520cc5a4164c1c98048ef395c0d7338"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_errors.py",
+      "size": 311,
+      "sha256": "0f26f8e537d7e3962ffe3ccafb60322015faff5c35d1a119c5491e13e2254354"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/analytics_dash.py",
+      "size": 1226,
+      "sha256": "b21ad5da8c02c2bab8b330db82f62f4a82b11e735678439c8284b0621d949e61"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/dr_backup.py",
+      "size": 1107,
+      "sha256": "474cf2554ed654cba8b740247a33bcf12e2ac6fdf4646604e3b6d108386fa95e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/__init__.py",
+      "size": 61,
+      "sha256": "e101aef8348f9cfe3de84a07371305a87e7c3fddde50b797a147aee4945354fe"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/factories.py",
+      "size": 691,
+      "sha256": "624614741a857dc1743f62b5c40ff7c2fb9717967bd0ab71d27974a5afb4e51c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/bench.py",
+      "size": 2413,
+      "sha256": "121873b5e8882a5f649f162a861a44c1d2f86c2b9e57e2afe7768575d19611ca"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/pii_crypto.py",
+      "size": 1096,
+      "sha256": "4d52dba88ccfbfb9a6b0723b6856c43db9dc113bcfb3b9ba6c5a0f12e03145e3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/graph_tooltips.py",
+      "size": 515,
+      "sha256": "f5c0668a8e91ad6a0785fa3c3ed1bb2e13134b98602ec5dfd0193826de242c36"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/soak.py",
+      "size": 962,
+      "sha256": "3d333276fe475a040917032b2a988f126b0fb829401e47100514b32c68d95712"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/providers.py",
+      "size": 371,
+      "sha256": "aa78a5491a3ab7c65d57a4b0bca5774868cdeabf1cd292dcedd953a9acb65bbc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/scim.py",
+      "size": 882,
+      "sha256": "1e25f095c79beeea0836c41352359589f6ebb941cb3a58e4aa5e0c1bb5d9f6d7"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/a11y_overlay.py",
+      "size": 965,
+      "sha256": "9d2f52c995bc0e1e5a563d3300eb71e9116051f9a69e70f8a870dd76351df483"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/probe.py",
+      "size": 633,
+      "sha256": "db209517a7e8a787bff20174f1c3348770b3db4eb1f288cf9c53f678ce412699"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/graph_export.py",
+      "size": 2550,
+      "sha256": "bd452a7e668ea71cab3bc78d4a616f620c9398dd8fc239b87409a30e580ed087"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/i18n.py",
+      "size": 801,
+      "sha256": "3c2a8abf85e4962a10adf8df3d05df37ad2e225ff155b90c5b0f551a16ea579c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_theme.py",
+      "size": 843,
+      "sha256": "b2d51adf51bb10566b39c86c6fcaaec5959896ca3437a73e82daf5eaf238c5ac"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/analytics.py",
+      "size": 1446,
+      "sha256": "36ffd611e39628b64d60b1a6ec8b052b5f9a79f685cc5c21e5ff81f022026984"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/learning.py",
+      "size": 4105,
+      "sha256": "54fab0e87d41022002ae44cf3b0a074199e8e5c324a999af0b2afc248fa1ab6e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/auth_validation.py",
+      "size": 1174,
+      "sha256": "9ab8c167effcb117f0f894d60fe99ea3235780de565d826ecb57ff526cb5aa59"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/turbo_quality.py",
+      "size": 1969,
+      "sha256": "4822026ba5158821b94ed3709a76de40a27961bf905f7ca99fa55cc4fdecb7f9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/telemetry_export.py",
+      "size": 2090,
+      "sha256": "24651bb306f067f29f6e799be8cbb3df9d2d83d6f100cc5e527ee73b3db9a2ec"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/provider_health.py",
+      "size": 389,
+      "sha256": "9578420cc9010d89e8f7b434d8c6f24dd36061d17f7b389bb94748b11727600f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/slo.py",
+      "size": 589,
+      "sha256": "e010c60f11593ac5d42f87497e1983b8c2ed8e10f8a2811f46a76fafd96dc4ed"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/flaky.py",
+      "size": 572,
+      "sha256": "b4314dcb2fb1a5634501087681daade2e6427760f0ea815a3ac82d4e8d3ffb87"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/validation.py",
+      "size": 284,
+      "sha256": "519e35ad8735cd3b52ed7ded1bd8e92d3181f107ed56f5bbd54d27fe4e7e289f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/models/graph.py",
+      "size": 607,
+      "sha256": "d28e4b0cdb7eb611a11a6fb9a0fe313de71fabfc9d0d11c60e482a4231997c01"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/models/__init__.py",
+      "size": 103,
+      "sha256": "13765ea462c2a54ed2536e2f15ebd19cb5a3ae3ba9e7073d200f1c8496ab70a0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/theme.css",
+      "size": 811,
+      "sha256": "2215fee86f47040dd59a7f25397a20d1c6a4ea50e48f8131864ff436c31928c5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/index.html",
+      "size": 954,
+      "sha256": "0a6515fe7c7b5211e50f8d2be986ea22aa9f6bada9c4f8bfd7b00767cc8a887e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/admin.html",
+      "size": 1726,
+      "sha256": "2ccd347491d56c87f359147c2d0186a3500a77c24f6fe73d0596b0d116590c8d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/inspect.html",
+      "size": 953,
+      "sha256": "c787e9a6f51487711e13c09c73025af7772f8a419a887a051c0e4463a543124c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/io.html",
+      "size": 2201,
+      "sha256": "6721c190c66807096b26ca7649972f1cc9994538a78fdcb5e71f66c13e638093"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/editor.html",
+      "size": 2466,
+      "sha256": "7ad2eff5af6d1c9fad3dd62199076a9e41fe41c1d24abbdd656375848a8a5d5b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/login.html",
+      "size": 3349,
+      "sha256": "2050c3df1256be69f42b46063ddebbf803a7558b7544044e0ca07cc4eae91dc0"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/execute.html",
+      "size": 1193,
+      "sha256": "9b436e1e6c06e78da3b0a2d3b4a11403ba4e125e9bd8531b98557aa88b6c0256"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/dashboard.html",
+      "size": 1578,
+      "sha256": "ba80413a1ee2529424fc8b389dd0cc8cb6fcf97087354f33ca869352845ca7ad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/workspaces.html",
+      "size": 1545,
+      "sha256": "0cbe0f1881825022c90c60d160a5f166538b183599dcad4f30b0e8a3de2509ad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/a11y.js",
+      "size": 4953,
+      "sha256": "b1ad80cb0bf2bec1f227209350e06f07fc34be3d2ff83e8c5efe8e9b5075e607"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/viewer.html",
+      "size": 1343,
+      "sha256": "6e38b7259668baa36d138ead66869d9b139a8a8f1625d0cd09773e6e3fa28264"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/style.css",
+      "size": 25072,
+      "sha256": "6701e6378de0309f30216377ccef42e80f5b402e370c2f360f6bb52883fe589a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/search.html",
+      "size": 1057,
+      "sha256": "6596fa9e60f82d6352f2c74f08917eb7b2b29db7d8d4bcb8b1690f6261729cad"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/session.html",
+      "size": 1243,
+      "sha256": "69a46e92923c342e71f5f545bc7881bcaf01b497c677dff8ac80a67f6938fa00"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/nav.js",
+      "size": 5423,
+      "sha256": "97f8d59bb5998f67ba1ae8883759d57e85005a29e8c683b896b2eae428a49862"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/onboarding.html",
+      "size": 770,
+      "sha256": "e710aba5b93a6b2f7ccb99eb0e2d96fd70d577fc32fa12dc7ff7fda6a48b13cb"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/__init__.py",
+      "size": 7,
+      "sha256": "e3300b082c5f4b2cce28d981fd8f91d40d225213e908eaca6e4275b2b256cb1a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/i18n/__init__.py",
+      "size": 15,
+      "sha256": "eeb9cfd3f65b30bb873c6e55525b16ad0cf03f2c5124882f8f44669d5edf6ac4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/data/analytics_events.jsonl",
+      "size": 3,
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/data/learning_log.jsonl",
+      "size": 106,
+      "sha256": "a2792ea5ad8d71159fcf787d87deb5bd3eafb23ef3f6f928bb755e0c67ba6f9c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/db_crypto.py",
+      "size": 544,
+      "sha256": "9199b8472b83505e5cfed5261699135500669c91bc4b6988af7ee9cfa1c95b6e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/auth.py",
+      "size": 547,
+      "sha256": "e37aa09e0c4f80e99ffa2f59d203e24b3a47e3baff4728af684a59da15d6d32b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/metrics.py",
+      "size": 887,
+      "sha256": "4a4d26ca469ceb07a3b51d95144af846013c589b9ca081d235429800c0027f7b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/factories_test.py",
+      "size": 507,
+      "sha256": "ee8aff10049669e9806950070b25956fb97f1e040772dffc8f05773a64005fd3"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/sso.py",
+      "size": 821,
+      "sha256": "bc8dd55ac106839b6c65f2bd91c60865474441417bd68715cd21acbb976b2526"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/health.py",
+      "size": 774,
+      "sha256": "8eb995b43e18a814c20b231c04fe89eb73388c7d7cfdb55a77bdb695de625430"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/graphs_export.py",
+      "size": 834,
+      "sha256": "a4cda7b70f834c179c99f9a0d9d10d069c9918540f56de15fdaf3c30312da854"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/analytics_dash.py",
+      "size": 514,
+      "sha256": "4e6cd59d355ca9f2b1aadebbe6dfe47b51d8a2971ecbb18bd9462bde40cd4f65"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/__init__.py",
+      "size": 747,
+      "sha256": "2fc9904092463fe60a78fa0234a97b2b008b182009477d09a66187adac0f2d95"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/telemetry.py",
+      "size": 935,
+      "sha256": "8dee77541de6ce9a3e043c67f5152f48ea576d560bbc7be33a3baaa225877a8b"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/log_test.py",
+      "size": 318,
+      "sha256": "2d39577e39564617d85d590d20b76140a13627cf42b1575c8f0894fe036fdefe"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/bench.py",
+      "size": 875,
+      "sha256": "ba44e237aa408879d13357abcda17a26f1c1013698c73b2f35d9f418930ca3be"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/pii_crypto.py",
+      "size": 545,
+      "sha256": "4993969d471cce6f6549add1773444b387b54798a47ba59b64d5a51fcf385e22"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/dashboard.py",
+      "size": 551,
+      "sha256": "696d2b8eea796175705539462105bd918c3a69d84085c51a42acd5124d6e543f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/graph_tooltips.py",
+      "size": 397,
+      "sha256": "eee1a0c7727c56d92fd750fd01ff61294d22ec20a9046e3f8727900399c0e6d4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/soak.py",
+      "size": 465,
+      "sha256": "c89108242a4de3dc2e5966b20a5c7bf95c9935fdf48138e1bbce42ce7281b429"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/dr.py",
+      "size": 565,
+      "sha256": "169cf40058364658bdd6e845ecd36874bbb4e93af7634c991ab5853f9c3f6cdf"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/providers.py",
+      "size": 990,
+      "sha256": "d09a28514e35ec46bef80a1442d390479728184f98000db485245e324ee1c1c9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/scim.py",
+      "size": 1157,
+      "sha256": "b285b14b53247fed06a0b7cae0656e23e8151eb898c65922692dedc1ecd3ec7c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/a11y_overlay.py",
+      "size": 340,
+      "sha256": "5a034ca3a742ffd97c1e43ddda8f3f49c6d90ec98d15cdb9daae075385bad0f6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/probe.py",
+      "size": 362,
+      "sha256": "7728ff0363810859ae3b2b9291c4ac4044b66312845415527e92581c9712cafd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/i18n.py",
+      "size": 647,
+      "sha256": "7d80ec14eaa3699386abcfc3b07f899ca8c9c5f20c306ec4f785eb055dc8ee43"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/ui_theme.py",
+      "size": 561,
+      "sha256": "9bd56d9d2f35bb6138063dc6ea8d55be4cbef74a56d1e7f7c36ab6e8436133d1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/analytics.py",
+      "size": 603,
+      "sha256": "033b68ecf1f708d891299e472b0ca7648420b680e8e343f30e95970c805b9e31"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/errors.py",
+      "size": 363,
+      "sha256": "8bc9e9d91803771eea1437a6d509ac6d04485cdfbe2ca7af99a6d17a0e368239"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/learning.py",
+      "size": 1436,
+      "sha256": "bd31fa3e8de5c355301d35f3b0c6013b53b4308414db7343972f360c5bdcb0e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/turbo_quality.py",
+      "size": 851,
+      "sha256": "580b67c964f0e3b9f766a0703e4d1a51be79d92fd4e41da7e3cd10a0f078a738"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/provider_health.py",
+      "size": 533,
+      "sha256": "f2630d2fbb201336c445658ca22370d4974c2bf452710739ed837958f588018e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/slo.py",
+      "size": 342,
+      "sha256": "68943fe99ff856a61a24b0d0b546408ee7072c172448e09e29ca9e4f94f11d29"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/workspaces.py",
+      "size": 755,
+      "sha256": "5cc0410b61ad8655c2f61a02127f232706106468f56e9f3ac5b25d598816c8de"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/__init__.py",
+      "size": 167,
+      "sha256": "7bdae8a72f3bd709992c945798155888110c3e71d824f1a6698ec47e046e8336"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/icons/status-warn.svg",
+      "size": 249,
+      "sha256": "a3bad381caca07bb0f21c9510a68cce75d32e55c9c9f1c82031dc388bb03770c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/icons/status-fail.svg",
+      "size": 207,
+      "sha256": "877c72f2736981de8790983394230f7567ff2e59c212ed8cfd2ba91f1914b0cd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/icons/status-pass.svg",
+      "size": 421,
+      "sha256": "ff8a8fa3234127e49aafcb117dd5b19d33d40346e6b09223eb07684fae1cb427"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/static/icons/status-info.svg",
+      "size": 243,
+      "sha256": "38a50992a54976256ff67710f843bc3693dde72777399f9bd659d6672cf45f93"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/errors/500.html",
+      "size": 392,
+      "sha256": "86f1ac3ea163f0027f1b2f6bcea6fec15fe46115671c2da018114bd9503119a6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/errors/404.html",
+      "size": 390,
+      "sha256": "f3e0ec71d3310502482d9e727b096392ba214b1f01fc8fe6d6175e1c10161df6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/errors/__init__.py",
+      "size": 7,
+      "sha256": "e3300b082c5f4b2cce28d981fd8f91d40d225213e908eaca6e4275b2b256cb1a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/i18n/locales/en.json",
+      "size": 58,
+      "sha256": "8e86650114a77d9466007068666fff8a1428801b3e8da2ca3ef99ec88dcacf12"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/i18n/locales/fr.json",
+      "size": 66,
+      "sha256": "9cb41768008e82193ebc93daecd54df8865cecb848eb27b4ecc95c177e1d61a1"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/i18n/locales/es.json",
+      "size": 59,
+      "sha256": "7a5fb66348b2d45d5895130914b004836d42edf3411ea30cd67237b9a4b33008"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/payments/__init__.py",
+      "size": 22,
+      "sha256": "902ffe9490f904ca7247d73063881f82750c71d5e9bf11d2985dcc6d163709df"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/payments/stripe_live.py",
+      "size": 633,
+      "sha256": "76f1fa2713badd4b5744c4ae76aca915a376e69c0903782049d9ad0cdbb22754"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/referrals/__init__.py",
+      "size": 20,
+      "sha256": "b93cb79319869852b439a6142f843ea1d98d9fec4fe3650d490e36fce2dc8047"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/referrals/engine.py",
+      "size": 839,
+      "sha256": "a61180a160d4b65879ab34cb43b84430d12db12aa5f9e6220a488bacbed76918"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/config.py",
+      "size": 530,
+      "sha256": "0120023088175cc403546bc553b1c86418cf8f7f3b3b8f08f45395741cc1804e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/registry.py",
+      "size": 704,
+      "sha256": "ce49305efec7717a3ddb8795638bc45c943cc9b5d6afb85e2c7ca14d57c8f0be"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/__init__.py",
+      "size": 158,
+      "sha256": "415c496e70a500c317996bfb49353ba9ef7305b5ba0f18df61f705a8c7ecb1c9"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/echo.py",
+      "size": 589,
+      "sha256": "adb18cd7fc0d7c89785bea87e9fc82adee2fd6d9c2b683a7464a0e5a3c655e9f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/base.py",
+      "size": 1018,
+      "sha256": "1882048f59a837e464675e26dc117fab0748e06627df59f4954cabd8fafeff7a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/smoke/test_endpoints.py",
+      "size": 1346,
+      "sha256": "10520f2f0eb6a5fd04f238a6090835b439c33222772e9b006f46a9fe1c740135"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/smoke/README.md",
+      "size": 233,
+      "sha256": "01dd7d177d757e06b394187578dc8ed27f37e29af23c5425d05f982c6106575f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/smoke/run_smoke.sh",
+      "size": 209,
+      "sha256": "a62c73a8e25ca94841894cb8b6e4bd1a6a45237a7c5e17d06b6b83fec89272bc"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/flaky/test_flaky.py",
+      "size": 298,
+      "sha256": "55f985c1278068ff96f98e927cb30e5bb3f06348919c3e22220e419e8d6702ff"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/load/k6/run.sh",
+      "size": 295,
+      "sha256": "9577205d68b8d2d6807f9ff6ca1c7968de5af3bd1b6bf8aae72791f2440015f5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/load/k6/README.md",
+      "size": 485,
+      "sha256": "18bdcc9b2c4a1088118832b416bcad7225fe809639caf3dda0471fb7b4d20f9f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/load/k6/script.js",
+      "size": 447,
+      "sha256": "593ed559298abdc01e2c4a456148f49bf9d5480c0c2efc01f09bd25ed337a590"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/investor/Investor_Pitch_Deck.pptx",
+      "size": 4,
+      "sha256": "8dcc7e601606217f3b754766511182a916b17e9a26a94c9d887104eba92e9bb2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/docs/investor/Investor_Pack_Final.pdf",
+      "size": 41,
+      "sha256": "e9f247072995c85b1f0ed457aa001ecd5c37e20c946d2318fa5921889fa32c45"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/static/img/favicon.ico",
+      "size": 4,
+      "sha256": "6b1e73a0094b7b812d3b9e22cffb4f8239319847522c4fa103753b6950020f93"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/static/img/logo.png",
+      "size": 8,
+      "sha256": "4c4b6a3be1314ab86138bef4314dde022e600960d8689a2c8f8631802d20dab6"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/static/img/logo.svg",
+      "size": 203,
+      "sha256": "7d07012e704a45f580c55bea8823d35889ae70e15f19ad88ebe4b7c5be695c7d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/.github/workflows/ci.yml",
+      "size": 588,
+      "sha256": "769d33a7bbc67442c3360b5b4836c4faad099a1e0a6a762c406824d8b4b0579e"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/data/i18n/en.json",
+      "size": 154,
+      "sha256": "f8e48201c0eb9db0f1f99555bed75cad3926d2cec3d507f97f7db9d27aca410c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/data/i18n/es.json",
+      "size": 173,
+      "sha256": "af18555323947963df64320e4f4b6063ac1a5bf8ecff1d51ac9e6f914106d75f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_pack/S21.10_diff_vs_S21.6.csv",
+      "size": 18421,
+      "sha256": "2a852377ddca444e8373085e5d227f480fcd449ef0cb2ce0bf68893e05ab2520"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_pack/S21.10_critical_hashes.csv",
+      "size": 864,
+      "sha256": "cc2b832e4a241776e5ccb114c8e6f8f43d1f91e9220c1519bc9928185f6a1437"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_pack/S21.10_stub_sweep.csv",
+      "size": 142,
+      "sha256": "b2bf63a775deebff46c072a60401513f41159c11807badd63554de1e2d075160"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_pack/S21.10_delta_summary.json",
+      "size": 272,
+      "sha256": "64543bc04830a913873d35c2d21d3b35df22180b53f9b63bb7c21416242ec228"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/Sprint26/qc/S21.10_pack/S21.10_full_manifest.csv",
+      "size": 10445,
+      "sha256": "34b14f8e44d062b5893c3bc4557d57a99d3deaff05a0aa08dafe76b9d25bd75f"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/routers/exports.py",
+      "size": 5338,
+      "sha256": "bae8444cf4f5fa76be35f23a384447f7720cc2e1866ca8c6a2928afd3e98251a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/routers/metrics.py",
+      "size": 875,
+      "sha256": "6116f599d96074dae76082a7d3bc293887a7e6ec38559488e815a6dc75ded1cd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/routers/billing.py",
+      "size": 4332,
+      "sha256": "fe4ea89f1b9362e1db2217b45e5f6d66d033dddf1e88a54597020cd8c66f4b91"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/routers/graphs.py",
+      "size": 10573,
+      "sha256": "bc5bfe28a0412197ee0f92a1a4de869acf54be1105ee9929a6d7a1758de6046d"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/middleware/tenant.py",
+      "size": 613,
+      "sha256": "1a03f75b7d97f961dbf64356d4efebda7624d581849dc752fbc38444d7fe1585"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/compat/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/compat/optional_deps.py",
+      "size": 273,
+      "sha256": "d736240c6c8bca5a3da7c1c8925952fee84992f433db558e77ce666637bef235"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/auth/jwt_auth.py",
+      "size": 2069,
+      "sha256": "ac155ad748679969cef07dfd2498201fd9d0c10500cc8a548420a998db716120"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/auth/middleware.py",
+      "size": 2027,
+      "sha256": "36a43d12305e196f7fd21916c40c2e90a2a2af87ba30569ad4c606407147e377"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/models/billing.py",
+      "size": 845,
+      "sha256": "731b91246910a42f3fb0ac13cd7e0eca78c894e914dd8b6f7fcadc3f1715f890"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/models/schemas.py",
+      "size": 1329,
+      "sha256": "42559d326e8514b9f7571647d26b9ca51a17ab655c5eddfe3941273f9aca9a47"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/db/neo4j_client.py",
+      "size": 698,
+      "sha256": "441039a8b38397db826dfd3694bdf6309ad6a9e8c44c1d660ac8a7c9714a9472"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/backend/db/migrations.cypher",
+      "size": 822,
+      "sha256": "6ea4bdf5d94190221d7fe2a46af192b267b4cd6e135c68a3c68177d8c504b536"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/observability/datasources/datasource.yml",
+      "size": 129,
+      "sha256": "a1b5e42e9fbca31502130e0e0e99823c4ada95dc40b70eda2f5c6a2ee0ff2501"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/observability/provisioning/dashboards.yml",
+      "size": 118,
+      "sha256": "6ed31ef4008f01c5e0d472e69583c227fe81d236e48384745900d363e9d2db62"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/observability/dashboards/backend.json",
+      "size": 529,
+      "sha256": "42feaff80df4eb0aad2f496181908012859f35bf11341d25439a1f83b2b8fda5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/observability/grafana/dashboards/idecide_kpis.json",
+      "size": 1273,
+      "sha256": "aa87a07354771d39aa4f76065d667953951a81a7ff59ecb29c4b484124165054"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/.github/workflows/ci.yml",
+      "size": 456,
+      "sha256": "8f1567724fbc659ea3537053cea2c6f5b015e52386b90dada7745e77c34b433a"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/__v5_5_main_overlay2.py",
+      "size": 146,
+      "sha256": "a3def405ec8fabd723fb4dee6ce42978df026b8d448623ed0091164edb3b42e5"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/__v5_5_main_overlay.py",
+      "size": 563,
+      "sha256": "e9a86d08a44201cc3cd7878ee87ce8a4b141c65d24d4006de0c627a6eed62c57"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/share.py",
+      "size": 767,
+      "sha256": "bfc1d05c0e05f7edcf5547e2cf4a316f393c5627a27b87ece3dc81a695cbcde4"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/telemetry_ui.py",
+      "size": 405,
+      "sha256": "b28fa05057b3851dd4010e2f34aeb96072fbb2affe219f0a793467e050848729"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/settings.py",
+      "size": 2592,
+      "sha256": "a46ae6dba5a845fc7cbbf3bb94724483c18399534db921a09bda4c967af187e8"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/utils/security_middleware.py",
+      "size": 993,
+      "sha256": "a455189df9b9a734ceb26477de01c8d7cd77e22b960f25a61d8e5af428d6e5a2"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/models/enterprise.py",
+      "size": 679,
+      "sha256": "00ab41f0d09c2ab6bf2a129577c7d5e3fe568a8e68b1667add056322b2b5d675"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/templates/telemetry.html",
+      "size": 1488,
+      "sha256": "39835802f07b688f4d4272b49d580a7e3f1974031980749da4f4c78e2b4805bd"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/templates/__v5_5_nav.html",
+      "size": 445,
+      "sha256": "ec864cc06df7c9760d2597e230bf96dbc4825271278af56a36e0d6df68a6012c"
+    },
+    {
+      "path": "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/services/enterprise_service.py",
+      "size": 1345,
+      "sha256": "73fa02548ea81ca3b2b1c37c15c1309d7719515591e855fb9114c1659fe80da9"
+    }
+  ],
+  "imports": {
+    "idsideAI_Complete_PyCharm_Ready/run.py": [
+      "asyncio",
+      "idsideai",
+      "os",
+      "pathlib",
+      "sys",
+      "uvicorn"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/setup.py": [
+      "asyncio",
+      "idsideai",
+      "os",
+      "pathlib",
+      "sys"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/config.py": [
+      "dotenv",
+      "os",
+      "pydantic"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/models.py": [
+      "database",
+      "datetime",
+      "sqlalchemy"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/database.py": [
+      "config",
+      "sqlalchemy"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/main.py": [
+      "fastapi",
+      "routers"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/app/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/app/main.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/setup.py": [
+      "setuptools"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/backend/app.py": [
+      "fastapi",
+      "idsideAI_Complete_PyCharm_Ready",
+      "os",
+      "prometheus_client",
+      "starlette",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/api/app.py": [
+      "docx",
+      "fastapi",
+      "io",
+      "json",
+      "os",
+      "reportlab",
+      "starlette",
+      "time",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/routers/telemetry.py": [
+      "fastapi",
+      "services"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/routers/decision_models.py": [
+      "fastapi",
+      "pydantic",
+      "services"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py": [
+      "pydantic",
+      "typing",
+      "yaml"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/services/telemetry.py": [
+      "datetime",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/services/export.py": [
+      "csv",
+      "json",
+      "pathlib",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/services/engine.py": [
+      "config",
+      "dsl",
+      "providers",
+      "telemetry"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideai/services/providers/openai_provider.py": [
+      "httpx",
+      "telemetry",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/docker/gunicorn.conf.py": [
+      "multiprocessing",
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/main.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/auth.py": [
+      "base64",
+      "collections",
+      "datetime",
+      "fastapi",
+      "hashlib",
+      "io",
+      "json",
+      "re",
+      "time",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/ui.py": [
+      "fastapi",
+      "pathlib"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/frontend.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/runtime.py": [
+      "datetime",
+      "fastapi",
+      "gc",
+      "os",
+      "platform",
+      "resource",
+      "shutil",
+      "signal",
+      "socket",
+      "sys",
+      "threading",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/admin.py": [
+      "auth",
+      "base64",
+      "datetime",
+      "fastapi",
+      "hashlib",
+      "io",
+      "json",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/graphs.py": [
+      "app",
+      "collections",
+      "csv",
+      "fastapi",
+      "io",
+      "pydantic",
+      "typing",
+      "uuid"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routers/workspaces.py": [
+      "auth",
+      "datetime",
+      "fastapi",
+      "uuid"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/ui/copy.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/middleware/security.py": [
+      "starlette",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/middleware/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/repos/__init__.py": [
+      "graphs_db"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/repos/graphs_db.py": [
+      "json",
+      "os",
+      "pathlib",
+      "sqlite3",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/config/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/config/feature_flags.py": [
+      "os",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/db_crypto.py": [
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/perf.py": [
+      "functools",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/logging.py": [
+      "datetime",
+      "json",
+      "logging",
+      "sys"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/metrics.py": [
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_dashboard.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/sso.py": [
+      "app",
+      "json"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_errors.py": [
+      "pathlib"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/analytics_dash.py": [
+      "app",
+      "collections"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/dr_backup.py": [
+      "os",
+      "pathlib",
+      "time",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/factories.py": [
+      "random",
+      "uuid"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/bench.py": [
+      "app",
+      "csv",
+      "io",
+      "time",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/pii_crypto.py": [
+      "base64",
+      "hashlib",
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/graph_tooltips.py": [
+      "re"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/soak.py": [
+      "os",
+      "requests",
+      "threading",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/providers.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/scim.py": [
+      "uuid"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/a11y_overlay.py": [
+      "re"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/probe.py": [
+      "requests",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/graph_export.py": [
+      "html",
+      "math",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/i18n.py": [
+      "app",
+      "json",
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/ui_theme.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/analytics.py": [
+      "app",
+      "json",
+      "os",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/learning.py": [
+      "app",
+      "collections",
+      "csv",
+      "io",
+      "json",
+      "os",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/auth_validation.py": [
+      "re"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/turbo_quality.py": [
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/telemetry_export.py": [
+      "app",
+      "csv",
+      "io"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/provider_health.py": [
+      "random",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/slo.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/flaky.py": [
+      "random",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/utils/validation.py": [
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/models/graph.py": [
+      "pydantic",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/models/__init__.py": [
+      "graph"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/i18n/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/db_crypto.py": [
+      "app",
+      "fastapi",
+      "os",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/auth.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/metrics.py": [
+      "app",
+      "fastapi",
+      "time",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/factories_test.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/sso.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/health.py": [
+      "app",
+      "fastapi",
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/graphs_export.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/analytics_dash.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/__init__.py": [
+      "a11y_overlay",
+      "auth",
+      "dashboard",
+      "errors",
+      "graph_tooltips",
+      "i18n",
+      "ui_theme"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/telemetry.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/log_test.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/bench.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/pii_crypto.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/dashboard.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/graph_tooltips.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/soak.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/dr.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/providers.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/scim.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/a11y_overlay.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/probe.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/i18n.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/ui_theme.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/analytics.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/errors.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/learning.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/turbo_quality.py": [
+      "app",
+      "fastapi",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/provider_health.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/slo.py": [
+      "app",
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/routes/workspaces.py": [
+      "fastapi",
+      "os",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/__init__.py": [
+      "referrals"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/templates/errors/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/payments/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/payments/stripe_live.py": [
+      "os",
+      "stripe"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/referrals/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/referrals/engine.py": [
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/config.py": [
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/registry.py": [
+      "base",
+      "echo",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/__init__.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/echo.py": [
+      "base",
+      "registry",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/app/services/providers/base.py": [
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/smoke/test_endpoints.py": [
+      "json",
+      "os",
+      "requests",
+      "sys",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/Sprint26/tests/flaky/test_flaky.py": [
+      "app",
+      "random"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/exports.py": [
+      "docx",
+      "fastapi",
+      "idsideAI_Complete_PyCharm_Ready",
+      "io",
+      "json",
+      "os",
+      "reportlab",
+      "starlette",
+      "time",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/metrics.py": [
+      "fastapi",
+      "idsideAI_Complete_PyCharm_Ready",
+      "prometheus_client"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/billing.py": [
+      "fastapi",
+      "json",
+      "os",
+      "pydantic",
+      "stripe",
+      "threading"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/graphs.py": [
+      "fastapi",
+      "hashlib",
+      "idsideAI_Complete_PyCharm_Ready",
+      "io",
+      "json",
+      "os",
+      "reportlab",
+      "time",
+      "typing",
+      "zipfile"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/middleware/tenant.py": [
+      "fastapi",
+      "starlette"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/compat/__init__.py": [],
+    "idsideAI_Complete_PyCharm_Ready/backend/compat/optional_deps.py": [],
+    "idsideAI_Complete_PyCharm_Ready/backend/auth/jwt_auth.py": [
+      "fastapi",
+      "jose",
+      "json",
+      "os",
+      "requests",
+      "time",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/auth/middleware.py": [
+      "fastapi",
+      "jose",
+      "json",
+      "os",
+      "urllib"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/models/billing.py": [
+      "pydantic",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/models/schemas.py": [
+      "pydantic",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/backend/db/neo4j_client.py": [
+      "dotenv",
+      "idsideAI_Complete_PyCharm_Ready",
+      "os"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/__v5_5_main_overlay2.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/__v5_5_main_overlay.py": [
+      "app"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/share.py": [
+      "app",
+      "fastapi",
+      "pydantic",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/telemetry_ui.py": [
+      "fastapi"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/routers/settings.py": [
+      "app",
+      "fastapi",
+      "pydantic",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/utils/security_middleware.py": [
+      "starlette",
+      "time"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/models/enterprise.py": [
+      "datetime",
+      "sqlmodel",
+      "typing"
+    ],
+    "idsideAI_Complete_PyCharm_Ready/idsideAIfinal_PyCharm_Ready/app/services/enterprise_service.py": [
+      "app",
+      "sqlmodel",
+      "typing"
+    ]
+  }
+}
