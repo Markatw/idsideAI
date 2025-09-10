@@ -1,0 +1,15 @@
+name: First-Run Demo
+description: |
+  Simple 3-step Decision Model.
+steps:
+  - id: summarise
+    type: prompt
+    prompt: "Summarise this text in 2 sentences: {text}"
+    next: improve
+  - id: improve
+    type: prompt
+    prompt: "Suggest 3 improvements to the previous summary."
+    next: choose_path
+  - id: choose_path
+    type: decision
+    inputs: { key: path }

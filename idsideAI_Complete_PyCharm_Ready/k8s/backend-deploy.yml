@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: idecide-backend }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app: idecide-backend } }
+  template:
+    metadata: { labels: { app: idecide-backend } }
+    spec:
+      containers:
+      - name: backend
+        image: ghcr.io/you/idecide-backend:latest
+        ports: [{ containerPort: 8001 }]
+        env:
+        - name: NEO4J_URI
+          valueFrom: { secretKeyRef: { name: idecide-secrets, key: NEO4J_URI } }
+        - name: NEO4J_USER
+          valueFrom: { secretKeyRef: { name: idecide-secrets, key: NEO4J_USER } }
+        - name: NEO4J_PASSWORD
+          valueFrom: { secretKeyRef: { name: idecide-secrets, key: NEO4J_PASSWORD } }
+        - name: JWT_SECRET
+          valueFrom: { secretKeyRef: { name: idecide-secrets, key: JWT_SECRET } }
+        - name: OTEL_EXPORTER_OTLP_ENDPOINT
+          value: "http://otel-collector:4317"
+---
+apiVersion: v1
+kind: Service
+metadata: { name: idecide-backend }
+spec:
+  selector: { app: idecide-backend }
+  ports: [{ port: 80, targetPort: 8001 }]

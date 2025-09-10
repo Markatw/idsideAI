@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="Postman/Newman" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="newman run packaging/Postman_collection.json --timeout-request 15000"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+    <method v="2" />
+  </configuration>
+</component>

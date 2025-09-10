@@ -1,0 +1,4 @@
+relative_path,size_bytes,sha256
+app/middleware/security.py,1058,9c8fc43ad43e0c1f34815ad2984d5eaa117313a1886f49244d2dc1b6eb1ea05a
+app/utils/validation.py,284,519e35ad8735cd3b52ed7ded1bd8e92d3181f107ed56f5bbd54d27fe4e7e289f
+docs/Sprint22_LOG.md,648,9cfccad4ee6da1d5e1e61ce11d2b4b7d8626fd972b66fbb4db9feb63fa280527

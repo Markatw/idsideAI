@@ -1,0 +1,4 @@
+relative_path,size_bytes,sha256
+app/utils/telemetry_export.py,2090,24651bb306f067f29f6e799be8cbb3df9d2d83d6f100cc5e527ee73b3db9a2ec
+app/routes/telemetry.py,935,8dee77541de6ce9a3e043c67f5152f48ea576d560bbc7be33a3baaa225877a8b
+docs/Sprint23_LOG.md,625,4be4d5a150df831876000e606c2c14a1ff72d1e11cee7f1181320bce602ef3a5

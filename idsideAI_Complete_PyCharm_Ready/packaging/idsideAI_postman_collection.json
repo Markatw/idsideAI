@@ -1,0 +1,107 @@
+{
+  "info": {
+    "name": "idsideAI \u2014 ABSOLUTE GREEN smoke",
+    "_postman_id": "c3b3c1c8-0000-4f00-b111-555555555555",
+    "description": "Smoke tests for idsideAI API endpoints (SVG/GraphML export, workspaces, provider health)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Graphs Export \u2014 SVG",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"fmt\": \"svg\", \"graph\": {\"nodes\": [{\"id\": \"A\"}, {\"id\": \"B\"}], \"edges\": [{\"source\": \"A\", \"target\": \"B\"}]}}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/graphs/export",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "graphs",
+            "export"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Graphs Export \u2014 GraphML",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"fmt\": \"graphml\", \"graph\": {\"nodes\": [{\"id\": \"A\"}], \"edges\": []}}"
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/graphs/export",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "graphs",
+            "export"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Workspaces \u2014 List",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/workspaces",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "workspaces"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Providers \u2014 Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/providers/health",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "providers",
+            "health"
+          ]
+        }
+      }
+    }
+  ]
+}

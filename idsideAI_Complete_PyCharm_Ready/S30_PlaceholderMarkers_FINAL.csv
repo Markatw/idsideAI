@@ -1,0 +1,12 @@
+path,lineno,snippet
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/routers/auth.py,103,"raise HTTPException(status_code=429, detail=""too many attempts; try later"")"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/routers/frontend.py,72,"<input type='text' placeholder=""{COPY['chat']['placeholder']}"" />"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/routers/frontend.py,104,"<form id=""newf""><input id=""newt"" placeholder=""Title""><br><textarea id=""newb"" rows=""4""></textarea><br><button>{COPY['docs']['save']}</button></form>"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/ui/copy.py,12,"""chat"": {""title"":""Chat"",""placeholder"":""Type a message…"",""send"":""Send"",""empty"":""No messages yet.""},"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/routes/workspaces.py,5,- GET /api/workspaces         -> list placeholder (empty list for now)
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/provider_health.py,8,# Simulate provider check (placeholder for real ping)
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/ui_errors.py,7,"root = Path(__file__).resolve().parents[1] / ""templates"" / ""errors"""
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/dr_backup.py,16,"tmp = out / f""placeholder_{ts}.txt"""
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/dr_backup.py,17,"tmp.write_text(""no-source-db; placeholder"", encoding=""utf-8"")"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/flaky.py,16,"return {""ok"": True, ""attempts"": i, ""last_result"": result}"
+/mnt/data/v3_run_manual/extracted_1757013819/Sprint26/app/utils/flaky.py,21,"return {""ok"": False, ""attempts"": times, ""last_result"": last_result}"

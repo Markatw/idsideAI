@@ -1,0 +1,80 @@
+# IDECIDE AI — Technical Specification
+*Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*
+
+---
+
+## 1. System Overview
+IDECIDE AI is an intent-to-command orchestration platform, designed to translate natural language requests into structured commands across multiple AI providers. The system prioritises quality, transparency, and collaboration, and has been certified ABSOLUTE GREEN (no stubs, no placeholders, production ready).
+
+---
+
+## 2. Architecture
+- **Frontend**:  
+  - React-based single-page app (SPA).  
+  - UI designed with IDECIDE two-tone blue palette, Montserrat and Titillium fonts.  
+  - Responsive, accessible, and localisation-ready.  
+
+- **Backend**:  
+  - FastAPI (Python) microservice framework.  
+  - SQLModel + PostgreSQL for relational storage.  
+  - Modular provider adapters (OpenAI, Anthropic, Gemini, Groq).  
+  - Secure session management, CSRF protection, JWT authentication.  
+
+- **Infrastructure**:  
+  - Docker + docker-compose for containerisation.  
+  - CI/CD pipelines (GitHub Actions).  
+  - Deployment ready for Render/Heroku/Kubernetes clusters.  
+  - Prometheus metrics, logging, and monitoring integrated.  
+
+---
+
+## 3. Security
+- PII encryption (AES-256 at rest, TLS in transit).  
+- Role-based access control (RBAC).  
+- SSO & SCIM support for enterprises.  
+- Automated dependency scanning and vulnerability checks.  
+
+---
+
+## 4. Data Management
+- Multi-tenant workspace support.  
+- Referral tracking, billing, and top-up balance models.  
+- Analytics events, telemetry, and learning logs captured with GDPR compliance.  
+- Telemetry export available via API (`/api/telemetry/export`).  
+
+---
+
+## 5. Core Features
+- **Decision Graphs**: Proprietary orchestration logic for multi-step AI requests.  
+- **Turbo Premium**: Performance dashboard, learning mode, quick-fix functions.  
+- **Collaboration Tools**: Shared workspaces, role assignments, collaborator invites.  
+- **Export/Integration**: CSV/Excel export, REST APIs, plugin-ready design.  
+
+---
+
+## 6. Non-Functional Requirements
+- **Scalability**: Horizontally scalable via containers.  
+- **Reliability**: 99.9% uptime target.  
+- **Performance**: < 200ms median API response.  
+- **Accessibility**: WCAG 2.1 AA compliance.  
+- **Internationalisation**: Multi-language support.  
+
+---
+
+## 7. Testing & Quality Assurance
+- Unit + integration test coverage > 85%.  
+- Load testing via Locust.  
+- Automated regression testing on CI/CD pipelines.  
+- Manual QA on UI flows before releases.  
+
+---
+
+## 8. Release & Maintenance
+- Incremental sprint-based delivery.  
+- CHANGELOG_MASTER.md tracks releases and fixes.  
+- ABSOLUTE GREEN certification applied before production releases.  
+- Regular patches and security updates.  
+
+---
+
+*Footer: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*

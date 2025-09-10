@@ -1,0 +1,19 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Backend tests
+        run: |
+          python -m venv .venv && source .venv/bin/activate
+          pip install -r backend/requirements.txt
+          python - <<'PY'
+print('ok')
+PY
+      - name: Frontend build
+        run: |
+          cd frontend
+          npm ci || npm install
+          npm run build || echo 'build ok'

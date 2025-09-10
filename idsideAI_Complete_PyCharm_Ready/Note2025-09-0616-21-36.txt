@@ -1,0 +1,80 @@
+# IDECIDE AI — Owner’s Manual
+*Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*
+
+---
+
+## 1. Introduction
+Welcome to IDECIDE AI, the intent-to-command orchestration platform. This manual provides guidance for setup, daily use, workspace management, and troubleshooting.
+
+---
+
+## 2. Getting Started
+### Account Setup
+1. Go to the IDECIDE AI login page.  
+2. Sign up using email or SSO (Google, Microsoft, or enterprise identity provider).  
+3. Confirm your email and complete profile setup.  
+
+### Plans
+- **Free Plan**: 20 AI requests/day.  
+- **Standard Plan**: Unlimited use with referral discounts.  
+- **Turbo Premium**: Adds performance dashboards, learning mode, and auto-repair functions.  
+
+---
+
+## 3. Using IDECIDE AI
+### Submitting Requests
+- Enter natural language instructions in the main input bar.  
+- IDECIDE AI orchestrates the best-fit AI provider and returns structured output.  
+- Decision Graphs enable multi-step logic automatically.  
+
+### Collaboration
+- Invite teammates or family members via the Workspace tab.  
+- Assign roles (Owner, Editor, Viewer).  
+- Share projects and track contributions.  
+
+### Turbo Features
+- **Performance Dashboard**: Track quality and efficiency of outputs.  
+- **Learning Mode**: System adapts to your preferences over time.  
+- **Quick Fix**: Repairs low-quality outputs in one click.  
+
+---
+
+## 4. Exporting & Integrations
+- Export outputs to CSV, Excel, or PDF.  
+- API endpoints available for integration with external tools.  
+- Telemetry and analytics can be downloaded for further review.  
+
+---
+
+## 5. Security & Privacy
+- All data encrypted at rest (AES-256) and in transit (TLS 1.3).  
+- GDPR, HIPAA, and enterprise compliance ready.  
+- User-controlled privacy settings available in account preferences.  
+
+---
+
+## 6. Troubleshooting
+| Issue | Solution |
+|-------|----------|
+| Can’t log in | Reset password or use SSO. |
+| Referral credits not applied | Check Referral tab or contact support. |
+| Turbo features missing | Verify subscription plan. |
+| App not responding | Refresh, clear cache, or contact support. |
+
+---
+
+## 7. Support
+- **Help Center**: knowledge.idecide.io  
+- **Email Support**: support@idecide.io  
+- **Enterprise Support**: Dedicated account manager.  
+
+---
+
+## 8. Glossary
+- **ABSOLUTE GREEN**: Certification of production-readiness (0 errors, 0 stubs, 0 placeholders).  
+- **Decision Graphs**: IDECIDE’s proprietary orchestration engine.  
+- **Turbo Premium**: Premium features for analytics and quality improvement.  
+
+---
+
+*Footer: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*

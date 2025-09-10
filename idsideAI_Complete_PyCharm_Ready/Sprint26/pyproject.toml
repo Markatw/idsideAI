@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "idsideai"
+version = "0.1.0"
+description = "IDECIDE idsideAI"
+authors = ["IDECIDE Dev Team"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "*"
+uvicorn = "*"
+sqlmodel = "*"
+requests = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+flake8 = "*"

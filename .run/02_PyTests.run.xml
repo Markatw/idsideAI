@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="PyTests (Coverage 90%)" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="pytest --maxfail=1 --cov=app --cov-report=term-missing --cov-fail-under=90"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+    <method v="2" />
+  </configuration>
+</component>

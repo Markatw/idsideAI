@@ -1,0 +1,6 @@
+relative_path,size_bytes,sha256
+app/utils/i18n.py,801,3c2a8abf85e4962a10adf8df3d05df37ad2e225ff155b90c5b0f551a16ea579c
+app/routes/i18n.py,647,7d80ec14eaa3699386abcfc3b07f899ca8c9c5f20c306ec4f785eb055dc8ee43
+docs/Sprint24_LOG.md,977,bee0fc87ef53c5555f40229eaad5afe0e14fa9cebd93c812d7a636079131fb3b
+data/i18n/en.json,154,f8e48201c0eb9db0f1f99555bed75cad3926d2cec3d507f97f7db9d27aca410c
+data/i18n/es.json,173,af18555323947963df64320e4f4b6063ac1a5bf8ecff1d51ac9e6f914106d75f

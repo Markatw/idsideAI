@@ -1,0 +1,79 @@
+📊 Slide Content
+
+Slide 1 — Title Slide
+	•	Title: IDECIDE AI — Owner’s Manual Training
+	•	Subtitle: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)
+
+⸻
+
+Slide 2 — Introduction
+	•	IDECIDE AI is an intent-to-command orchestration platform.
+	•	This deck guides you through setup, use, Turbo, and troubleshooting.
+	•	Based on ABSOLUTE GREEN certified Master Green App 040925.
+
+⸻
+
+Slide 3 — Getting Started
+	•	Create account (email/SSO).
+	•	Verify and set up profile.
+	•	Choose plan: Free, Standard, or Turbo.
+
+⸻
+
+Slide 4 — Submitting Requests
+	•	Enter natural language → get structured AI outputs.
+	•	Multi-step logic powered by Decision Graphs.
+	•	Outputs optimized for clarity and quality.
+
+⸻
+
+Slide 5 — Collaboration
+	•	Invite teammates, family, or collaborators.
+	•	Assign roles: Owner / Editor / Viewer.
+	•	Share projects and track contributions.
+
+⸻
+
+Slide 6 — Turbo Features
+	•	Performance Dashboard: Output quality and speed metrics.
+	•	Learning Mode: System adapts to your needs.
+	•	Quick Fix: One-click repair of weak outputs.
+
+⸻
+
+Slide 7 — Export & Integration
+	•	Export to CSV, Excel, or PDF.
+	•	API endpoints available.
+	•	Telemetry and analytics downloadable.
+
+⸻
+
+Slide 8 — Security & Privacy
+	•	AES-256 encryption at rest, TLS in transit.
+	•	GDPR/HIPAA compliant.
+	•	User-controlled privacy settings.
+
+Issue	Solution
+Login failed	Reset password or use SSO
+Referral not applied	Check Referral tab
+Turbo missing	Verify subscription
+App frozen	Refresh or clear cache
+
+Slide 10 — Support
+	•	Help Center: knowledge.idecide.io
+	•	Email: support@idecide.io
+	•	Enterprise users: Account manager
+
+⸻
+
+Slide 11 — Glossary
+	•	ABSOLUTE GREEN: 0 errors, 0 stubs, 0 placeholders.
+	•	Decision Graphs: Proprietary orchestration engine.
+	•	Turbo: Premium performance + quality features.
+
+⸻
+
+Slide 12 — Closing
+	•	IDECIDE AI empowers ethical, accessible AI usage.
+	•	Thank you for adopting ABSOLUTE GREEN certified software.
+	•	Together, we democratize AI for everyone.

@@ -1,0 +1,15 @@
+{
+  "compare_to": "S22.1 baseline",
+  "files_base": 120,
+  "bytes_base": 319712,
+  "files_cur": 153,
+  "bytes_cur": 346884,
+  "files_delta": 33,
+  "bytes_delta": 27172,
+  "micro_count": {
+    "planned": 10,
+    "completed": 10,
+    "remaining": 0,
+    "status": "COMPLETE"
+  }
+}

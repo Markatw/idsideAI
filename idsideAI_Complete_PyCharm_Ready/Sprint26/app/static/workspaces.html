@@ -1,0 +1,21 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Workspaces — IDECIDE AI</title>
+<header><h1>Workspaces</h1></header>
+<div class="container card"><p><label>Workspace <select id="wssel"><option>personal</option><option>team</option><option>org</option></select></label> <button class="btn" onclick="setWS()">Set workspace</button></p><p id="cur"></p><pre id="out" class="card"></pre></div>
+<div class="container card">
+  <p>Choose a workspace:</p>
+  <p>
+    <button class="btn" onclick="sel('personal')">Personal</button>
+    <button class="btn" onclick="sel('team')">Team</button>
+    <button class="btn" onclick="sel('enterprise')">Enterprise</button>
+  </p>
+  <p><small class="muted">Build: 2025-09-01T13:47:12Z</small></p>
+</div>
+<script>function sel(w){localStorage.setItem('idside_ws',w);location.href='/ui';}</script>
+<script>
+function refresh(){fetch('/auth/session').then(r=>r.json()).then(d=>{try{document.getElementById('cur').textContent='Current: '+(d.workspace||'personal')}catch(e){}})}
+function setWS(){let el=document.getElementById('wssel'); let ws=(el&&el.value)||'personal'; fetch('/auth/set-workspace',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({workspace:ws})}).then(r=>r.json()).then(d=>{out.textContent=JSON.stringify(d,null,2); try{toast('Workspace: '+(d.workspace||ws))}catch(e){}; refresh();}).catch(e=>out.textContent=String(e));}
+document.addEventListener('DOMContentLoaded',refresh);
+</script>

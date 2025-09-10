@@ -1,0 +1,70 @@
+# IDECIDE AI — Strategy Document
+*Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*
+
+---
+
+## 1. Strategic Vision
+To establish IDECIDE as the most trusted, mission-driven AI orchestration platform, enabling individuals, teams, and institutions to harness AI effectively, affordably, and ethically.
+
+---
+
+## 2. Strategic Pillars
+1. **Product Leadership**  
+   - Continuous innovation through Decision Graphs and Turbo analytics.  
+   - Maintain ABSOLUTE GREEN certification across all releases.  
+
+2. **Market Disruption**  
+   - Ultra-low pricing to build a competitive moat.  
+   - Referral-driven growth with donation pathways.  
+
+3. **Collaboration-First Approach**  
+   - Families, SMEs, enterprises, and research institutions as core audiences.  
+   - Shared workspaces, team functionality, and cross-sector integration.  
+
+4. **Mission Alignment**  
+   - Inclusion and access for disadvantaged users.  
+   - Ethical AI that builds trust and avoids hype.  
+
+---
+
+## 3. Phased Strategy
+- **Phase 1**: Launch SEO FreeFlow to build consumer funnel.  
+- **Phase 2**: Drive adoption of idsideAI in SMEs and teams.  
+- **Phase 3**: Expand Turbo into premium enterprise markets.  
+- **Phase 4**: Deploy into education, law, and public sector.  
+- **Phase 5**: Scale globally and build data-value networks.  
+
+---
+
+## 4. Key Differentiators
+- **Decision Graphs**: Proprietary orchestration engine.  
+- **Turbo**: Embedded and standalone premium upgrade path.  
+- **ABSOLUTE GREEN**: Trustmark for production-readiness.  
+- **Ethical Foundation**: Brand built on mission, not hype.  
+
+---
+
+## 5. Success Metrics
+- ARR milestones (£2.85m Year 1, £6–7m Year 2).  
+- Retention, churn, conversion, and attach-rate KPIs.  
+- Enterprise pilots within 12 months.  
+- Active engagement across consumer, SME, and enterprise channels.  
+
+---
+
+## 6. Risks & Mitigations
+- **Referral fraud** → Monitoring and anti-abuse controls.  
+- **Platform/API dependency** → Multi-provider integration.  
+- **Competition** → Maintain ultra-low cost advantage.  
+- **Trust erosion** → Reinforce ABSOLUTE GREEN brand promise.  
+
+---
+
+## 7. Long-Term Vision
+- Build IDECIDE into a global ecosystem of interoperable apps.  
+- Expand beyond orchestration into decision-support systems.  
+- Create global networks for research, education, and development powered by IDECIDE data and AI insights.  
+
+---
+
+*Footer: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*

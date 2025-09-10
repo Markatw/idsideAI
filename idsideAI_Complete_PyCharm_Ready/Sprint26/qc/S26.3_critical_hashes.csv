@@ -1,0 +1,4 @@
+path,present,sha256
+tests/smoke/test_endpoints.py,True,10520f2f0eb6a5fd04f238a6090835b439c33222772e9b006f46a9fe1c740135
+tests/smoke/run_smoke.sh,True,a62c73a8e25ca94841894cb8b6e4bd1a6a45237a7c5e17d06b6b83fec89272bc
+tests/smoke/README.md,True,01dd7d177d757e06b394187578dc8ed27f37e29af23c5425d05f982c6106575f

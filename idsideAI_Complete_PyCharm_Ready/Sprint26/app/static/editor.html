@@ -1,0 +1,32 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Graph Editor — IDECIDE AI</title>
+<header><h1>Graph Editor</h1></header>
+<div class="container">
+<div class="container"><p><button class="btn" onclick="openViewer()">Open Viewer</button></p></div>
+  <div class="card"><h3>Add Node</h3>
+    <p>Graph ID <input id="gidN" aria-label="Graph ID for new node" style="padding:6px;border:1px solid #e5e7eb;border-radius:8px"></p>
+    <p>ID <input id="nid" aria-label="Node ID"> Label <input id="nlabel" aria-label="Node label"></p>
+    <p><button class="btn" onclick="addNode()">Create Node</button> <span id="nr"></span></p>
+  </div>
+  <div class="card"><h3>Add Edge</h3>
+    <p>Graph ID <input id="gidE" aria-label="Graph ID for new edge" style="padding:6px;border:1px solid #e5e7eb;border-radius:8px"></p>
+    <p>Source <input id="es" aria-label="Edge source node ID"> Target <input id="et" aria-label="Edge target node ID"> Label <input id="el" aria-label="Edge label"> Directed <input id="ed" aria-label="Directed edge checkbox" type="checkbox" checked></p>
+    <p><button class="btn" onclick="addEdge()">Create Edge</button> <span id="er"></span></p>
+  </div>
+  <p><small class="muted">Build: 2025-09-01T13:56:11Z</small></p>
+</div>
+<script>
+function j(u,d){return fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)});}
+function addNode(){let g=gidN.value.trim();if(!g)return nr.textContent='Enter graph id';let d={id:nid.value.trim(),label:nlabel.value.trim()||null};j(`/graphs/${g}/nodes`,d).then(r=>{nr.textContent=r.ok?'OK':'ERR'; if(r.ok){ toast('Node created'); openViewer(); }});}
+function addEdge(){let g=gidE.value.trim();if(!g)return er.textContent='Enter graph id';let d={source:es.value.trim(),target:et.value.trim(),label:el.value.trim()||null,directed:ed.checked};j(`/graphs/${g}/edges`,d).then(r=>{er.textContent=r.ok?'OK':'ERR'; if(r.ok){ toast('Edge created'); openViewer(); }});}
+</script>
+<script>function openViewer(){let g=(gidN.value||gidE.value||'').trim();if(!g){alert('Enter graph id');return;}location.href='/ui/viewer?gid='+encodeURIComponent(g);}
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  fetch('/auth/session').then(r=>r.json()).then(d=>{
+    if(!d.authenticated){ try{toast('Login required')}catch(e){}; location.href='/ui/login'; }
+  }).catch(()=>{ location.href='/ui/login'; });
+});
+</script>

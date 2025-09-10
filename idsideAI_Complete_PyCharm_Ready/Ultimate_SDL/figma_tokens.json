@@ -1,0 +1,153 @@
+{
+  "version": "1.0",
+  "idecide": {
+    "color": {
+      "brand": {
+        "$value": "#0052CC",
+        "$type": "color"
+      },
+      "brandAccent": {
+        "$value": "#0099FF",
+        "$type": "color"
+      },
+      "success": {
+        "$value": "#18A957",
+        "$type": "color"
+      },
+      "warning": {
+        "$value": "#F5A300",
+        "$type": "color"
+      },
+      "danger": {
+        "$value": "#D7263D",
+        "$type": "color"
+      },
+      "bg": {
+        "$value": "#0B0D12",
+        "$type": "color"
+      },
+      "surface": {
+        "$value": "#FFFFFF",
+        "$type": "color"
+      },
+      "ink": {
+        "$value": "#0F172A",
+        "$type": "color"
+      },
+      "muted": {
+        "$value": "#6B7280",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "#E6EAF0",
+        "$type": "color"
+      }
+    },
+    "radius": {
+      "sm": {
+        "$value": "6px",
+        "$type": "borderRadius"
+      },
+      "md": {
+        "$value": "10px",
+        "$type": "borderRadius"
+      },
+      "lg": {
+        "$value": "14px",
+        "$type": "borderRadius"
+      },
+      "pill": {
+        "$value": "999px",
+        "$type": "borderRadius"
+      }
+    },
+    "shadow": {
+      "e1": {
+        "$value": "0 1px 2px rgba(0,0,0,0.06)",
+        "$type": "boxShadow"
+      },
+      "e2": {
+        "$value": "0 6px 20px rgba(0,0,0,0.12)",
+        "$type": "boxShadow"
+      }
+    },
+    "font": {
+      "family": {
+        "$value": "Inter, Roboto, system-ui, -apple-system, Segoe UI",
+        "$type": "fontFamily"
+      },
+      "h1": {
+        "$value": "32px",
+        "$type": "fontSize"
+      },
+      "h2": {
+        "$value": "24px",
+        "$type": "fontSize"
+      },
+      "h3": {
+        "$value": "20px",
+        "$type": "fontSize"
+      },
+      "body": {
+        "$value": "16px",
+        "$type": "fontSize"
+      },
+      "small": {
+        "$value": "13px",
+        "$type": "fontSize"
+      },
+      "weightHeading": {
+        "$value": "700",
+        "$type": "fontWeight"
+      },
+      "weightBody": {
+        "$value": "400",
+        "$type": "fontWeight"
+      }
+    },
+    "motion": {
+      "fadeIn": {
+        "$value": "200ms ease-out",
+        "$type": "other"
+      },
+      "pulse": {
+        "$value": "400ms ease-in-out",
+        "$type": "other"
+      },
+      "slide": {
+        "$value": "220ms cubic-bezier(0.2, 0.8, 0.2, 1)",
+        "$type": "other"
+      }
+    },
+    "graph": {
+      "node": {
+        "sizeS": {
+          "$value": "28",
+          "$type": "number"
+        },
+        "sizeM": {
+          "$value": "42",
+          "$type": "number"
+        },
+        "sizeL": {
+          "$value": "56",
+          "$type": "number"
+        },
+        "titleSize": {
+          "$value": "12px",
+          "$type": "fontSize"
+        }
+      },
+      "edge": {
+        "width": {
+          "$value": "1.6",
+          "$type": "number"
+        },
+        "widthBold": {
+          "$value": "3.2",
+          "$type": "number"
+        }
+      }
+    }
+  }
+}

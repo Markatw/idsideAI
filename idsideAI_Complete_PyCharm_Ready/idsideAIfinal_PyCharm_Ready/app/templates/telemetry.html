@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Telemetry — idsideAI{% endblock %}
+{% block content %}
+<h1>Telemetry</h1>
+<p class="muted">Latency and quality metrics from recent runs.</p>
+<canvas id="lat" width="900" height="320" aria-label="Latency chart"></canvas>
+<canvas id="qual" width="900" height="320" aria-label="Quality chart" style="margin-top:16px;"></canvas>
+<script>
+async function load(){
+  try{
+    const r = await fetch('/telemetry/recent');
+    const data = await r.json();
+    const ts = data.map(x=>x.timestamp||'t');
+    const lat = data.map(x=>x.latency_ms||0);
+    const q = data.map(x=>(x.quality && x.quality.overall) || 0);
+    draw(document.getElementById('lat'), ts, lat, 'Latency (ms)');
+    draw(document.getElementById('qual'), ts, q, 'Quality (0-1)');
+  }catch(e){
+    console.error(e);
+  }
+}
+function draw(c, labels, series, title){
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0,0,c.width,c.height);
+  ctx.font = '14px sans-serif';
+  ctx.fillText(title, 10, 20);
+  const max = Math.max(1, ...series);
+  const pad = 40; const w = c.width - pad*2; const h = c.height - pad*2;
+  // axes
+  ctx.beginPath();
+  ctx.moveTo(pad, pad); ctx.lineTo(pad, pad+h); ctx.lineTo(pad+w, pad+h);
+  ctx.stroke();
+  // line
+  ctx.beginPath();
+  series.forEach((v,i)=>{
+    const x = pad + (i/(Math.max(1,series.length-1))) * w;
+    const y = pad + h - (v/max)*h;
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+}
+load();
+</script>
+{% endblock %}

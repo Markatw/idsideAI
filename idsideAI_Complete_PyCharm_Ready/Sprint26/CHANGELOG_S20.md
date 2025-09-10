@@ -1,0 +1,17 @@
+
+- S20.1: Accessibility polish (focus-visible outlines, skip link, sr-only helpers, roles).
+- S20.2: A11y II — focus-visible on custom controls, :focus-within on cards/panels, .kbd helper, disabled-pointer guard.
+- S20.3: A11y III — ARIA-friendly patterns: [aria-invalid] outline, .form-error/.invalid-feedback, .form-hint, .required asterisk, fieldset/legend reset, inline status.
+- S20.4: A11y IV — improved link states (underline/visited), contrast tweaks, prefers-contrast support, readable hover rows, reduced-motion safe outlines.
+- S20.5: A11y V — added .kbd-banner (keyboard-only hint) and .focus-guide[data-step] for focus order cues.
+- S20.6: A11y VI — sr-only-focusable, anchor targets/links, sticky section nav, landmark focus-within; base template landmark hints (if present).
+- S20.7: A11y VII — added minimal JS focus trap for [data-focus-trap] + ESC close, and keyboard-only close button styling.
+- S20.8: A11y VIII — high-contrast masked icons (.icon-hc), alt/figure patterns, and .error-summary block.
+- S20.9: A11y IX — respect user font-size, improve base line-height, clamp responsive headings, readable form controls, small-screen 200% zoom adjustments.
+- S20.10: A11y X — reduced flashing (no high-frequency), motion safety under prefers-reduced-motion, and reduced transparency option; contrast-friendly backgrounds.
+- S20.11: A11y XI — added .sr-live utility and a11yAnnounce(msg,{mode:'polite'|'assertive'}) live region helper.
+- S20.12: A11y XII — .form-group/.fieldset styles, required marker .req, and auto aria-describedby/aria-required wiring via data-*.
+- S20.13: A11y XIII — focus-visible polyfill (keyboard detection) + custom outline hook, and skip-link focus target enhancements.
+- S20.14: A11y XIV — .table-responsive wrapper, caption styling, sticky headers, striped rows, and focusable cell pattern.
+- S20.15: A11y XV — .chart helpers; JS to set role=img, aria-label/labelledby, and described-by for sr-only data tables.
+- S20.16: A11y XVI — WCAG 2.2 AA mapping matrix + checklist; sprint accessibility wrap.

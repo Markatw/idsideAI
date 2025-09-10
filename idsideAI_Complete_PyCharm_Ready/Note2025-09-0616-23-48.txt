@@ -1,0 +1,79 @@
+# IDECIDE AI — Disruption Report (Final)
+*Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*
+
+---
+
+## 1. Purpose
+This report positions IDECIDE AI as a disruption leader in the AI market. It outlines how our pricing model, collaboration-first design, and mission-driven approach create an unassailable moat against incumbents and competitors.
+
+---
+
+## 2. Disruption Thesis
+IDECIDE AI’s competitive edge comes from combining:  
+- **Referral-based ultra-low pricing**: Breaking cost barriers for consumers and SMEs.  
+- **ABSOLUTE GREEN certification**: Guaranteeing trust and production readiness.  
+- **Collaboration-first architecture**: Serving teams, families, and institutions from day one.  
+- **Differentiators**: Decision Graphs and Turbo performance dashboards.  
+
+This trifecta ensures IDECIDE AI is both disruptive and defensible.
+
+---
+
+## 3. Market Landscape
+- Global AI orchestration market > $100B.  
+- Current players focus on enterprise-only pricing.  
+- Consumers and SMEs underserved.  
+- Growing demand for ethical, transparent, affordable AI access.  
+
+---
+
+## 4. IDECIDE’s Moat
+1. **Pricing Model**  
+   - Referral-first → viral growth.  
+   - Discounts up to 80%, but floor pricing ensures sustainability.  
+
+2. **Technology**  
+   - Decision Graphs orchestrate multi-step workflows.  
+   - Turbo Premium adds quality assurance and analytics.  
+
+3. **Brand Trust**  
+   - ABSOLUTE GREEN certification = no placeholders, no stubs, enterprise-ready.  
+   - Mission-first identity = credibility with regulators and social sectors.  
+
+---
+
+## 5. Financial Disruption
+- Year 1 base scenario: 75k users → ~£2.85m ARR.  
+- Year 2 base: £6–7m ARR.  
+- CAC driven down via referrals (< £10 by Month 6).  
+- CLV £120–200/user → strong margins despite low entry pricing.  
+
+---
+
+## 6. Social Impact Disruption
+- Extending access to disadvantaged users via donation of referral credits.  
+- Education, law, and public sector benefit from cost-efficient adoption.  
+- Democratization of AI aligns with regulatory trends and global development goals.  
+
+---
+
+## 7. Risks & Mitigations
+- **Referral abuse** → fraud detection.  
+- **Competitive undercutting** → maintain floor pricing + proprietary differentiators.  
+- **API dependency** → multi-provider adapters.  
+- **Turbo adoption risk** → embed as premium option inside idsideAI.  
+
+---
+
+## 8. Conclusion
+IDECIDE AI is not only a viable commercial product but also a disruptive force reshaping AI access. Its combination of:  
+- Ultra-low cost,  
+- Mission-first branding,  
+- ABSOLUTE GREEN certification,  
+- And collaborative design  
+
+ensures resilience, growth, and market leadership.  
+
+---
+
+*Footer: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*

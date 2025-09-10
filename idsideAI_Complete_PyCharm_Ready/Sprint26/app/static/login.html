@@ -1,0 +1,58 @@
+<!doctype html>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<script src="/static/nav.js"></script>
+<title>Login — IDECIDE AI</title>
+<header><h1>Login</h1></header>
+<div class="container card">
+<p><a href="/ui/editor">Go to Editor</a> • <a href="/ui/admin">Go to Admin</a></p>
+  <p><label>Username <input id="username" placeholder="your name" aria-label="Username"></label></p>
+  <p><label>Password <input id="password" type="password" placeholder="••••" aria-label="Password"></label></p>
+  <p><button class="btn" onclick="demo()">Demo login</button>
+     <button class="btn secondary" onclick="who()">Who am I?</button></p>
+  <pre id="out" class="card" style="white-space:pre-wrap" aria-live="polite"></pre>
+  <p><small class="muted">Build: 2025-09-01T17:29:47Z</small></p>
+</div>
+<script>
+function demo(){fetch('/auth/demo-login').then(r=>r.json()).then(d=>{out.textContent=JSON.stringify(d,null,2); try{toast('Logged in as demo')}catch(e){}}).catch(e=>out.textContent=String(e));}
+function who(){fetch('/auth/whoami').then(r=>r.json()).then(d=>out.textContent=JSON.stringify(d,null,2)).catch(e=>out.textContent=String(e));}
+</script>
+<script>
+function logout(){fetch('/auth/logout',{method:'POST'}).then(r=>r.json()).then(d=>{out.textContent=JSON.stringify(d,null,2); try{toast('Logged out')}catch(e){}}).catch(e=>out.textContent=String(e));}
+</script>
+<script>
+function me(){fetch('/auth/me').then(async r=>{let txt=await r.text(); try{out.textContent=JSON.stringify(JSON.parse(txt),null,2);}catch(e){out.textContent=txt}}).catch(e=>out.textContent=String(e));}
+</script>
+<script>
+function signup(){
+  const u = document.getElementById('username').value.trim();
+  if(!u){ out.textContent='Enter username'; return; }
+  fetch('/auth/signup',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u})})
+   .then(r=>r.json()).then(d=>{ out.textContent=JSON.stringify(d,null,2); try{toast('Signed in as '+u)}catch(e){} })
+   .catch(e=>out.textContent=String(e));
+}
+</script>
+<script>
+function loginUser(){
+  const u=document.getElementById('username').value.trim();
+  const p=document.getElementById('password').value;
+  if(!u||!p){ out.textContent='Enter username and password'; return; }
+  fetch('/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})})
+    .then(r=>{if(!r.ok) throw new Error('Login failed '+r.status); return r.json()})
+    .then(d=>{ out.textContent=JSON.stringify(d,null,2); try{toast('Logged in as '+u)}catch(e){} })
+    .catch(e=>{ out.textContent=String(e); });
+}
+</script>
+
+<script>
+function signupUser(){
+  const u=document.getElementById('username').value.trim();
+  const p=document.getElementById('password').value;
+  if(!u||!p){ out.textContent='Enter username and password'; return; }
+  fetch('/auth/signup',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:u,password:p})})
+    .then(r=>{if(!r.ok) throw new Error('Signup failed '+r.status); return r.json()})
+    .then(d=>{ out.textContent=JSON.stringify(d,null,2); try{toast('Signed up '+u)}catch(e){}; document.getElementById('password').value=''; })
+    .catch(e=>{ out.textContent=String(e); });
+}
+</script>
+
+<script>try{document.getElementById('password').value='';}catch(e){}</script>

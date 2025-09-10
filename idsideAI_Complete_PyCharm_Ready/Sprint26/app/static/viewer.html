@@ -1,0 +1,17 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Graph Viewer — IDECIDE AI</title>
+<header><h1>Graph Viewer</h1></header>
+<div class="container"><p><a class="btn" href="#" id="back">Back to Editor</a> <button class="btn secondary" id="refresh">Refresh</button></p></div>
+<div class="container card"><div id="host">Loading…</div></div>
+<script>
+function q(k){return new URL(location.href).searchParams.get(k)||""}
+const gid=q("gid"); if(!gid){document.getElementById('host').textContent='Missing gid';}
+document.addEventListener('DOMContentLoaded',()=>{document.getElementById('back').href='/ui/editor?gid='+encodeURIComponent(gid);document.getElementById('refresh').onclick=()=>location.reload();});
+else fetch(`/graphs/${gid}/export/mermaid`).then(r=>r.json()).then(d=>{
+  const pre=document.createElement('pre'); pre.className='mermaid'; pre.textContent=d.mermaid||'graph LR\nA-->B';
+  const h=document.getElementById('host'); h.innerHTML=''; h.appendChild(pre);
+  const s=document.createElement('script'); s.src='https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js'; s.onload=()=>{mermaid.initialize({startOnLoad:true});}; document.body.appendChild(s);
+}).catch(()=>{document.getElementById('host').textContent='Failed to load graph';});
+</script>

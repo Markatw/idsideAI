@@ -1,0 +1,27 @@
+services:
+- type: web
+  name: idecide-backend
+  env: docker
+  plan: starter
+  dockerfilePath: ./backend/Dockerfile
+  envVars:
+  - key: NEO4J_URI
+    value: ${NEO4J_URI}
+  - key: NEO4J_USER
+    value: ${NEO4J_USER}
+  - key: NEO4J_PASSWORD
+    value: ${NEO4J_PASSWORD}
+  - key: JWKS_URL
+    value: ${JWKS_URL}
+  - key: JWT_AUDIENCE
+    value: ${JWT_AUDIENCE}
+  - key: JWT_ISSUER
+    value: ${JWT_ISSUER}
+- type: web
+  name: idecide-frontend
+  env: docker
+  plan: starter
+  dockerfilePath: ./frontend/Dockerfile
+  envVars:
+  - key: VITE_API_URL
+    value: https://idecide-backend.onrender.com

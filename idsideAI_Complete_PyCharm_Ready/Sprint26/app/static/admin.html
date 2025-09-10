@@ -1,0 +1,30 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Admin — IDECIDE AI</title>
+<header><h1>Admin</h1></header>
+<div class="container">
+  <div class="card"><h3>Graphs</h3>
+    <p><button class="btn" onclick="load()">Refresh</button></p>
+    <ul id="list"></ul>
+  </div>
+  <div class="card"><h3>Reset Store</h3>
+    <p><button class="btn secondary" onclick="resetStore()">POST /graphs/reset</button> <span id="rs"></span></p>
+    <p><small class="muted">Build: 2025-09-01T14:18:27Z</small></p>
+  </div>
+</div>
+<script>
+function el(tag,txt){let e=document.createElement(tag); if(txt)e.textContent=txt; return e}
+function load(){fetch('/graphs').then(r=>r.json()).then(d=>{let ul=document.getElementById('list'); ul.innerHTML=''; (d.ids||[]).forEach(gid=>{let li=el('li'); li.appendChild(el('span',gid+' ')); let a=el('a','[clone]'); a.href='#'; a.onclick=()=>clone(gid); li.appendChild(a); li.appendChild(el('span',' ')); let del=el('a','[delete]'); del.href='#'; del.onclick=()=>remove(gid); li.appendChild(del); ul.appendChild(li);});});}
+function remove(g){fetch(`/graphs/${g}`,{method:'DELETE'}).then(()=>load());}
+function clone(g){fetch(`/graphs/${g}/clone`,{method:'POST'}).then(()=>load());}
+function resetStore(){fetch('/graphs/reset',{method:'POST'}).then(r=>{rs.textContent=r.ok?'OK':'ERR'; load();});}
+document.addEventListener('DOMContentLoaded',load);
+</script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  fetch('/auth/session').then(r=>r.json()).then(d=>{
+    if(!d.authenticated){ try{toast('Login required')}catch(e){}; location.href='/ui/login'; }
+  }).catch(()=>{ location.href='/ui/login'; });
+});
+</script>

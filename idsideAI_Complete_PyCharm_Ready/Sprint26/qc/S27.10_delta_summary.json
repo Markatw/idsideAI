@@ -1,0 +1,14 @@
+{
+  "baseline_files": 396,
+  "baseline_bytes": 715776,
+  "current_files": 399,
+  "current_bytes": 753673,
+  "delta_files": 3,
+  "delta_bytes": 37897,
+  "micro_count": {
+    "planned": 10,
+    "completed": 10,
+    "remaining": 0,
+    "status": "COMPLETE"
+  }
+}

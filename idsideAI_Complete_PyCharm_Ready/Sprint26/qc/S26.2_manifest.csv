@@ -1,0 +1,4 @@
+relative_path,size_bytes,sha256
+app/utils/factories.py,691,624614741a857dc1743f62b5c40ff7c2fb9717967bd0ab71d27974a5afb4e51c
+app/routes/factories_test.py,507,ee8aff10049669e9806950070b25956fb97f1e040772dffc8f05773a64005fd3
+docs/Sprint26_LOG.md,401,bbccfa7c36f5e730789e703b22054dea9b5fd81afe15ed1721e0d030cc79737f

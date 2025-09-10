@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration name="Sam Demo Gate" type="ShConfigurationType">
+    <option name="SCRIPT_TEXT" value="bash scripts/sam_demo_gate.sh"/>
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$"/>
+    <method v="2" />
+  </configuration>
+</component>

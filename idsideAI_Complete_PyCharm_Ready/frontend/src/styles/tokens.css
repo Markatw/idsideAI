@@ -1,0 +1,30 @@
+:root{
+  --brand:#0052CC; --accent:#0099FF; --success:#18A957; --warning:#F5A300; --danger:#D7263D;
+  --bg:#F7F9FC; --surface:#FFFFFF; --ink:#0F172A; --muted:#6B7280; --border:#E6EAF0;
+  --radius-sm:6px; --radius-md:10px; --radius-lg:14px; --radius-pill:999px;
+  --shadow-1:0 1px 2px rgba(0,0,0,.06); --shadow-2:0 6px 20px rgba(0,0,0,.12);
+  --h1:32px; --h2:24px; --h3:20px; --body:16px; --small:13px;
+  --font: Inter, Roboto, system-ui, -apple-system, Segoe UI;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg); color:var(--ink); font-family:var(--font)}
+h1,h2,h3{margin:0}
+.btn{padding:10px 14px; border-radius:var(--radius-sm); border:1px solid var(--border); background:var(--surface); cursor:pointer}
+.btn.primary{background:var(--brand); color:#fff; border-color:transparent}
+.btn.ghost{background:transparent; color:var(--brand); border-color:var(--brand)}
+.header{background:linear-gradient(135deg,var(--brand),var(--accent)); color:#fff; padding:24px 28px}
+.kpis{display:flex; gap:12px; margin-top:8px}
+.chip{background:#EDF5FF; color:#002C6A; padding:6px 10px; border-radius:var(--radius-pill); font-size:var(--small)}
+.chip.ok{background:#E9FAF0; color:#135E2F}
+.toolbar{display:flex; gap:8px; padding:12px; background:var(--surface); border-bottom:1px solid var(--border); position:sticky; top:0; z-index:5}
+.canvas{display:grid; grid-template-columns: 1fr 340px; height: calc(100vh - 160px)}
+.board{position:relative; background:var(--surface); margin:16px; border:1px solid var(--border); border-radius:var(--radius-md); overflow:hidden}
+.inspector{border-left:1px solid var(--border); background:var(--surface); padding:16px}
+.timeline{height:64px; border-top:1px solid var(--border); background:var(--surface); display:flex; align-items:center; gap:12px; padding:0 16px}
+.badge{display:inline-block; padding:4px 8px; border-radius:var(--radius-pill); font-size:var(--small); background:#EDF5FF; color:#002C6A}
+
+.canvas.dense text{display:none}
+.canvas.compact text{font-size:12px}
+.canvas.cozy text{font-size:14px}
+
+:focus{outline: 3px solid #2684FF; outline-offset: 2px}

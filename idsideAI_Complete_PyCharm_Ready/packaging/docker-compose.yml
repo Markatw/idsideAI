@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  idsideai:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - WORKSPACE_NAME=Default

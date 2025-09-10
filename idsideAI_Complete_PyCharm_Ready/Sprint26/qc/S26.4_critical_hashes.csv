@@ -1,0 +1,4 @@
+path,present,sha256
+tests/load/k6/script.js,True,593ed559298abdc01e2c4a456148f49bf9d5480c0c2efc01f09bd25ed337a590
+tests/load/k6/run.sh,True,9577205d68b8d2d6807f9ff6ca1c7968de5af3bd1b6bf8aae72791f2440015f5
+tests/load/k6/README.md,True,18bdcc9b2c4a1088118832b416bcad7225fe809639caf3dda0471fb7b4d20f9f

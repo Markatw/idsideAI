@@ -1,0 +1,10 @@
+/* Motion cues per SDL */
+@keyframes fadeIn { from{opacity:.7} to{opacity:1} }
+@keyframes pulse { 0%{transform:scale(1)} 50%{transform:scale(1.05)} 100%{transform:scale(1)} }
+.ghost{opacity:.9; animation: fadeIn .2s ease-out forwards}
+.pulse{animation: pulse .4s ease-in-out 1}
+.glow{filter: drop-shadow(0 0 6px rgba(0,153,255,.5))}
+
+.added{filter: drop-shadow(0 0 8px rgba(24,169,87,.6))}
+.removed{opacity:.4}
+.changed rect{stroke:#0099FF; stroke-width:3}

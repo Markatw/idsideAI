@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: idecide-frontend }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app: idecide-frontend } }
+  template:
+    metadata: { labels: { app: idecide-frontend } }
+    spec:
+      containers:
+      - name: frontend
+        image: ghcr.io/you/idecide-frontend:latest
+        ports: [{ containerPort: 80 }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: idecide-frontend }
+spec:
+  selector: { app: idecide-frontend }
+  ports: [{ port: 80, targetPort: 80 }]

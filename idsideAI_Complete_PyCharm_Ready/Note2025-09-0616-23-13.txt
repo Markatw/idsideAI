@@ -1,0 +1,93 @@
+# IDECIDE AI — Maths Logic Report
+*Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*
+
+---
+
+## 1. Purpose
+This report documents the mathematical and logical underpinnings of IDECIDE AI’s orchestration engine, performance benchmarking, and pricing models. It ensures full transparency for Board, investors, and technical stakeholders.
+
+---
+
+## 2. Decision Graphs Logic
+- **Structure**: Directed acyclic graph (DAG) model representing multi-step AI reasoning.  
+- **Node Types**: Input, processing, validation, output.  
+- **Pathfinding**: Weighted edge costs based on performance metrics.  
+- **Execution**: Graph traversal determines the optimal sequence of providers and transformations.  
+
+Mathematical core:  
+- Let G = (V, E) where V = nodes, E = edges.  
+- Edge weights w(e) represent latency, confidence, and cost.  
+- Path P* = argmin Σ w(e) across all candidate paths.  
+- Outputs validated at terminal nodes via quality scoring function Q(o).  
+
+---
+
+## 3. Quality Scoring
+Quality function Q(o) is defined as:  
+Q(o) = α * Accuracy + β * Relevance + γ * Efficiency  
+
+Where:  
+- α, β, γ are adjustable weights per workspace context.  
+- Q(o) ∈ [0, 1].  
+- Threshold τ = 0.8 for ABSOLUTE GREEN outputs.  
+
+---
+
+## 4. Turbo Analytics
+Turbo introduces performance dashboards powered by real-time metrics.  
+- **Confidence Index (CI)** = mean(Q(o)) across outputs.  
+- **Failure Rate (FR)** = (# of retries) / (total requests).  
+- **Efficiency Ratio (ER)** = outputs/time.  
+
+Target values:  
+- CI ≥ 0.85  
+- FR ≤ 5%  
+- ER ≥ 1.2 outputs/sec  
+
+---
+
+## 5. Pricing Model
+Referral-based, low-cost pricing designed to maximise adoption while maintaining sustainability.  
+
+Mathematical model:  
+- Base subscription: £X.  
+- Referral discount per paying referral: d%.  
+- Discount cap: c = 80%.  
+- Effective price P = max(0.2X, X * (1 – n * d%)), where n = number of paying referrals.  
+
+Example:  
+- X = £10/month, d = 10%, n = 5 → P = £2 (floor at 20%).  
+
+---
+
+## 6. Growth Projections
+Year 1 (Base scenario):  
+- 75,000 users.  
+- ARR ≈ £2.85m.  
+
+Year 2 (Base scenario):  
+- ARR ≈ £6–7m.  
+
+Retention modelling:  
+- Churn < 5%.  
+- Viral coefficient K ≥ 0.20.  
+
+---
+
+## 7. Risk Modelling
+- **Referral Fraud Probability**: p ≈ 2% (detectable via anomaly detection).  
+- **API Dependency Risk**: Mitigated by multi-provider redundancy.  
+- **Competitive Undercut**: Addressed by maintaining floor pricing (20%).  
+
+---
+
+## 8. Conclusion
+The mathematical and logical design of IDECIDE AI ensures a scalable, ethical, and disruption-proof system.  
+- Decision Graphs formalise orchestration.  
+- Turbo metrics quantify quality and efficiency.  
+- Referral economics guarantee affordability.  
+- ABSOLUTE GREEN certification validates trust and readiness.  
+
+---
+
+*Footer: Aligned with Master Green App 040925 (ABSOLUTE GREEN certified baseline)*

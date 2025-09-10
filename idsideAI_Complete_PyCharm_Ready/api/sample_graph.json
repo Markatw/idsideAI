@@ -1,0 +1,142 @@
+{
+  "nodes": [
+    {
+      "id": "DEC-1",
+      "type": "Decision",
+      "title": "Decision: Select Supplier",
+      "x": 140,
+      "y": 180,
+      "w": 240,
+      "h": 56
+    },
+    {
+      "id": "OPT-A",
+      "type": "Option",
+      "title": "Option A \u2014 Vendor Alpha",
+      "x": 520,
+      "y": 150,
+      "w": 240,
+      "h": 48
+    },
+    {
+      "id": "OPT-B",
+      "type": "Option",
+      "title": "Option B \u2014 Vendor Beta",
+      "x": 520,
+      "y": 260,
+      "w": 240,
+      "h": 48
+    },
+    {
+      "id": "EV-42",
+      "type": "Evidence",
+      "title": "ISO 27001",
+      "x": 300,
+      "y": 380,
+      "confidence": 0.75,
+      "url": "https://example.com/iso-27001-cert",
+      "source": "Certification Body",
+      "date": "2025-05-01",
+      "author": "Auditor Team",
+      "logo": "logo_iso.png"
+    },
+    {
+      "id": "RSK-1",
+      "type": "Risk",
+      "title": "Risk: Vendor Lock\u2011in",
+      "x": 840,
+      "y": 210,
+      "w": 260,
+      "h": 44
+    },
+    {
+      "id": "EV-99",
+      "type": "Evidence",
+      "title": "SOC2 Report",
+      "x": 340,
+      "y": 430,
+      "confidence": 0.6,
+      "url": "https://example.com/soc2-report",
+      "source": "Independent Assessor",
+      "date": "2025-06-15",
+      "author": "Assurance Inc.",
+      "logo": "logo_soc2.png"
+    }
+  ],
+  "edges": [
+    {
+      "id": "E1",
+      "type": "considers",
+      "source": "DEC-1",
+      "target": "OPT-A"
+    },
+    {
+      "id": "E2",
+      "type": "considers",
+      "source": "DEC-1",
+      "target": "OPT-B"
+    },
+    {
+      "id": "E3",
+      "type": "supported_by",
+      "source": "EV-42",
+      "target": "OPT-A"
+    },
+    {
+      "id": "E4",
+      "type": "incurs",
+      "source": "OPT-B",
+      "target": "RSK-1"
+    },
+    {
+      "id": "E5",
+      "type": "supported_by",
+      "source": "EV-99",
+      "target": "OPT-A"
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "v1",
+      "at": "2025-07-28T09:00:00Z"
+    },
+    {
+      "id": "v2",
+      "at": "2025-08-10T11:30:00Z"
+    }
+  ],
+  "diff_v1_v2": {
+    "nodes_added": [
+      {
+        "id": "EV-99",
+        "type": "Evidence",
+        "title": "SOC2 Report",
+        "x": 340,
+        "y": 430,
+        "confidence": 0.6
+      }
+    ],
+    "nodes_removed": [],
+    "edges_added": [
+      {
+        "id": "E5",
+        "type": "supported_by",
+        "source": "EV-99",
+        "target": "OPT-A"
+      }
+    ],
+    "edges_removed": [],
+    "props_changed": [
+      {
+        "id": "RSK-1",
+        "field": "severity",
+        "from": "High",
+        "to": "Medium"
+      }
+    ]
+  },
+  "chosen": {
+    "decision": "DEC-1",
+    "option": "OPT-A"
+  }
+}

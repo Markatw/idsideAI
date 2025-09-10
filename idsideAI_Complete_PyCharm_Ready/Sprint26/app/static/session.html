@@ -1,0 +1,31 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/theme.css">
+<script src="/static/nav.js"></script>
+<header><h1>Session Info</h1></header>
+<div class="container card">
+  <p id="uname">User: (loading...)</p>
+  <p id="ws">Workspace: (loading...)</p>
+  <p id="exp">Expired: (loading...)</p>
+  <p id="rem">Remember-me: (loading...)</p>
+  <pre id="raw" class="card" style="white-space:pre-wrap"></pre>
+<p><button class="btn" onclick="__ids_logout()">Logout</button></p>
+</div>
+<script>
+(function(){
+  function set(id, val){ var el=document.getElementById(id); if(el){ el.textContent=val; } }
+  function refresh(){
+    fetch('/auth/session').then(r=>r.json()).then(d=>{
+      set('ws','Workspace: '+(d.workspace||'personal'));
+      set('exp','Expired: '+(!!d.expired));
+      set('rem','Remember-me: '+(!!d.remember));
+      document.getElementById('raw').textContent = JSON.stringify(d,null,2);
+      return fetch('/auth/whoami');
+    }).then(r=>r.json()).then(w=>{
+      var u = (w && w.user && w.user.username) ? w.user.username : 'guest';
+      set('uname','User: '+u);
+    }).catch(function(e){ document.getElementById('raw').textContent = String(e); });
+  }
+  refresh(); setInterval(refresh, 5000);
+})();
+</script>

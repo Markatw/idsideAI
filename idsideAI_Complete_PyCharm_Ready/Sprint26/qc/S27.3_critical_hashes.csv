@@ -1,0 +1,4 @@
+path,sha256
+docker-compose.yml,ef41e7cf756e3cc26a222e61c5a892cd74ddf36bd4e419f08d3acc1ae5139b28
+docker/Dockerfile,6a4d27603c889c350e286d6d0f22024beaf8cf988ddf969c67d58b786c6c0950
+.env.example,fc052c9bc0ef01723a23b99ee42437286ffb9ffd53225b26c368001979bf3ddf

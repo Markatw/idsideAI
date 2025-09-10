@@ -1,0 +1,19 @@
+"""
+Sprint 25.5 — DB crypto routes (protocol v2)
+"""
+from typing import Any, Dict
+from fastapi import APIRouter, Body
+import os
+from app.utils.db_crypto import get_db_key, wrap_sqlite_conn
+
+router = APIRouter(prefix="/api/db/enc", tags=["db-crypto"])
+
+@router.get("/status")
+def status() -> Dict[str, Any]:
+    key = get_db_key()
+    return {"enabled": bool(key), "key_loaded": bool(key)}
+
+@router.post("/setkey")
+def setkey(key: str = Body(...)) -> Dict[str, Any]:
+    os.environ["DB_ENC_KEY"] = key
+    return {"ok": True, "enabled": True}

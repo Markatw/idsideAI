@@ -1,0 +1,19 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Search — IDECIDE AI</title>
+<header><h1>Path Search</h1></header>
+<div class="container card">
+  <p>Graph ID <input id="gid" style="padding:6px;border:1px solid #e5e7eb;border-radius:8px"></p>
+  <p>Labels (comma-separated) <input id="labels" placeholder="label1,label2"></p>
+  <p><button class="btn" onclick="run()">Search</button></p>
+  <pre id="out" class="card" style="white-space:pre-wrap"></pre>
+  <p><small class="muted">Build: 2025-09-01T14:11:21Z</small></p>
+</div>
+<script>
+function run(){let g=gid.value.trim(); if(!g){out.textContent='Enter graph id';return}; 
+ let arr=(labels.value||'').split(',').map(s=>s.trim()).filter(Boolean);
+ fetch(`/graphs/${g}/search`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({labels:arr})})
+ .then(r=>r.json().catch(()=>({error:'Non-JSON'}))).then(d=>{out.textContent=JSON.stringify(d,null,2)})
+ .catch(e=>out.textContent=String(e));}
+</script>

@@ -1,0 +1,4 @@
+relative_path,size_bytes,sha256
+app/utils/a11y_overlay.py,965,9d2f52c995bc0e1e5a563d3300eb71e9116051f9a69e70f8a870dd76351df483
+app/routes/a11y_overlay.py,340,5a034ca3a742ffd97c1e43ddda8f3f49c6d90ec98d15cdb9daae075385bad0f6
+docs/Sprint24_LOG.md,1157,4e2c57d7239f1c8c10671f26acd7c1e9ca078b54b982d2f2c7f4c3223bec45f4

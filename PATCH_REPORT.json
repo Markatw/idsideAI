@@ -1,0 +1,30 @@
+{
+  "pkg_root": "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready",
+  "modified": [
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/__init__.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/__init__.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/app.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/routers/graphs.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/routers/exports.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/compat/__init__.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/compat/optional_deps.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/routers/billing.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/routers/metrics.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/db/neo4j_client.py",
+    "/mnt/data/workdir/idsideAI_Complete_PyCharm_Ready/backend/routers/exports.py",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt",
+    "/mnt/data/workdir/requirements.txt"
+  ],
+  "notes": []
+}

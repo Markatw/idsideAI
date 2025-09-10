@@ -1,0 +1,29 @@
+{% extends "base.html" %}{% block content %}
+<h2>Run a Decision Model</h2>
+<p>Paste SDL below and click Run. If no API key is set, a fake provider will echo prompts.</p>
+<form id="runForm">
+<textarea id="sdl" rows="14" style="width:100%">
+name: Demo Model
+description: Simple two-step echo
+steps:
+  - id: step1
+    type: prompt
+    prompt: "Summarise: {text}"
+    next: step2
+  - id: step2
+    type: prompt
+    prompt: "List 3 improvements to the summary above."
+</textarea><br/>
+<label>Inputs JSON:</label>
+<textarea id="inputs" rows="4" style="width:100%">{ "text": "AI makes knowledge work faster." }</textarea><br/>
+<button type="button" onclick="runModel()">Run</button></form>
+<pre id="out"></pre>
+<script>
+async function runModel(){
+  const sdl=document.getElementById('sdl').value;
+  const inputs=JSON.parse(document.getElementById('inputs').value);
+  const r=await fetch('/decision-models/run',{method:'POST',headers:{'Content-Type':'application/json'},body: JSON.stringify({sdl_text:sdl, inputs})});
+  const data=await r.json();
+  document.getElementById('out').textContent = JSON.stringify(data,null,2);
+}
+</script>{% endblock %}

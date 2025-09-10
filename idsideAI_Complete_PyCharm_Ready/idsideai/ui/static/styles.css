@@ -1,0 +1,5 @@
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:2rem;color:#0a2540}
+header h1{color:#003366}
+button{padding:.6rem 1rem;border:1px solid #003366;background:#3399FF;color:#fff;border-radius:6px;cursor:pointer}
+textarea{font-family:ui-monospace,Consolas,monospace}
+pre{background:#f7f9fc;padding:1rem;border-radius:8px;border:1px solid #e1e8f0}

@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  prometheus:
+    image: prom/prometheus:latest
+    ports: ["9090:9090"]
+    volumes:
+      - ./observability/prometheus.yml:/etc/prometheus/prometheus.yml
+  grafana:
+    image: grafana/grafana:latest
+    ports: ["3000:3000"]
+    volumes:
+      - ./observability/dashboards:/var/lib/grafana/dashboards
+      - ./observability/datasources:/etc/grafana/provisioning/datasources
+      - ./observability/provisioning:/etc/grafana/provisioning/dashboards

@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: idecide
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+  - host: idecide.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: { name: idecide-frontend, port: { number: 80 } }
+      - path: /api
+        pathType: Prefix
+        backend:
+          service: { name: idecide-backend, port: { number: 80 } }

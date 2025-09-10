@@ -1,0 +1,4 @@
+relative_path,size_bytes,sha256
+app/utils/providers.py,371,aa78a5491a3ab7c65d57a4b0bca5774868cdeabf1cd292dcedd953a9acb65bbc
+app/routes/providers.py,972,72713007d8bf33cceb769ee5873496c12e5cfe44546f2eedaea45527b6d7d7b3
+docs/Sprint23_LOG.md,422,59777b13613a3cb59ac47ae42779f366b7e1eb45eff4dc4aa3e3e8798ba2a863

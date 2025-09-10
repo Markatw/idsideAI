@@ -1,0 +1,15 @@
+{
+  "compare_to": "S21.6 wrap",
+  "files_prev": 96,
+  "bytes_prev": 277403,
+  "files_cur": 110,
+  "bytes_cur": 286780,
+  "files_delta": 14,
+  "bytes_delta": 9377,
+  "micro_count": {
+    "planned": 10,
+    "completed": 10,
+    "remaining": 0,
+    "status": "COMPLETE"
+  }
+}

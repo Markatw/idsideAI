@@ -1,0 +1,32 @@
+<!doctype html>
+<script src="/static/nav.js"></script>
+<meta charset="utf-8"><link rel="stylesheet" href="/static/theme.css">
+<title>Import / Export — IDECIDE AI</title>
+<header><h1>Import / Export</h1></header>
+<div class="container">
+  <div class="card"><h3>Export</h3>
+    <p>Graph ID <input id="gid" style="padding:6px;border:1px solid #e5e7eb;border-radius:8px"></p>
+    <p><button class="btn" onclick="expJSON()">Export JSON</button>
+       <button class="btn secondary" onclick="expMermaid()">Export Mermaid</button></p>
+    <pre id="out" class="card" style="white-space:pre-wrap"></pre>
+  </div>
+  <div class="card"><h3>Import</h3>
+    <p>Into Graph ID <input id="gid2" style="padding:6px;border:1px solid #e5e7eb;border-radius:8px"></p>
+    <p><input type="file" id="file" accept=".json,.csv">
+       <select id="ft"><option value="json">JSON</option><option value="csv">CSV</option></select>
+       <button class="btn" onclick="doImport()">Import</button></p>
+    <pre id="res" class="card" style="white-space:pre-wrap"></pre>
+    <p><small class="muted">Build: 2025-09-01T14:15:20Z</small></p>
+  </div>
+</div>
+<script>
+function expJSON(){let g=gid.value.trim(); if(!g){out.textContent='Enter graph id';return};
+ fetch(`/graphs/${g}/export`).then(r=>r.json()).then(d=>out.textContent=JSON.stringify(d,null,2)).catch(e=>out.textContent=String(e));}
+function expMermaid(){let g=gid.value.trim(); if(!g){out.textContent='Enter graph id';return};
+ fetch(`/graphs/${g}/export/mermaid`).then(r=>r.json()).then(d=>out.textContent=(d.mermaid||'')).catch(e=>out.textContent=String(e));}
+function doImport(){let g=gid2.value.trim(); let f=file.files[0]; if(!g){res.textContent='Enter target graph id';return}; if(!f){res.textContent='Choose a file';return};
+ let reader=new FileReader(); reader.onload=()=>{let txt=reader.result; let t=ft.value;
+ let url=t==='csv'?`/graphs/${g}/import/csv`:`/graphs/${g}/import`; 
+ let ct=t==='csv'?'text/csv':'application/json';
+ fetch(url,{method:'POST',headers:{'Content-Type':ct},body:txt}).then(r=>r.json().catch(()=>({status:r.status}))).then(d=>res.textContent=JSON.stringify(d,null,2)).catch(e=>res.textContent=String(e));}; reader.readAsText(f);}
+</script>
