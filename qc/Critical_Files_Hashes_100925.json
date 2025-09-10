@@ -1,0 +1,12 @@
+{
+  "date": "2025-09-10",
+  "files": {
+    "idsideAI_Complete_PyCharm_Ready/backend/app.py": "3f9c7ede909cdb7f42490c7a3a18d530916d084f1e3c023b83e59ba698a73d23",
+    "idsideAI_Complete_PyCharm_Ready/backend/models/billing.py": "731b91246910a42f3fb0ac13cd7e0eca78c894e914dd8b6f7fcadc3f1715f890",
+    "idsideAI_Complete_PyCharm_Ready/backend/models/schemas.py": "42559d326e8514b9f7571647d26b9ca51a17ab655c5eddfe3941273f9aca9a47",
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/billing.py": "9bae17e6231b8ca550207141e2ae11db277203f828a8b2a13976ec60394c6222",
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/exports.py": "bae8444cf4f5fa76be35f23a384447f7720cc2e1866ca8c6a2928afd3e98251a",
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/graphs.py": "bc5bfe28a0412197ee0f92a1a4de869acf54be1105ee9929a6d7a1758de6046d",
+    "idsideAI_Complete_PyCharm_Ready/backend/routers/metrics.py": "6116f599d96074dae76082a7d3bc293887a7e6ec38559488e815a6dc75ded1cd"
+  }
+}
