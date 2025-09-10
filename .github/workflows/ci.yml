@@ -43,7 +43,7 @@ jobs:
         run: mypy --config-file mypy.ini
 
       - name: Bandit (security)
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready
+        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
 YAMYA
 git add .github/worgflows/ci.yml
 git commit -m "ci: set PYTHONPATH for mypy"
@@ -52,12 +52,12 @@ git push
 ruff check .
 black --check .
 mypy --config-file mypy.ini
-bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready
+bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
 
 # auto-fix formatting & easy lint issues, then re-run checks
 black .
 ruff check . --fix
-ruff check . && mypy --config-file mypy.ini && bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready
+ruff check . && mypy --config-file mypy.ini && bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
 
 # commit & push
 git add -A
@@ -110,4 +110,4 @@ jobs:
         run: mypy --config-file mypy.ini
 
       - name: Bandit (security)
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready
+        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
