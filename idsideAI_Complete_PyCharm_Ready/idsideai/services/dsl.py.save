@@ -1,0 +1,42 @@
+n# paste the function above, ensure indentation is 4 spaces everywhere, save (Ctrl+O) and exit (Ctrl+X)
+
+# 2) fast syntax/ruff check for just this file
+python -m pyflakes idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py || true
+ruff check idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py --select B904,E999,F821
+
+# 3) commit & push
+git add idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py
+git commit -m "fix(dsl): chain exception (B904) and tidy parse_sdl"
+git push
+from typing import Any, Dict, List, Literal, Optional
+
+import yaml
+from pydantic import BaseModel, Field
+
+
+class Step(BaseModel):
+    id: str
+ cp idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py.bak
+
+   type: Literal["prompt", "tool", 
+"decision"]
+    model: Optional[str] = None
+    prompt: Optional[str] = None
+    inputs: Dict[str, Any] = Field(default_factory=dict)
+    next: Optional[str] = None
+
+
+class DecisionModelSpec(BaseModel):
+    name: str
+    description: str = ""
+    steps: List[Step]
+
+
+def parse_sdl(text: str) -> DecisionModelSpec:
+    """Parse SDL YAML into a DecisionModelSpec."""
+    try:
+        data = yaml.safe_load(text)
+        return DecisionModelSpec(**data)
+    except Exception as e:
+        # Preserve original traceback/context for Ruff B904
+        raise ValueError(f"SDL parse error: {e}") from e
