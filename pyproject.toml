@@ -1,8 +1,14 @@
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+exclude = ["venv", ".venv", "build", "dist", ".git", "qc", "tools"]
+
+[tool.ruff.lint]
 select = ["E", "F", "I", "B"]
-exclude = ["venv", ".venv", "build", "dist", ".git"]
+ignore = [
+  "E501",   # line length for now
+  "B905",   # zip() without strict= (we can fix later)
+]
 
 [tool.ruff.format]
 quote-style = "preserve"
@@ -18,3 +24,6 @@ exclude = ["tests/"]
 [tool.bandit]
 skips = ["B101"]
 exclude_dirs = ["tests", "venv", ".venv", ".git", "build", "dist"]
+
+[tool.ruff.lint.per-file-ignores]
+"**/__init__.py" = ["F401"]  # allow re-export patterns in __init__.py
