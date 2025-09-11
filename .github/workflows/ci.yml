@@ -2,7 +2,7 @@ python - <<'PY'
 from pathlib import Path
 wf = Path(".github/workflows/ci.yml")
 wf.parent.mkdir(parents=True, exist_ok=True)
-wf.write_text("""name: CI
+  workflow_dispatch:
 on:
   push:
   pull_request:
