@@ -8,7 +8,8 @@ from app.utils import flaky
 
 def sometimes_passes():
     return (
-        random.random() > 0.5  # nosec B311 (low): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
+        random.random()
+        > 0.5  # nosec B311 (low): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
     )  # nosec B311 (LOW): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
 
 

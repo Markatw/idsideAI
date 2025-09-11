@@ -15,5 +15,3 @@ def validate(name: str, cfg: dict) -> dict:
 
 def create(name: str, cfg: dict):
     return {"name": name or "echo", "config": cfg or {}}
-
-

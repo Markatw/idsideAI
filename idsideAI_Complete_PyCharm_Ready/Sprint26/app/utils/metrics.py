@@ -3,7 +3,6 @@ Sprint 25.7 — Metrics collector (protocol v2)
 Very light in-process counters + histograms to expose Prometheus text format.
 """
 
-
 COUNTERS = {
     "app_requests_total": 0,
     "app_health_checks_total": 0,
