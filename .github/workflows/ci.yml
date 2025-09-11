@@ -12,19 +12,28 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: ${{ runner.os }}-pip-
-
-      - name: Install deps
+      - name: Install system build deps
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt ruff black mypy bandit defusedxml
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential libpq-dev libffi-dev libssl-dev \
+            libxml2-dev libxslt1-dev zlib1g-dev
 
-      - name: Set PYTHONPATH
+      - name: Upgrade pip tooling
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip --version
+          python --version
+
+      - name: Install dev tools
+        run: |
+          pip install --upgrade ruff black mypy bandit defusedxml
+
+      - name: Project deps (prefer wheels, no interactive)
+        env:
+          PIP_DISABLE_PIP_VERSION_CHECK: "1"
+        run: |
+          pip install --prefer-binary --no-input -r requir          pip install --prefer-binaNPATH
         run: echo "PYTHONPATH=${GITHUB_WORKSPACE}/idsideAI_Complete_PyCharm_Ready" >> $GITHUB_ENV
 
       - name: Black (format check)
