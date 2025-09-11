@@ -1,0 +1,74 @@
+# Release Notes – CI, Hygiene & Operational Flags
+
+## Overview
+This release stabilizes CI (lint / types / security / dep audit), fixes broken dependency specs, and normalizes code style. CI currently runs non-blocking while lint cleanup is finished; steps can be flipped to blocking incrementally. We also documented temporary runtime flags (20 command cap, Stripe disabled) used during testing.
+
+---
+
+## CI / Workflows
+- Workflow: `.github/workflows/ci.yml`
+- Triggers: `push`, `pull_request`, `workflow_dispatch`
+- Jobs (currently **non-blocking**):
+  - **Ruff (lint)** – modern config; `.ruffignore` excludes `qc/` and `tools/`; temp ignores E501 (line length) & B905 (zip(strict=)).
+  - **Mypy (types)** – via `mypy.ini`; excludes `tests/`, `qc/`, `tools/`; `ignore_missing_imports = True`.
+  - **Bandit (security)** – repo scope only; excludes `tests, venv, .venv, .git, build, dist, qc, tools`.
+  - **pip-audit (vulns)** – audits `requirements*.txt`; ignores advisory `GHSA-wj6h-64fc-37mp` (ecdsa) until migration.
+- YAML issues resolved by resetting to a minimal, conflict-free workflow and layering back full steps.
+- Manual run enabled via `workflow_dispatch`.
+
+---
+
+## Lint / Type Configuration
+- **pyproject.toml** – Ruff modernized:
+  - `[tool.ruff]` → `line-length=100`, `target-version="py312"`, excludes `venv, .venv, build, dist, .git, qc, tools`.
+  - `[tool.ruff.lint]` → `select=["E","F","I","B"]`, `ignore=["E501","B905"]`.
+  - `[tool.ruff.lint.per-file-ignores]` → `**/__init__.py = ["F401"]`.
+- **.ruffignore** – excludes `.venv/`, `venv/`, `build/`, `dist/`, `.git/`, `qc/`, `tools/`.
+- **mypy.ini** – Python 3.12, `ignore_missing_imports = True`, excludes `^tests/|^qc/|^tools/`.
+
+---
+
+## Dependencies / Security
+- Fixed: `defusedxml==0.7.1` (was `defusedxml==`).
+- Pinned: `ecdsa==0.19.1` (no upstream fix; CI ignores `GHSA-wj6h-64fc-37mp`).
+- CI: `pip-audit --strict -r requirements*.txt --ignore-vuln GHSA-wj6h-64fc-37mp`.
+
+---
+
+## Code Changes (functional & style)
+- Global import reordering/formatting via Ruff (no functional changes).
+- `idsideAI_Complete_PyCharm_Ready/api/app.py`: rename unused `decision` → `_decision` (F841).
+- `idsideAI_Complete_PyCharm_Ready/idsideai/services/dsl.py`: `parse_sdl()` now chains exceptions with `from e` (B904).
+
+---
+
+## Operational Flags (testing)
+- **20 command cap**: temporary runtime cap configured to limit command throughput during testing.
+  - Action before release: confirm intended production limit (remove or raise).
+- **Stripe disabled for testing**: payment integration disabled to avoid real charges.
+  - Action before release: re-enable Stripe, confirm test vs live keys, run a sandbox charge, and restore webhooks.
+
+---
+
+## Outstanding Work (to enforce CI strictly)
+- **Ruff** (clean up and then make blocking):
+  - E999 (syntax): fix indentation/stray characters in flagged files.
+  - F821 (undefined names): add imports / correct typos.
+  - E402 (imports not at top): move imports; use local import + `# noqa: E402` only if necessary.
+  - B008 (function call in default arg): use `None` sentinel pattern.
+  - B904 (raise without chaining): add `from e` where needed (bulk codemod provided).
+  - (Temporarily ignored) E501 line length, B905 zip(strict=).
+- **Mypy**: after lint is clean, narrow excludes (`qc/`, `tools`), add types, then tighten.
+- **Bandit**: fix `tools/fix_bandit.py` syntax if you want to include `tools/` in scans later.
+- **pip-audit**: plan migration from `ecdsa` → `cryptography`; remove advisory ignore.
+
+---
+
+## Verification (local mirror of CI)
+```bash
+pip install -r requirements.txt
+[ -f requirements-dev.txt ] && pip install -r requirements-dev.txt
+ruff check .
+mypy .
+bandit -r . -x tests,venv,.venv,.git,build,dist,qc,tools
+pip-audit --strict -r requirements.txt --ignore-vuln GHSA-wj6h-64fc-37mp
