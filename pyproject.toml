@@ -6,6 +6,7 @@ exclude = ["venv", ".venv", "build", "dist", ".git", "qc", "tools"]
 [tool.ruff.lint]
 select = ["E", "F", "I", "B"]
 ignore = [
+  "E402",
   "E501",
   "B905",
 ]
