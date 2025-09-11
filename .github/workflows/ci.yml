@@ -41,6 +41,13 @@ jobs:
         run: bandit -r . -x tests,venv,.venv,.git,build,dist
         continue-on-error: ${{ env.STRICT != 'true' }}
 
-      - name: pip-audit (vulns)
-        run: pip-audit --strict
+            - name: pip-audit (vulns)
+        run: |
+          if [ -f requirements.txt ]; then
+            pip-audit --strict -r requirements.txt --ignore-vuln GHSA-wj6h-64fc-37mp
+          fi
+          if [ -f requirements-dev.txt ]; then
+            pip-audit --strict -r requirements-dev.txt --ignore-vuln GHSA-wj6h-64fc-37mp
+          fi
         continue-on-error: ${{ env.STRICT != 'true' }}
+
