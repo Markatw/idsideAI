@@ -1,9 +1,47 @@
-name: ci
-on:
-  push:
-  workflow_dispatch:
+name: Lint / Types / Security
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
 jobs:
-  build:
+  python-ci:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ok
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install tools & deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff mypy bandit pip-audit
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
+
+      - name: Ruff (lint)
+        run: ruff check .
+        continue-on-error: true
+
+      - name: Mypy (types)
+        run: |
+          mypy --install-types --non-interactive || true
+          mypy .
+        continue-on-error: true
+
+      - name: Bandit (security)
+        run: bandit -r . -x tests,venv,.venv,.git,build,dist,qc,tools
+        continue-on-error: true
+
+      - name: p      - name: p      - name: p      - na  if [ -f requirements.txt ]; then
+            pip-audit --strict -r requirements.       gnore-vuln GHSA-wj6h-64fc-37mp
+          fi
+          if [ -f requirements-dev.txt ]; then
+            pip-audit --strict -r req      nts-dev.txt --ignore-vuln GHSA-wj6h-64fc-37mp
+          fi
+        continue-on-error: true
