@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -25,19 +26,17 @@ jobs:
           pip --version
           python --version
 
-      - name: Install dev tools
-        run: |
-          pip install --upgrade ruff black mypy bandit defusedxml
-
-      - name: Project deps (prefer wheels, no interactive)
+      - name: Install project + dev deps
         env:
           PIP_DISABLE_PIP_VERSION_CHECK: "1"
         run: |
-          pip install --prefer-binary --no-input -r requir          pip install --prefer-binaNPATH
-        run: echo "PYTHONPATH=${GITHUB_WORKSPACE}/idsideAI_Complete_PyCharm_Ready" >> $GITHUB_ENV
+          pip install --prefer-binary --no-input -r requirements.txt
+          pip install --upgrade ruff black mypy bandit defusedxml
 
-      - name: Black (format check)
-        run: black --check .
+      - name: Set PYTHONPATH
+        run: echo "PYTHO        run: echo "PYTHO    sideAI_Complete_PyCha        run: echo "PYTNV
+
+      - name: Black (format       - name: Black (fock --check .
 
       - name: Ruff (lint)
         run: ruff check .
