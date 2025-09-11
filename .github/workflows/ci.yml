@@ -1,133 +1,40 @@
 name: CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-permissions:
-  contents: read
-
-concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+on: [push, pull_request]
 
 jobs:
   lint-type-security:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements.txt
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: ${{ runner.os }}-pip-
 
       - name: Install deps
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt ruff mypy bandit black
+          pip install -r requirements.txt ruff black mypy bandit defusedxml
 
       - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=$GITHUB_WORKSPACE/idsideAI_Complete_PyCharm_Ready" >> $GITHUB_ENV
-
-      - name: Ruff (lint)
-        run: ruff check .
+        run: echo "PYTHONPATH=${GITHUB_WORKSPACE}/idsideAI_Complete_PyCharm_Ready" >> $GITHUB_ENV
 
       - name: Black (format check)
         run: black --check .
 
-      - name: Mypy (type check)
-        run: mypy --config-file mypy.ini
-
-      - name: Bandit (security)
-      - name: Bandit JSON (proof)
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low -f json -o qc/bandit_ci.json
-
-      - name: Upload audit artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: security-artifacts-${{ github.run_number }}
-          path: |
-            qc/Deep_Audit_*.json
-            qc/bandit_*.json
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
-YAMYA
-git add .github/worgflows/ci.yml
-git commit -m "ci: set PYTHONPATH for mypy"
-git push
-# run checks locally
-ruff check .
-black --check .
-mypy --config-file mypy.ini
-bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
-
-# auto-fix formatting & easy lint issues, then re-run checks
-black .
-ruff check . --fix
-ruff check . && mypy --config-file mypy.ini && bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
-
-# commit & push
-git add -A
-git commit -m "chore: fix lint/format/type/security"
-git push
-mkdir -p .github/workflows
-cat > .github/workflows/ci.yml <<'YAML'
-name: CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-permissions:
-  contents: read
-
-concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
-
-jobs:
-  lint-type-security:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements.txt
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt ruff mypy bandit black
-
-      - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=$GITHUB_WORKSPACE/idsideAI_Complete_PyCharm_Ready" >> $GITHUB_ENV
-
       - name: Ruff (lint)
         run: ruff check .
 
-      - name: Black (format check)
-        run: black --check .
-
-      - name: Mypy (type check)
+      - name: Mypy (types)
         run: mypy --config-file mypy.ini
 
-      - name: Bandit (security)
-      - name: Bandit JSON (proof)
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low -f json -o qc/bandit_ci.json
-
-      - name: Upload audit artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: security-artifacts-${{ github.run_number }}
-          path: |
-            qc/Deep_Audit_*.json
-            qc/bandit_*.json
+      - name: Bandit (security low/low)
         run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
