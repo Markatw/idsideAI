@@ -5,7 +5,7 @@ Sprint 24.3 — Dashboard UI helpers (protocol v2)
 - validate_tiles(tiles) → basic a11y presence checks (title/ariaLabel)
 """
 
-from app.utils.perf import clamp_int, cap_events
+from app.utils.perf import cap_events, clamp_int
 
 
 def responsive_cols(width: int) -> int:

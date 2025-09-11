@@ -1,7 +1,8 @@
 from typing import List, Optional
-from sqlmodel import select
+
 from app.models.enterprise import ApiCredential, DecisionModelShare
 from app.utils.db import get_session
+from sqlmodel import select
 
 
 def set_api_key(user_id: Optional[int], provider: str, api_key: str) -> ApiCredential:

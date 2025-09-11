@@ -4,8 +4,10 @@ Sprint 22.2 — Telemetry API (protocol v2)
 - POST /api/telemetry/summary -> summary stats
 """
 
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 from fastapi import APIRouter, Body
+
 from app.utils.telemetry_export import export_events_csv, summarize_events
 
 router = APIRouter(prefix="/api/telemetry", tags=["telemetry"])

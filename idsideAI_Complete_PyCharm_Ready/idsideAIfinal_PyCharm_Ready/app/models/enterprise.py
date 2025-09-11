@@ -1,6 +1,7 @@
-from typing import Optional
 from datetime import datetime
-from sqlmodel import SQLModel, Field
+from typing import Optional
+
+from sqlmodel import Field, SQLModel
 
 
 class ApiCredential(SQLModel, table=True):

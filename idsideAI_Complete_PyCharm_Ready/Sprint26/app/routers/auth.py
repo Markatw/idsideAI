@@ -34,13 +34,14 @@ def _norm_user(name):
     return n
 
 
-from datetime import datetime
 import time
+from datetime import datetime
 
 FAILED_LOGINS = {}
 USER_STORE = {}
-from fastapi import APIRouter, Request, HTTPException
 from collections import defaultdict, deque
+
+from fastapi import APIRouter, HTTPException, Request
 
 SIGNUP_BUCKETS = defaultdict(lambda: deque(maxlen=20))  # per-IP signup times
 
@@ -609,9 +610,9 @@ def bulk_export_users(payload: dict, request: Request):
     items = (payload or {}).get("users") or []
     if not isinstance(items, list):
         raise HTTPException(status_code=400, detail="invalid users payload")
-    from io import BytesIO
-    import zipfile
     import base64
+    import zipfile
+    from io import BytesIO
 
     buf = BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -727,10 +728,10 @@ def export_audit_range(request: Request, payload: dict):
     events = [e for e in items if in_range(e)]
     if not do_zip:
         return {"count": len(events), "events": events}
-    from io import BytesIO
-    import zipfile
-    import json
     import base64
+    import json
+    import zipfile
+    from io import BytesIO
 
     buf = BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -828,8 +829,8 @@ def export_audit_all(request: Request):
         ensure_ascii=False,
         indent=2,
     ).encode("utf-8")
-    import hashlib
     import base64
+    import hashlib
     import io
     import zipfile
 

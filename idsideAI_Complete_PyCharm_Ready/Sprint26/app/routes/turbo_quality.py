@@ -5,9 +5,11 @@ Sprint 21.3 — Turbo quality monitoring API (protocol v2)
 Router wiring via include_router can be added separately to avoid startup coupling.
 """
 
-from fastapi import APIRouter, Body
 from typing import Any, Dict
-from app.utils.turbo_quality import classify_failure, check_thresholds
+
+from fastapi import APIRouter, Body
+
+from app.utils.turbo_quality import check_thresholds, classify_failure
 
 router = APIRouter(prefix="/api/turbo/quality", tags=["turbo_quality"])
 

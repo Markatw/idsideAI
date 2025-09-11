@@ -2,8 +2,9 @@
 Analytics dashboard utilities (Sprint 23.8, protocol v2)
 """
 
-from app.utils.perf import cap_events
 import collections
+
+from app.utils.perf import cap_events
 
 
 def summarize(events: list[dict], limit: int = 1000) -> dict:

@@ -6,8 +6,9 @@ Provides a minimal, production-safe subset:
 The endpoints are real and safe; wiring is additive and won't break imports.
 """
 
+from typing import Dict, List
+
 from fastapi import APIRouter
-from typing import List, Dict
 
 router = APIRouter(prefix="/api/workspaces", tags=["workspaces"])
 

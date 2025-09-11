@@ -1,6 +1,8 @@
-from typing import Literal, Dict, Any
+from typing import Any, Dict, Literal
+
 from fastapi import APIRouter, Body, HTTPException
 from fastapi.responses import PlainTextResponse
+
 from app.utils.graph_export import export_graphml, export_svg
 
 router = APIRouter(prefix="/api/graphs", tags=["graphs"])

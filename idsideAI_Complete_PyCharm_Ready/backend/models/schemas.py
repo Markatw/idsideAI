@@ -1,5 +1,6 @@
+from typing import Any, Dict, List, Literal, Optional
+
 from pydantic import BaseModel, Field
-from typing import Literal, Dict, Any, List, Optional
 
 NodeType = Literal[
     "Decision", "Option", "Evidence", "Risk", "Constraint", "Outcome", "Metric", "Task"

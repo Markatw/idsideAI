@@ -1,6 +1,7 @@
+import time
+
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.responses import Response
-import time
 
 
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):

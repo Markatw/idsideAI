@@ -1,6 +1,6 @@
-from typing import Dict, Any, List
-import math
 import html as html_mod
+import math
+from typing import Any, Dict, List
 
 
 def _coerce_graph(graph: Dict[str, Any]) -> Dict[str, Any]:

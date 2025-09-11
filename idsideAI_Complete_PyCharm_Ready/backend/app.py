@@ -1,27 +1,29 @@
 import time
-from fastapi.responses import Response
+
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
-from idsideAI_Complete_PyCharm_Ready.backend.middleware.tenant import (
-    TenantContextMiddleware,
-)
-from idsideAI_Complete_PyCharm_Ready.backend.routers.graphs import (
-    router as graphs_router,
-)
-from idsideAI_Complete_PyCharm_Ready.backend.routers.billing import (
-    router as billing_router,
-)
+from fastapi.responses import Response
+from fastapi.staticfiles import StaticFiles
+
 from idsideAI_Complete_PyCharm_Ready.backend.auth import jwt_auth
-from idsideAI_Complete_PyCharm_Ready.backend.routers.metrics import (
-    router as metrics_router,
-)
 from idsideAI_Complete_PyCharm_Ready.backend.auth.middleware import (
     get_auth,
     inject_tenant_headers,
 )
+from idsideAI_Complete_PyCharm_Ready.backend.middleware.tenant import (
+    TenantContextMiddleware,
+)
+from idsideAI_Complete_PyCharm_Ready.backend.routers.billing import (
+    router as billing_router,
+)
 from idsideAI_Complete_PyCharm_Ready.backend.routers.exports import (
     router as exports_router,
+)
+from idsideAI_Complete_PyCharm_Ready.backend.routers.graphs import (
+    router as graphs_router,
+)
+from idsideAI_Complete_PyCharm_Ready.backend.routers.metrics import (
+    router as metrics_router,
 )
 
 app = FastAPI(title="IDECIDE Graph API (Neo4j)", version="0.1.0")
@@ -44,8 +46,9 @@ def health():
     return {"status": "ok"}
 
 
-from starlette.staticfiles import StaticFiles
 import os
+
+from starlette.staticfiles import StaticFiles
 
 EXPORT_DIR = os.path.join(os.path.dirname(__file__), "exports")
 os.makedirs(EXPORT_DIR, exist_ok=True)
@@ -67,7 +70,7 @@ async def whoami(request):
 
 
 from fastapi import Depends, Request
-from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
+from prometheus_client import CONTENT_TYPE_LATEST, Counter, Histogram, generate_latest
 
 REQUEST_COUNT = Counter(
     "http_requests_total", "Total HTTP requests", ["method", "path", "status"]

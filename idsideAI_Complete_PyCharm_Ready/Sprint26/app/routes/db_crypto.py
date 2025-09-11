@@ -2,9 +2,11 @@
 Sprint 25.5 — DB crypto routes (protocol v2)
 """
 
-from typing import Any, Dict
-from fastapi import APIRouter, Body
 import os
+from typing import Any, Dict
+
+from fastapi import APIRouter, Body
+
 from app.utils.db_crypto import get_db_key
 
 router = APIRouter(prefix="/api/db/enc", tags=["db-crypto"])

@@ -1,5 +1,7 @@
 import os
+
 from dotenv import load_dotenv
+
 from idsideAI_Complete_PyCharm_Ready.backend.compat.optional_deps import neo4j as _neo4j
 
 GraphDatabase = _neo4j.GraphDatabase if _neo4j else None

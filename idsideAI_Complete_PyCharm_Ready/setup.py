@@ -11,7 +11,7 @@ from pathlib import Path
 # Add the current directory to Python path
 sys.path.insert(0, str(Path(__file__).parent))
 
-from idsideai.database import engine, Base
+from idsideai.database import Base, engine
 
 
 async def setup_database():

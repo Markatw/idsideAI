@@ -1,5 +1,7 @@
-import httpx
 import time
+
+import httpx
+
 from ..telemetry import Telemetry
 
 OPENAI_URL = "https://api.openai.com/v1/chat/completions"

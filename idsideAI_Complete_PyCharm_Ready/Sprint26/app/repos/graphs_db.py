@@ -1,8 +1,8 @@
-import os
 import json
+import os
+import pathlib
 import sqlite3
 import time
-import pathlib
 
 _DB = os.environ.get("GRAPH_DB_PATH", "data/graphs.db")
 

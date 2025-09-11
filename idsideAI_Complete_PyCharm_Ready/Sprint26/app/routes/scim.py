@@ -3,9 +3,11 @@ Sprint 25.2 — SCIM routes (protocol v2)
 """
 
 from typing import Any, Dict
+
 from fastapi import APIRouter, Body, Path, status
 from fastapi.responses import JSONResponse
-from app.utils.scim import user_skeleton, list_response
+
+from app.utils.scim import list_response, user_skeleton
 
 router = APIRouter(prefix="/scim/v2", tags=["scim"])
 

@@ -4,10 +4,10 @@ from idsideAI_Complete_PyCharm_Ready.backend.compat.optional_deps import (
 
 if _pc:
     from prometheus_client import (
+        CONTENT_TYPE_LATEST,
         Counter,
         Histogram,
         generate_latest,
-        CONTENT_TYPE_LATEST,
     )
 else:
 
@@ -32,7 +32,6 @@ else:
     CONTENT_TYPE_LATEST = "text/plain"
 
 from fastapi import APIRouter, Response
-
 
 router = APIRouter()
 requests_total = Counter(

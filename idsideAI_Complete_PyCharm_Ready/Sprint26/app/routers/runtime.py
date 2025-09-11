@@ -1,7 +1,8 @@
-from fastapi import APIRouter
-import sys
 import gc
 import resource  # stdlib on Unix (macOS/Linux)
+import sys
+
+from fastapi import APIRouter
 
 router = APIRouter(prefix="/status", tags=["runtime"])
 
@@ -185,8 +186,8 @@ def env_count_status():
 def python_status():
     """Return Python version and implementation using stdlib only."""
     try:
-        import sys
         import platform
+        import sys
 
         return {
             "version": sys.version.split()[0],

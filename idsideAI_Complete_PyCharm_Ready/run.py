@@ -6,8 +6,9 @@ Automatically sets up the database and starts the application.
 
 import asyncio
 import sys
-import uvicorn
 from pathlib import Path
+
+import uvicorn
 
 # Add the current directory to Python path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -16,7 +17,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 async def ensure_database():
     """Ensure database is set up before starting the application."""
     try:
-        from idsideai.database import engine, Base
+        from idsideai.database import Base, engine
 
         # Create tables if they don't exist
         async with engine.begin() as conn:

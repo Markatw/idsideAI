@@ -1,6 +1,6 @@
+from ..config import settings
 from .dsl import DecisionModelSpec, Step
 from .providers import openai_provider
-from ..config import settings
 from .telemetry import Telemetry
 
 

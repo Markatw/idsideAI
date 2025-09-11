@@ -4,9 +4,10 @@ Sprint 24.6 — i18n hooks (protocol v2)
 - set_lang(lang) / get_lang()
 """
 
-from app.utils.perf import one_of as _one_of
 import json
 import os
+
+from app.utils.perf import one_of as _one_of
 
 _LANG = "en"
 

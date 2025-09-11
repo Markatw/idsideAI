@@ -1,9 +1,10 @@
 import json
-from fastapi import APIRouter, Request, HTTPException
-from pydantic import BaseModel
 import os
-import stripe
 import threading
+
+import stripe
+from fastapi import APIRouter, HTTPException, Request
+from pydantic import BaseModel
 
 DRY_RUN = os.getenv("STRIPE_DRY_RUN", "0") in {"1", "true", "True"}
 DRY_CAP = int(os.getenv("STRIPE_DRY_RUN_MAX_REQUESTS", "20"))

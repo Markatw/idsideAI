@@ -1,3 +1,3 @@
-from .graph import NodeModel, EdgeModel, GraphModel
+from .graph import EdgeModel, GraphModel, NodeModel
 
 __all__ = ["NodeModel", "EdgeModel", "GraphModel"]

@@ -4,10 +4,12 @@ Sprint 21.4: Providers API (protocol v2)
 - GET  /api/providers/health   { provider, config }         -> adapter health
 """
 
-from typing import Dict, Any
+from typing import Any, Dict
+
 from fastapi import APIRouter, Body
-from app.services.providers.registry import create
+
 from app.services.providers.config import validate
+from app.services.providers.registry import create
 
 router = APIRouter(prefix="/api/providers", tags=["providers"])
 

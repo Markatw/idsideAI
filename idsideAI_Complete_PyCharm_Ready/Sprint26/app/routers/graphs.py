@@ -1,8 +1,9 @@
-from fastapi import APIRouter, HTTPException
 from typing import Dict
 from uuid import uuid4
-from app.models import GraphModel, NodeModel, EdgeModel
-from app.repos import save_graph, load_graph
+
+from app.models import EdgeModel, GraphModel, NodeModel
+from app.repos import load_graph, save_graph
+from fastapi import APIRouter, HTTPException
 
 router = APIRouter(prefix="/graphs", tags=["graphs"])
 _store: Dict[str, GraphModel] = {}
@@ -114,8 +115,9 @@ def traverse(gid: str, start: str, mode: str = "bfs"):
     return {"start": start, "mode": mode.lower(), "order": order}
 
 
-from pydantic import BaseModel
 from typing import List, Optional
+
+from pydantic import BaseModel
 
 
 class ExecRequest(BaseModel):
@@ -273,8 +275,9 @@ def graph_summary(gid: str):
     }
 
 
-from pydantic import BaseModel
 from typing import List
+
+from pydantic import BaseModel
 
 
 class SearchRequest(BaseModel):
@@ -337,10 +340,11 @@ def export_mermaid(gid: str):
     return {"mermaid": "\n".join(lines)}
 
 
-from pydantic import BaseModel
-from typing import Optional
 import csv
 import io
+from typing import Optional
+
+from pydantic import BaseModel
 
 
 class CSVImport(BaseModel):

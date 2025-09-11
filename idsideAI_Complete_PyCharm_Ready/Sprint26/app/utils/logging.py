@@ -2,10 +2,10 @@
 Sprint 25.8 — Structured JSON logging (protocol v2)
 """
 
-import logging
-import json
-import sys
 import datetime
+import json
+import logging
+import sys
 
 
 class JsonFormatter(logging.Formatter):

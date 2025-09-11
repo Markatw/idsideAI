@@ -3,7 +3,8 @@ Sprint 26.2 — Factories test routes (protocol v2)
 """
 
 from fastapi import APIRouter
-from app.utils.factories import make_user, make_workspace, make_subscription
+
+from app.utils.factories import make_subscription, make_user, make_workspace
 
 router = APIRouter(prefix="/api/factories", tags=["factories-test"])
 

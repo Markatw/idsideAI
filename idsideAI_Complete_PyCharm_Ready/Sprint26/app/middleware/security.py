@@ -3,9 +3,10 @@ Sprint 22.3 (protocol v2): Security middleware adding standard HTTP security hea
 Use by including: app.add_middleware(SecurityHeadersMiddleware)
 """
 
+from typing import Callable
+
 from starlette.middleware.base import BaseHTTPMiddleware
 from starlette.types import ASGIApp
-from typing import Callable
 
 
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):

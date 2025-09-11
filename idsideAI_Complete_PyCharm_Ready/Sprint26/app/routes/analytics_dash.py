@@ -2,9 +2,11 @@
 Analytics dashboard routes (Sprint 23.8, protocol v2)
 """
 
-from typing import List, Dict, Any
+from typing import Any, Dict, List
+
 from fastapi import APIRouter, Body
-from app.utils.analytics_dash import summarize, seed_dashboard
+
+from app.utils.analytics_dash import seed_dashboard, summarize
 
 router = APIRouter(prefix="/api/analytics/dash", tags=["analytics-dash"])
 

@@ -1,17 +1,21 @@
-from fastapi import APIRouter, Query
-from fastapi.responses import JSONResponse
-import os
 import json
+import os
 import time
 import zipfile
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.pagesizes import A4
-from reportlab.lib import colors
+
 from docx import Document
+from fastapi import APIRouter, Query
+from fastapi.responses import JSONResponse
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+
+from idsideAI_Complete_PyCharm_Ready.backend.routers.graphs import (
+    _load_snapshots_neo4j as _load_snapshots,
+)
 from idsideAI_Complete_PyCharm_Ready.backend.routers.graphs import (
     _materialize_subgraph,
-    _load_snapshots_neo4j as _load_snapshots,
 )
 
 router = APIRouter()

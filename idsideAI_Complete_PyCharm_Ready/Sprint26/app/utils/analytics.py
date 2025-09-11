@@ -4,9 +4,10 @@ Sprint 22.8 (protocol v2): Analytics JSONL logger.
 - list_events(limit): return most recent events (capped)
 """
 
-from typing import Dict, Any, List
 import json
 import os
+from typing import Any, Dict, List
+
 from app.utils.perf import cap_events
 
 LOG_PATH = os.path.join(

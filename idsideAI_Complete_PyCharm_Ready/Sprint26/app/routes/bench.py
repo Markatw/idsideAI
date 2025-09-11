@@ -4,7 +4,9 @@ Sprint 21.8 — Benchmark API (protocol v2)
 """
 
 from typing import Any, Dict, List
+
 from fastapi import APIRouter, Body
+
 from app.utils.bench import run_bench
 
 router = APIRouter(prefix="/api/bench", tags=["bench"])

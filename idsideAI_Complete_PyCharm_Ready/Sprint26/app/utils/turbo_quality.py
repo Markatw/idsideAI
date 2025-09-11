@@ -5,7 +5,7 @@ Sprint 21.3 (protocol v2): Turbo quality monitoring utilities.
 The goal is to enable light-weight server-side checks without extra deps.
 """
 
-from typing import Dict, List, Any
+from typing import Any, Dict, List
 
 # Simple taxonomy for failure classification
 FAILURE_TYPES = {

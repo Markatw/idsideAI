@@ -2,10 +2,11 @@
 Sprint 26.5 — Soak testing utilities (protocol v2)
 """
 
+import os
 import threading
 import time
+
 import requests
-import os
 
 _running = False
 _thread = None

@@ -5,7 +5,9 @@ Sprint 22.8 — Analytics API (protocol v2)
 """
 
 from typing import Any, Dict
+
 from fastapi import APIRouter, Body, Query
+
 from app.utils.analytics import append_event, list_events
 
 router = APIRouter(prefix="/api/analytics", tags=["analytics"])

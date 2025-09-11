@@ -3,6 +3,7 @@ Sprint 25.8 — Log test route (protocol v2)
 """
 
 from fastapi import APIRouter
+
 from app.utils.logging import get_logger
 
 router = APIRouter(prefix="/api/log", tags=["log-test"])

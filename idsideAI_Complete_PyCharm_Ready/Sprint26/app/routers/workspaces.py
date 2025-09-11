@@ -1,7 +1,9 @@
-from fastapi import APIRouter, Request, HTTPException
-from .auth import _audit
-from datetime import datetime
 import uuid
+from datetime import datetime
+
+from fastapi import APIRouter, HTTPException, Request
+
+from .auth import _audit
 
 router = APIRouter(prefix="/workspaces")
 WORKSPACES: dict = {}  # ws_id -> {id,name,owner,created_at}
@@ -156,8 +158,8 @@ def _ctx_get(req: Request):
 
 
 def _ctx_set(req: Request, ws_id: str):
-    if not hasattr(req, "session") or not isinstance(getattr(req, "session"), dict):
-        setattr(req, "session", {})
+    if not hasattr(req, "session") or not isinstance(req.session, dict):
+        req.session = {}
     req.session["ws_id"] = ws_id
 
 

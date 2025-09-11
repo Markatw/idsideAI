@@ -3,8 +3,10 @@ Sprint 25.4 — PII crypto endpoints (protocol v2)
 """
 
 from typing import Any, Dict
+
 from fastapi import APIRouter, Body
-from app.utils.pii_crypto import encrypt_pii, decrypt_pii
+
+from app.utils.pii_crypto import decrypt_pii, encrypt_pii
 
 router = APIRouter(prefix="/api/crypto/pii", tags=["pii-crypto"])
 

@@ -4,8 +4,8 @@ Sprint 21.8 (protocol v2): Simple benchmark runner.
 Dependency-light; safe for server use.
 """
 
-from typing import List, Dict, Any
 import time
+from typing import Any, Dict, List
 
 
 def _now_ms() -> int:
@@ -56,9 +56,10 @@ def compare_providers(scenarios: list[dict], providers: list[str]) -> list[dict]
 
 def export_comparisons_csv(results: list[dict]) -> str:
     "Flatten comparison results into CSV string."
-    from app.utils.perf import cap_events
-    import io
     import csv
+    import io
+
+    from app.utils.perf import cap_events
 
     rows = []
     for r in results or []:

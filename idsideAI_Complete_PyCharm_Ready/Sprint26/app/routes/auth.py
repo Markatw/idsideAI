@@ -3,7 +3,9 @@ Sprint 24.2 — Auth routes (protocol v2)
 """
 
 from typing import Any, Dict
+
 from fastapi import APIRouter, Body
+
 from app.utils.auth_validation import validate_login_form, validate_reset_form
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])

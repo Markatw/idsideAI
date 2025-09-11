@@ -3,7 +3,8 @@ Sprint 21.4: Provider registry (protocol v2)
 Lightweight discovery and graceful fallback if provider missing.
 """
 
-from typing import Dict, Any, Callable
+from typing import Any, Callable, Dict
+
 from .base import BaseProvider
 
 _REGISTRY: Dict[str, Callable[..., BaseProvider]] = {}

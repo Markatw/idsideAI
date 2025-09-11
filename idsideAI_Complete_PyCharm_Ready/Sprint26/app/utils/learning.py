@@ -3,9 +3,9 @@ Sprint 21.9 (protocol v2): Learning mode utilities.
 Persistence: JSON Lines file under data/learning_log.jsonl
 """
 
-from typing import Dict, Any, List
 import json
 import os
+from typing import Any, Dict, List
 
 LOG_PATH = os.path.join(
     os.path.dirname(os.path.dirname(__file__)), "data", "learning_log.jsonl"
@@ -43,8 +43,8 @@ from app.utils.perf import cap_events
 def list_all_feedback(limit: int = 100):
     "Return capped list of all feedback entries."
     out = []
-    import os
     import json
+    import os
 
     LOG_PATH = os.path.join(
         os.path.dirname(os.path.dirname(__file__)), "data", "learning_log.jsonl"
@@ -64,8 +64,8 @@ def list_all_feedback(limit: int = 100):
 
 def add_feedback_tags(event_id: str, tags: list[str]):
     "Append a tag record into learning_log.jsonl"
-    import os
     import json
+    import os
 
     LOG_PATH = os.path.join(
         os.path.dirname(os.path.dirname(__file__)), "data", "learning_log.jsonl"
@@ -79,9 +79,9 @@ def add_feedback_tags(event_id: str, tags: list[str]):
 
 def summarize_feedback(limit: int = 1000):
     "Return counts by feedback_type and top tags."
-    import os
-    import json
     import collections
+    import json
+    import os
 
     LOG_PATH = os.path.join(
         os.path.dirname(os.path.dirname(__file__)), "data", "learning_log.jsonl"
@@ -112,10 +112,10 @@ def summarize_feedback(limit: int = 1000):
 
 def export_feedback_csv(limit: int = 1000) -> str:
     "Return a CSV string of recent feedback entries."
-    import os
-    import json
-    import io
     import csv
+    import io
+    import json
+    import os
 
     LOG_PATH = os.path.join(
         os.path.dirname(os.path.dirname(__file__)), "data", "learning_log.jsonl"

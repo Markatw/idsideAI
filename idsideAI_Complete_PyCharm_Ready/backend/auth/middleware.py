@@ -1,9 +1,10 @@
-from fastapi import Request, HTTPException
-from fastapi.routing import APIRoute
-from jose import jwt, JWTError
-import os
 import json
+import os
 import urllib.request
+
+from fastapi import HTTPException, Request
+from fastapi.routing import APIRoute
+from jose import JWTError, jwt
 
 JWT_SECRET = os.getenv("JWT_SECRET")
 JWT_AUDIENCE = os.getenv("JWT_AUDIENCE", "idecide")

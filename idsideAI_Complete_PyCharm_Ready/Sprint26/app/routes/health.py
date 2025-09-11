@@ -3,7 +3,9 @@ Sprint 27.5 — Healthcheck endpoints (protocol v2)
 """
 
 import os
+
 from fastapi import APIRouter
+
 from app.utils import metrics
 
 router = APIRouter(tags=["health"])

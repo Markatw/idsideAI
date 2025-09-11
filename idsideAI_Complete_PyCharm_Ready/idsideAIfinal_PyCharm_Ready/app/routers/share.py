@@ -1,7 +1,8 @@
+from typing import List
+
+from app.services.enterprise_service import list_shares, share_decision_model
 from fastapi import APIRouter
 from pydantic import BaseModel
-from typing import List
-from app.services.enterprise_service import share_decision_model, list_shares
 
 router = APIRouter(prefix="/share", tags=["share"])
 

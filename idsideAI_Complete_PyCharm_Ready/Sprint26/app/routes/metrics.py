@@ -2,10 +2,12 @@
 Sprint 25.7 — Metrics routes (protocol v2)
 """
 
+import time
 from typing import Any, Dict
+
 from fastapi import APIRouter
 from fastapi.responses import PlainTextResponse
-import time
+
 from app.utils.metrics import inc_counter, observe_latency, render_prometheus
 
 router = APIRouter(prefix="/api/metrics", tags=["metrics"])

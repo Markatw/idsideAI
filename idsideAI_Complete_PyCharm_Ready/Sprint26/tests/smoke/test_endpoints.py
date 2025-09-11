@@ -3,9 +3,9 @@ Sprint 26.3 — API smoke tests (protocol v2)
 Run against a local FastAPI server (default http://localhost:8000).
 """
 
+import json
 import os
 import sys
-import json
 import time
 
 try:

@@ -1,5 +1,7 @@
-from fastapi import APIRouter, Request, HTTPException
 from datetime import datetime
+
+from fastapi import APIRouter, HTTPException, Request
+
 from .auth import _audit  # reuse existing audit helper
 
 router = APIRouter(prefix="/admin")
@@ -46,8 +48,8 @@ def export_settings(request: Request):
     blob = json.dumps(
         dict(SETTINGS_STORE), ensure_ascii=False, sort_keys=True, indent=2
     ).encode("utf-8")
-    import hashlib
     import base64
+    import hashlib
 
     digest = hashlib.sha256(blob).hexdigest()
     _audit("admin_settings_export", "admin")

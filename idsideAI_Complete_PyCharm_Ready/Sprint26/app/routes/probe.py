@@ -2,7 +2,8 @@
 Sprint 26.7 — Probe routes (protocol v2)
 """
 
-from fastapi import APIRouter, Query, Body
+from fastapi import APIRouter, Body, Query
+
 from app.utils import probe
 
 router = APIRouter(prefix="/api/probe", tags=["probe"])

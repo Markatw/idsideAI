@@ -3,8 +3,10 @@ Sprint 24.6 — i18n endpoints (protocol v2)
 """
 
 from typing import Any, Dict, List
+
 from fastapi import APIRouter, Body, Query
-from app.utils.i18n import set_lang, get_lang, t
+
+from app.utils.i18n import get_lang, set_lang, t
 
 router = APIRouter(prefix="/api/i18n", tags=["i18n"])
 

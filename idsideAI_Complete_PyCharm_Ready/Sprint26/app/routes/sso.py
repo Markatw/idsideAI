@@ -3,9 +3,11 @@ Sprint 25.3 — SSO routes (protocol v2)
 """
 
 from typing import Any, Dict
+
 from fastapi import APIRouter, Body, Query
 from fastapi.responses import HTMLResponse
-from app.utils.sso import saml_metadata, oidc_discovery, test_login
+
+from app.utils.sso import oidc_discovery, saml_metadata, test_login
 
 router = APIRouter(prefix="/api/sso", tags=["sso"])
 

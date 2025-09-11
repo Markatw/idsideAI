@@ -1,6 +1,7 @@
+from typing import Any, Dict, List, Literal, Optional
+
 import yaml
 from pydantic import BaseModel, Field
-from typing import List, Literal, Optional, Dict, Any
 
 
 class Step(BaseModel):

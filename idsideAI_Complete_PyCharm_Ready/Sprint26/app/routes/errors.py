@@ -4,6 +4,7 @@ Sprint 24.8 — Error routes (protocol v2)
 
 from fastapi import APIRouter, Query
 from fastapi.responses import HTMLResponse
+
 from app.utils.ui_errors import load_error_page
 
 router = APIRouter(prefix="/api/errors", tags=["errors"])

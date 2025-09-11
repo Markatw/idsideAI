@@ -5,7 +5,8 @@ Sprint 21.9 — Learning API (protocol v2)
 """
 
 from fastapi import APIRouter, Body
-from app.utils.learning import log_feedback, get_feedback
+
+from app.utils.learning import get_feedback, log_feedback
 
 router = APIRouter(prefix="/api/learning", tags=["learning"])
 

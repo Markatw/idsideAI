@@ -1,10 +1,11 @@
 import os
 import time
+from typing import Any, Dict, Optional
+
 import requests
-from typing import Optional, Dict, Any
+from fastapi import Depends, HTTPException, status
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from jose import jwt
-from fastapi import HTTPException, status, Depends
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 
 JWKS_URL = os.getenv("JWKS_URL")
 JWT_AUDIENCE = os.getenv("JWT_AUDIENCE")

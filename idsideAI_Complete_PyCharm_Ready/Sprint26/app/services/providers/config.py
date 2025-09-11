@@ -3,7 +3,7 @@ Sprint 21.4: Provider config schema (protocol v2)
 A minimal schema validator (no external deps).
 """
 
-from typing import Dict, Any
+from typing import Any, Dict
 
 REQUIRED_KEYS = {
     "echo": [],

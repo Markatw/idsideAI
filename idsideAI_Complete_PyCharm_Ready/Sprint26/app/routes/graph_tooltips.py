@@ -2,8 +2,10 @@
 Sprint 24.4 — Graph tooltip routes (protocol v2)
 """
 
-from typing import Dict, Any
+from typing import Any, Dict
+
 from fastapi import APIRouter, Body
+
 from app.utils.graph_tooltips import add_tooltips
 
 router = APIRouter(prefix="/api/graphs", tags=["graphs-tooltips"])

@@ -3,7 +3,9 @@ Sprint 24.3 — Dashboard routes (protocol v2)
 """
 
 from typing import Any, Dict, List
+
 from fastapi import APIRouter, Body, Query
+
 from app.utils.ui_dashboard import layout, validate_tiles
 
 router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])

@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
-from ..services.dsl import parse_sdl, DecisionModelSpec
+
+from ..services.dsl import DecisionModelSpec, parse_sdl
 from ..services.engine import run_model
 
 router = APIRouter(prefix="/decision-models", tags=["decision-models"])

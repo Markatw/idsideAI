@@ -1,6 +1,6 @@
+from app.services.enterprise_service import list_api_keys, set_api_key
 from fastapi import APIRouter, Request
 from pydantic import BaseModel
-from app.services.enterprise_service import set_api_key, list_api_keys
 
 router = APIRouter(prefix="/settings", tags=["settings"])
 

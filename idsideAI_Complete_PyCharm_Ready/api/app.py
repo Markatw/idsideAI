@@ -1,13 +1,14 @@
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 import json
 import os
+import time
+
+from docx import Document
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from reportlab.lib.pagesizes import A4
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
-from docx import Document
-import time
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 app = FastAPI(title="IDECIDE Dummy Graph API", version="0.1.0")
 
@@ -111,9 +112,9 @@ def create_snapshot(graph_id: str, root: str = None, depth: int = 3):
     return {"snapshot": {"id": snap_id}}
 
 
-from starlette.staticfiles import StaticFiles
-from reportlab.platypus import Table, TableStyle
 from reportlab.lib import colors
+from reportlab.platypus import Table, TableStyle
+from starlette.staticfiles import StaticFiles
 
 EXPORT_DIR = os.path.join(BASE, "exports")
 os.makedirs(EXPORT_DIR, exist_ok=True)
