@@ -57,7 +57,7 @@ def verify_token(token: str) -> Dict[str, Any]:
         )
         return claims
     except Exception as e:
-        raise HTTPException(
+        raise HTTPException( from e
             status_code=status.HTTP_401_UNAUTHORIZED, detail=f"Invalid token: {str(e)}"
         )
 

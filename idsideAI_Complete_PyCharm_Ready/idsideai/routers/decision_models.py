@@ -17,6 +17,6 @@ async def run_decision_model(req: RunRequest):
     try:
         spec: DecisionModelSpec = parse_sdl(req.sdl_text)
     except Exception as e:
-        raise HTTPException(400, f"SDL parse error: {e}")
+        raise HTTPException(400, f"SDL parse error: {e}") from e
     result = await run_model(spec, req.inputs)
     return result

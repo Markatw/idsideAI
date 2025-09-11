@@ -109,7 +109,7 @@ async def checkout(request: Request):
         )
         return {"url": session.url}
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=400, detail=str(e)) from e
 
 
 @router.post("/portal")
@@ -133,7 +133,7 @@ async def portal(request: Request):
         )
         return {"url": portal.url}
     except Exception as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        raise HTTPException(status_code=400, detail=str(e)) from e
 
 
 @router.post("/webhooks/stripe")
@@ -147,7 +147,7 @@ async def webhook(request: Request):
                 payload=payload, sig_header=sig, secret=webhook_secret
             )
         except Exception as e:
-            raise HTTPException(status_code=400, detail=f"Invalid signature: {e}")
+            raise HTTPException(status_code=400, detail=f"Invalid signature: {e}") from e
     else:
         # skip verify for local
         try:
