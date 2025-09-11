@@ -1,0 +1,52 @@
+name: CI
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  lint-type-security:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: "${{ github.workspace }}/idsideAI_Complete_PyCharm_Ready"
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install system build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            build-essential libpq-dev libffi-dev libssl-dev \
+            libxml2-dev libxslt1-dev zlib1g-dev
+
+      - name: Upgrade pip tooling
+        run: python -m pip install --upgrade pip setuptools wheel
+
+      - name: Install project deps
+        run: pip install --prefer-binary --no-input -r requirements.txt
+
+      - name: Install dev tools + stubs
+        run: |
+          pip install --upgrade ruff black mypy bandit defusedxml
+          pip install -U types-requests types-PyYAML types-python-dateutil types-redis types-setuptools
+
+      - name: Black (format check)
+        run: black --check .
+
+      - name: Ruff (lint)
+        run: ruff check .
+
+      - name: Mypy (types)
+        run: |
+          mypy --install-types --non-interactive --config-file mypy.ini || true
+          mypy --config-file mypy.ini
+
+      - name: Bandit (security low/low)
+        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
