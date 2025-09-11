@@ -124,7 +124,7 @@ app.mount("/exports", StaticFiles(directory=EXPORT_DIR), name="exports")
 def derive_why(sample):
     nodes = sample["nodes"]
     edges = sample["edges"]
-    decision = next((n for n in nodes if n.get("type") == "Decision"), None)
+    _decision = next((n for n in nodes if n.get("type") == "Decision"), None)
     chosen = next(
         (
             e
