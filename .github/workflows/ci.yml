@@ -1,15 +1,19 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
 
 jobs:
   lint-type-security:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
@@ -23,8 +27,6 @@ jobs:
       - name: Upgrade pip tooling
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          pip --version
-          python --version
 
       - name: Install project + dev deps
         env:
@@ -34,9 +36,10 @@ jobs:
           pip install --upgrade ruff black mypy bandit defusedxml
 
       - name: Set PYTHONPATH
-        run: echo "PYTHO        run: echo "PYTHO    sideAI_Complete_PyCha        run: echo "PYTNV
+        run: |
+          echo "PYTHONPATH=$GITHUB_WORKSPACE/idsideAI_Complete_PyCha      dy" >> "$GITHUB_ENV"
 
-      - name: Black (format       - name: Black (fock --check .
+      - name: Bla      - name: Bla         run: black --check .
 
       - name: Ruff (lint)
         run: ruff check .
