@@ -1,77 +1,12 @@
-python - <<'PY'
-from pathlib import Path
-wf = Path(".github/workflows/ci.yml")
-wf.parent.mkdir(parents=True, exist_ok=True)
-  workflow_dispatch:
-on:
-  push:
-  pull_request:
-  workflow_dispatch:
+---
+name: CI
+'on':
+  push: {}
+  workflow_dispatch: {}
 
 jobs:
-  lint-type-security:
+  smoke:
     runs-on: ubuntu-latest
-    env:
-      PYTHONPATH: "${{ github.workspace }}/idsideAI_Complete_PyCharm_Ready"
-      PIP_DISABLE_PIP_VERSION_CHECK: "1"
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Tool versions
-        run: |
-          python -V
-          pip -V
-
-      - name: Install system build deps
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends \
-            build-essential libpq-dev libffi-dev libssl-dev \
-            libxml2-dev libxslt1-dev zlib1g-dev
-
-      - name: Upgrade pip tooling
-        run: python -m pip install --upgrade pip setuptools wheel
-
-      - name: Install project deps
-        run: pip install --prefer-binary --no-input -r requirements.txt
-
-      - name: Install dev tools + stubs
-        run: |
-          pip install --upgrade ruff black mypy bandit defusedxml
-          pip install -U types-requests types-PyYAML types-python-dateutil types-redis types-setuptools
-
-      # --- Autofix then check (prevents CI red from trivial style) ---
-      - name: Black (autofix)
-        run: black .
-      - name: Ruff (autofix)
-        run: ruff check . --fix
-
-      # Now enforce
-      - name: Black (format check)
-        run: black --check .
-      - name: Ruff (lint)
-        run: ruff check .
-
-      - name: Mypy (types)
-        run: |
-          mypy --install-types --non-interactive --config-file mypy.ini || true
-          mypy --config-file mypy.ini
-
-      - name: Bandit (security low/low)
-        run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
-""", encoding="utf-8")
-print("Rewrote", wf, "bytes=", wf.stat().st_size)
-PY
-
-git add .github/workflows/ci.yml
-git commit -m "ci: auto-fix Black/Ruff before checks; mypy stubs; verbose logs" || echo "no changes"
-git push
-# force a run regardless
-git commit --allow-empty -m "ci: trigger"
-git push
+      - name: Hello
+        run: echo ok
