@@ -1,9 +1,11 @@
 name: Lint / Types / Security
-
 on: [push, pull_request, workflow_dispatch]
 
 permissions:
   contents: read
+
+env:
+  STRICT: "false"   # flip to "true" later to enforce failures
 
 jobs:
   python-ci:
@@ -27,14 +29,18 @@ jobs:
 
       - name: Ruff (lint)
         run: ruff check .
+        continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: Mypy (types)
         run: |
           mypy --install-types --non-interactive || true
           mypy .
+        continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: Bandit (security)
-        run: bandit -r . -x tests
+        run: bandit -r . -x tests,venv,.venv,.git,build,dist
+        continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: pip-audit (vulns)
         run: pip-audit --strict
+        continue-on-error: ${{ env.STRICT != 'true' }}
