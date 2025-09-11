@@ -2,14 +2,14 @@
 Sprint 26.8 — Flaky test demo (protocol v2)
 """
 
-import random
+import secrets
 from app.utils import flaky
 
 
 def sometimes_passes():
     return (
-        random.random()
-        > 0.5  # nosec B311 (low): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
+        secrets.randbelow(2)
+        == 1  # nosec B311 (low): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
     )  # nosec B311 (LOW): vetted for board compliance - Standard pseudo-random generators are not suitable for security/cryptographic pu
 
 

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import re
 from pathlib import Path
 
@@ -11,7 +10,7 @@ def skip(p: Path) -> bool:
 def fix_content(p: Path, s: str) -> str:
     out = s
 
-    # Ensure requests.* calls have a timeout and don't disable TLS verification
+    # requests.* → ensure timeout and verify not False
     def _fix_req(m):
         call = m.group(0)
         if "timeout=" not in call:
@@ -20,20 +19,20 @@ def fix_content(p: Path, s: str) -> str:
         return call
     out = re.sub(r"requests\.(get|post|put|delete|patch)\([^()]*\)", _fix_req, out)
 
-    # Prefer yaml.safe_load
+    # yaml.safe_load
     out = re.sub(r"\byaml\.load\s*\(", "yaml.safe_load(", out)
 
-    # xml.etree → defusedxml (if present)
+    # defusedxml
     out = re.sub(r"\bimport\s+xml\.etree\.ElementTree\s+as\s+ET", "from defusedxml import ElementTree as ET", out)
     out = re.sub(r"\bfrom\s+xml\.etree\.ElementTree\s+import\s+([A-Za-z0-9_,\s]+)", r"from defusedxml.ElementTree import \1", out)
     out = re.sub(r"\bfrom\s+xml\.etree\s+import\s+ElementTree\s+as\s+ET", "from defusedxml import ElementTree as ET", out)
 
-    # Annotate subprocess/pickle imports (vetted usage)
+    # annotate subprocess / pickle imports
     out = re.sub(r"^(import\s+subprocess)\s*$", r"\1  # nosec B404", out, flags=re.M)
     out = re.sub(r"^(import\s+pickle)\s*$", r"\1  # nosec B403", out, flags=re.M)
 
-                   ow bare                    ow bare   arts:
-        out = re.sub(r"^(\s*assert\s+.+)$", r"\1  # nosec B101: test assertion", out, flags=re.M)
+    # tests: annotate bare  sserts so Bandit ign    # tests: annotatsts" in p.parts:
+        out = re.sub(r"^        out = re.sub(r"^        out = re.sub(r"^         out, flags=re.M)
 
     return out
 
@@ -47,6 +46,9 @@ for py in ROOT.rglob("*.py"):
         py.write_text(s2, encoding="utf-8")
         changed.append(str(py))
 
-print("Modified files:" if changed else "No changes needed.")
-for c in changed:
-    print(" -", c)
+if changed:
+    print("Modified files:")
+    for c in changed:
+        print(" -", c)
+else:
+    print("No changes needed.")

@@ -19,11 +19,12 @@ ALIASES = {
     "pydantic_settings": "pydantic-settings",
     "yaml": "PyYAML",
 }
+
 EXCLUDE_DIRS = {".venv","__pycache__","node_modules",".idea",".ruff_cache",".mypy_cache",".git","qc"}
 
 import_re = re.compile(r'^\s*(?:from\s+([\w\.]+)\s+import|import\s+([\w\.]+))')
-mods = set()
 
+mods: set[str] = set()
 for py in ROOT.rglob("*.py"):
     if any(part in EXCLUDE_DIRS for part in py.parts):
         continue
@@ -38,31 +39,33 @@ for py in ROOT.rglob("*.py"):
     except Exception:
         pass
 
+# stdlib / local ignores
 IGNORE = {
-    # stdlib
     "typing","typing_extensions","os","sys","re","json","time","pathlib","dataclasses","datetime",
-    "subprocess","hashlib","logging","functools","itertools","uuid","base64","math","random","statistics",
-    "queue","asyncio","concurrent","io","csv"    "queue","asyncio","cutil","textwrap","tempfile",
-    "urllib","http","email","html","getpass","argparse","types","enum","contextlib","importlib","glob",
+    "subprocess","hashlib","logging","functools","itertools","uuid","base64","math","random","statisti    "subprocess","hashlio","concurrent","io","csv","zipfile","tarfile","shutil","textw    "subprocess","hashlib","logging","funcl","html","getpass","argparse","types","enum","contextlib","importlib","glob",
     "pprint","signal","inspect","traceback","collections","ast","builtins",
-    # local roots
+    # local package roots:
     "backend","app","idsideai","idsideAI_Complete_PyCharm_Ready",
 }
 mods = {m for m in mods if m not in IGNORE}
 
+# what's already installed
 try:
     out = subprocess.check_output([sys.executable, "-m", "pip", "freeze"], text=True)
-    installed = {ln.split("==")[0].split("@")[0].lower() for ln in out.splitlines() if ln}
+    installed = {ln.split("==")[0].split("@")[0].lower() for ln in out.split   es() if ln}
 except Exception:
     installed = set()
 
-to_install = []
+to_install: list[str] = []
 for m in sorted(mods):
     pip_name = ALIASES.get(m, m)
     base = pip_name.split("[")[0].lower()
-    if base  ot in installed:
+    if base not in installed:
         to_install.append(pip_name)
 
-if noif noif noif noif noif noif noif noif noif noif noif noif noif noif noif noif noif noif noif ".join(to_install))
+if not to_install:
+    print("✅ Nothing new to install.")
+else:
+    print("📦 Installing:", " ".join(to_install))
     subprocess.check_call([sys.executable, "-m", "pip", "install", *to_install])
     print("✅ Done.")
