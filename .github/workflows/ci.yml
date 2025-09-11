@@ -1,49 +1,40 @@
 name: Lint / Types / Security
 
-on:
-  push:
-    branches: ["**"]
-  pull_request:
-    branches: ["**"]
+on: [push, pull_request, workflow_dispatch]
 
-concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-pr  cancel-in-pr  cancel-in-pr  cancets:   cancel-in-pr  cancel-in-pr  cancel-in-pr  canclater to enforce failures
+permissions:
+  contents: read
 
 jobs:
   python-ci:
     runs-on: ubuntu-latest
-
     steps:
-      -     : Checkout
-                  ons/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        us        us        python@v5
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
-          cache: "pip"
+          python-version: '3.12'
+          cache: 'pip'
 
       - name: Install tools & deps
         run: |
-          python -m pip install --upgra     p
+          python -m pip install --upgrade pip
           pip install ruff mypy bandit pip-audit
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
 
-      -      -      -             run: ruff check .
-        continue-on-error: ${{ env.STRICT != 'true' }}
+      - name: Ruff (lint)
+        run: ruff check .
 
       - name: Mypy (types)
         run: |
           mypy --install-types --non-interactive || true
           mypy .
-        continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: Bandit (security)
         run: bandit -r . -x tests
-        continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: pip-audit (vulns)
         run: pip-audit --strict
-        continue-on-error: ${{ env.STRICT != 'true' }}
