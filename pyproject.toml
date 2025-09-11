@@ -1,4 +1,3 @@
-cat > pyproject.toml <<'TOML'
 [tool.ruff]
 line-length = 100
 target-version = "py312"
@@ -19,4 +18,3 @@ exclude = ["tests/"]
 [tool.bandit]
 skips = ["B101"]
 exclude_dirs = ["tests", "venv", ".venv", ".git", "build", "dist"]
-TOML

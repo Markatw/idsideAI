@@ -8,37 +8,30 @@ on:
 
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
-
-permissions:
-  contents: read
-
-env:
-  STRICT: "false"   # set to "true" later to make checks block the build
+  cancel-in-pr  cancel-in-pr  cancel-in-pr  cancets:   cancel-in-pr  cancel-in-pr  cancel-in-pr  canclater to enforce failures
 
 jobs:
   python-ci:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      -     : Checkout
+                  ons/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        us        us        python@v5
         with:
           python-version: "3.12"
           cache: "pip"
 
       - name: Install tools & deps
         run: |
-          python -m pip install --upgrade pip
+          python -m pip install --upgra     p
           pip install ruff mypy bandit pip-audit
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
 
-      - name: Ruff (lint)
-        run: ruff check .
+      -      -      -             run: ruff check .
         continue-on-error: ${{ env.STRICT != 'true' }}
 
       - name: Mypy (types)
