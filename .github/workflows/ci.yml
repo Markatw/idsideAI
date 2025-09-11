@@ -1,24 +1,9 @@
-rm -f .github/workflows/ci.yml
-
-cat > .github/workflows/ci.yml <<'YAML'
-name: Lint / Types / Security
-on: [push, pull_request, workflow_dispatch]
-
-permissions:
-  contents: read
-
+name: ci
+on:
+  push:
+  workflow_dispatch:
 jobs:
-  python-ci:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - name: Sanity
-        run: |
-          python -V
-          echo "YAML good ✅"
-YAML
+      - run: echo ok
