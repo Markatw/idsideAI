@@ -6,14 +6,14 @@ on:
 jobs:
   lint-type-security:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}/idsideAI_Complete_PyCharm_Ready
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
@@ -25,8 +25,7 @@ jobs:
             libxml2-dev libxslt1-dev zlib1g-dev
 
       - name: Upgrade pip tooling
-        run: |
-          python -m pip install --upgrade pip setuptools wheel
+        run: python -m pip install --upgrade pip setuptools wheel
 
       - name: Install project + dev deps
         env:
@@ -35,17 +34,11 @@ jobs:
           pip install --prefer-binary --no-input -r requirements.txt
           pip install --upgrade ruff black mypy bandit defusedxml
 
-      - name: Set PYTHONPATH
-        run: |
-          echo "PYTHONPATH=$GITHUB_WORKSPACE/idsideAI_Complete_PyCha      dy" >> "$GITHUB_ENV"
-
-      - name: Bla      - name: Bla         run: black --check .
-
+      - name: Black (format ch      - name: Black (format ch    
       - name: Ruff (lint)
         run: ruff check .
 
-      - name: Mypy (types)
-        run: mypy --config-file mypy.ini
+      - name: Mypy      - name: Mypy      py --config-file mypy.ini
 
       - name: Bandit (security low/low)
         run: bandit -c bandit.yaml -r idsideAI_Complete_PyCharm_Ready --severity-level low --confidence-level low
