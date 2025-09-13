@@ -1,3 +1,16 @@
+from datetime import timezone
+from datetime import timedelta
+import hashlib
+import json
+
+from typing import Annotated
+from fastapi import Body
+from pydantic import BaseModel
+
+class LoginPayload(BaseModel):
+    username: str
+    password: str
+
 ACTIVE_SESSIONS = {}
 FORCE_LOGOUT = {}
 
@@ -10,7 +23,7 @@ def _audit(event, username=None, detail=None):
     try:
         AUDIT_LOG.append(
             {
-                "ts": datetime.utcnow().isoformat(),
+                "ts": datetime.now(timezone.utc).isoformat(),
                 "event": event,
                 "username": username,
                 "detail": detail,
@@ -51,7 +64,7 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 @router.get("/demo-login")
 def demo_login(request: Request):
     request.session["user"] = {"id": 1, "username": "demo"}
-    _audit("signup", username)
+    _audit("signup", "username")
     return {"ok": True, "user": request.session["user"]}
 
 
@@ -83,12 +96,12 @@ def signup(payload: dict, request: Request):
         raise HTTPException(status_code=400, detail="username required")
     if not password or not isinstance(password, str):
         raise HTTPException(status_code=400, detail="password required")
-    pw_hash = hlib.sha256(password.encode()).hexdigest()
+    pw_hash = hashlib.sha256(password.encode()).hexdigest()
     if username not in USER_STORE:
         USER_STORE[username] = {
             "username": username,
             "display_name": username.title(),
-            "created_at": datetime.utcnow().isoformat(),
+            "created_at": datetime.now(timezone.utc).isoformat(),
             "pw_hash": pw_hash,
         }
     request.session["user"] = {
@@ -119,9 +132,15 @@ def expire(request: Request):
 
 
 @router.post("/login")
-def login(payload: dict, request: Request):
-    username = (payload or {}).get("username")
-    password = (payload or {}).get("password")
+#def login(payload: dict, request: Request):
+#    username = (payload or {}).get("username")
+#    password = (payload or {}).get("password")
+def login(payload: Annotated[LoginPayload, Body(...)], request: Request):
+    username = payload.username
+    password = payload.password
+    pw = password
+
+
     if not username or not password:
         raise HTTPException(status_code=400, detail="username and password required")
     # throttle: after 5 consecutive failures, block for 30s
@@ -138,7 +157,7 @@ def login(payload: dict, request: Request):
         FAILED_LOGINS[username] = rec
         _audit("login_fail", username)
         raise HTTPException(status_code=401, detail="invalid credentials")
-    pw_hash = hlib.sha256(password.encode()).hexdigest()
+    pw_hash = hashlib.sha256(password.encode()).hexdigest()
     if prof.get("pw_hash") != pw_hash:
         rec["fails"] = rec.get("fails", 0) + 1
         if rec["fails"] >= 5:
@@ -153,13 +172,13 @@ def login(payload: dict, request: Request):
     # remember-me flag via query param (?remember=true)
     q = str(request.query_params.get("remember", "")).lower()
     request.session["remember"] = q in ("1", "true", "yes", "on")
-    prof["last_login"] = datetime.utcnow().isoformat()
+    prof["last_login"] = datetime.now(timezone.utc).isoformat()
     USER_STORE[username] = prof
-    prof["last_login"] = datetime.utcnow().isoformat()
+    prof["last_login"] = datetime.now(timezone.utc).isoformat()
     USER_STORE[username] = prof
     ACTIVE_SESSIONS[username] = {
-        "since": datetime.utcnow().isoformat(),
-        "last_refreshed": datetime.utcnow().isoformat(),
+        "since": datetime.now(timezone.utc).isoformat(),
+        "last_refreshed": datetime.now(timezone.utc).isoformat(),
     }
     _audit("login_ok", username)
     return {"ok": True, "user": safe_prof}
@@ -206,7 +225,7 @@ def reset_password(username: str, payload: dict, request: Request):
     if not prof:
         raise HTTPException(status_code=404, detail="not found")
     new_pw = (payload or {}).get("password")
-    if not _strong_pw(pw):
+    if not _strong_pw(new_pw):
         raise HTTPException(status_code=400, detail="invalid password strength")
     if not new_pw or not isinstance(new_pw, str):
         raise HTTPException(status_code=400, detail="password required")
@@ -218,7 +237,7 @@ def reset_password(username: str, payload: dict, request: Request):
 
 @router.post("/refresh")
 def refresh(request: Request):
-    ts = datetime.utcnow().isoformat()
+    ts = datetime.now(timezone.utc).isoformat()
     request.session["last_refreshed"] = ts
     cu = request.session.get("user") or {}
     uname = cu.get("username") if isinstance(cu, dict) else None
@@ -319,7 +338,7 @@ def force_logout_user(username: str, request: Request):
         raise HTTPException(status_code=403, detail="forbidden")
     if username not in USER_STORE:
         raise HTTPException(status_code=404, detail="not found")
-    FORCE_LOGOUT[username] = datetime.utcnow().isoformat()
+    FORCE_LOGOUT[username] = datetime.now(timezone.utc).isoformat()
     _audit("force_logout", username)
     return {"ok": True, "username": username}
 
@@ -419,7 +438,7 @@ def self_delete(request: Request):
     if not prof:
         raise HTTPException(status_code=404, detail="profile missing")
     prof["is_deleted"] = True
-    prof["deleted_at"] = datetime.utcnow().isoformat()
+    prof["deleted_at"] = datetime.now(timezone.utc).isoformat()
     prof["is_active"] = False
     USER_STORE[username] = prof
     _audit("self_delete", username)
@@ -442,7 +461,7 @@ def export_personal_data(request: Request):
     except Exception:
         events = []
     payload = {
-        "exported_at": datetime.utcnow().isoformat(),
+        "exported_at": datetime.now(timezone.utc).isoformat(),
         "profile": safe_prof,
         "audit": events,
     }
@@ -594,7 +613,7 @@ def bulk_delete_users(payload: dict, request: Request):
             out.append({"username": name, "ok": False, "error": "not found"})
             continue
         prof["is_deleted"] = True
-        prof["deleted_at"] = datetime.utcnow().isoformat()
+        prof["deleted_at"] = datetime.now(timezone.utc).isoformat()
         prof["is_active"] = False
         USER_STORE[name] = prof
         _audit("user_delete", name)
@@ -624,7 +643,7 @@ def bulk_export_users(payload: dict, request: Request):
             except Exception:
                 events = []
             data = {
-                "exported_at": datetime.utcnow().isoformat(),
+                "exported_at": datetime.now(timezone.utc).isoformat(),
                 "profile": safe_prof,
                 "audit": events,
             }
@@ -667,7 +686,7 @@ def purge_audit_older(request: Request, days: int = 90):
         raise HTTPException(status_code=403, detail="forbidden")
     if days < 1:
         days = 1
-    cutoff = datetime.utcnow() - timedelta(days=days)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     kept, purged = [], 0
     try:
         src = list(AUDIT_LOG)
@@ -787,7 +806,7 @@ def audit_summary(request: Request, payload: dict | None = None):
         days = 30
     if days < 1:
         days = 1
-    cutoff = datetime.utcnow() - timedelta(days=days)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days)
     try:
         items = list(AUDIT_LOG)
     except Exception:
@@ -825,7 +844,7 @@ def export_audit_all(request: Request):
     except Exception:
         items = []
     blob = json.dumps(
-        {"exported_at": datetime.utcnow().isoformat(), "events": items},
+        {"exported_at": datetime.now(timezone.utc).isoformat(), "events": items},
         ensure_ascii=False,
         indent=2,
     ).encode("utf-8")

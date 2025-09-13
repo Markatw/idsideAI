@@ -1,3 +1,4 @@
+from datetime import timezone
 import uuid
 from datetime import datetime
 
@@ -31,7 +32,7 @@ def create_ws(request: Request, payload: dict):
         "id": ws_id,
         "name": name,
         "owner": "admin",
-        "created_at": datetime.utcnow().isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "settings": {"title": name, "description": "", "plan": "free"},
     }
     _audit("ws_create", "admin")
@@ -227,7 +228,7 @@ def patch_settings(ws_id: str, request: Request, payload: dict):
 def _activity_add(ws_id: str, event: str, actor: str, extra: dict | None = None):
     ACTIVITY.setdefault(ws_id, []).append(
         {
-            "ts": datetime.utcnow().isoformat(),
+            "ts": datetime.now(timezone.utc).isoformat(),
             "event": event,
             "actor": actor,
             "extra": extra or {},
@@ -281,7 +282,7 @@ def export_audit(ws_id: str, request: Request):
 
 def _chat_add(ws_id: str, user: str, text: str):
     CHAT.setdefault(ws_id, []).append(
-        {"ts": datetime.utcnow().isoformat(), "user": user, "text": text}
+        {"ts": datetime.now(timezone.utc).isoformat(), "user": user, "text": text}
     )
 
 
@@ -320,7 +321,7 @@ def get_chat(ws_id: str, request: Request, limit: int = 50):
 
 
 def _presence_touch(ws_id: str, user: str):
-    PRESENCE.setdefault(ws_id, {})[user] = datetime.utcnow().isoformat()
+    PRESENCE.setdefault(ws_id, {})[user] = datetime.now(timezone.utc).isoformat()
 
 
 @router.get("/{ws_id}/presence")
@@ -344,7 +345,7 @@ def _doc_make(ws_id: str, doc_id: str, title: str, content: str, owner: str):
         "title": title,
         "content": content,
         "owner": owner,
-        "created_at": datetime.utcnow().isoformat(),
+        "created_at": datetime.now(timezone.utc).isoformat(),
         "updated_at": None,
     }
 
@@ -402,7 +403,7 @@ def update_doc(ws_id: str, doc_id: str, request: Request, payload: dict):
         doc["title"] = payload["title"]
     if "content" in (payload or {}):
         doc["content"] = payload["content"]
-    doc["updated_at"] = datetime.utcnow().isoformat()
+    doc["updated_at"] = datetime.now(timezone.utc).isoformat()
     _activity_add(ws_id, "doc_update", actor, {"id": doc_id})
     return doc
 

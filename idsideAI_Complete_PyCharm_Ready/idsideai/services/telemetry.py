@@ -1,3 +1,4 @@
+from datetime import timezone
 from datetime import datetime
 from typing import Any, Dict, List
 
@@ -8,7 +9,7 @@ class Telemetry:
     @classmethod
     def log(cls, provider: str, metrics: Dict[str, Any]):
         cls._events.append(
-            {"ts": datetime.utcnow().isoformat(), "provider": provider, **metrics}
+            {"ts": datetime.now(timezone.utc).isoformat(), "provider": provider, **metrics}
         )
 
     @classmethod

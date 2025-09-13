@@ -1,3 +1,8 @@
+from datetime import timezone
+import json
+import hashlib
+import base64
+
 from datetime import datetime
 
 from fastapi import APIRouter, HTTPException, Request
@@ -116,7 +121,7 @@ HISTORY_MAX = 20
 def _snapshot(user: str):
     SETTINGS_HISTORY.append(
         {
-            "ts": datetime.utcnow().isoformat(),
+            "ts": datetime.now(timezone.utc).isoformat(),
             "user": user,
             "settings": dict(SETTINGS_STORE),
         }
@@ -152,7 +157,7 @@ def rollback_settings(request: Request, payload: dict):
 def compliance_export(request: Request):
     if not _is_admin(request):
         raise HTTPException(status_code=403, detail="forbidden")
-    meta = {"ts": datetime.utcnow().isoformat(), "user": "admin"}
+    meta = {"ts": datetime.now(timezone.utc).isoformat(), "user": "admin"}
     pack = {
         "settings": dict(SETTINGS_STORE),
         "history": list(SETTINGS_HISTORY),
