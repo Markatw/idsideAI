@@ -1,3 +1,11 @@
+# IDSIDEAI UI_ERRORS ROOT BEGIN
+from typing import Any, Dict
+try:
+    root  # type: ignore # noqa: F821
+except NameError:
+    root: Dict[str, Any] = {}
+# IDSIDEAI UI_ERRORS ROOT END
+
 """
 Sprint 24.8 — Error page helpers (protocol v2)
 """

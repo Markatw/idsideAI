@@ -1,10 +1,7 @@
-from datetime import datetime, timedelta, timezone
+
 import base64
-import hashlib
-import hmac
-import json
 import os
-from typing import Any, Dict, Optional, Annotated
+from typing import Any, Dict, Annotated
 
 from fastapi import Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
@@ -67,10 +64,18 @@ def _verify_hs256(token: str, secret: str) -> Dict[str, Any]:
 
 # ---- Public API ------------------------------------------------------------
 def decode_token(token: str) -> Dict[str, Any]:
-    """Decode/verify a bearer token, returning its payload dict."""
+    "Decode/verify a bearer token, returning its payload dict."""
     if JWT_ALGORITHM != "HS256":
         # Minimal implementation only supports HS256 for now.
         raise HTTPException(status_code=400, detail=f"Unsupported JWT_ALGORITHM: {JWT_ALGORITHM}")
+    return _verify_hs256(token, JWT_SECRET)
+
+def decode_token(token: str) -> Dict[str, Any]:
+    if JWT_ALGORITHM != "HS256":
+        raise HTTPException(
+            status_code=400,
+            detail=f"Unsupported JWT_ALGORITHM: {JWT_ALGORITHM}",
+        )
     return _verify_hs256(token, JWT_SECRET)
 
 

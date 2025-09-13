@@ -138,7 +138,6 @@ def expire(request: Request):
 def login(payload: Annotated[LoginPayload, Body(...)], request: Request):
     username = payload.username
     password = payload.password
-    pw = password
 
 
     if not username or not password:

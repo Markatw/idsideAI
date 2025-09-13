@@ -1,4 +1,3 @@
-from datetime import timezone
 import gc
 import resource  # stdlib on Unix (macOS/Linux)
 import sys

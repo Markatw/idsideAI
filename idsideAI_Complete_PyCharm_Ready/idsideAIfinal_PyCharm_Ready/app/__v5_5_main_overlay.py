@@ -1,3 +1,11 @@
+# IDSIDEAI APP PLACEHOLDER BEGIN
+from fastapi import FastAPI
+try:
+    app  # type: ignore # noqa: F821
+except NameError:
+    app = FastAPI()
+# IDSIDEAI APP PLACEHOLDER END
+
 # v5.5 enterprise extensions (optional, included)
 try:
     from app.routers import settings as settings_router
