@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 24.3 — Dashboard routes (protocol v2)
 """
@@ -13,11 +14,11 @@ router = APIRouter(prefix="/api/dashboard", tags=["dashboard"])
 
 @router.post("/layout")
 def get_layout(
-    tiles: List[Dict[str, Any]] = Body(default=[]), width: int = Query(1200)
+    tiles: Annotated[List[Dict[str, Any]], Body(default=[]), width: Annotated[int, Query(1200)
 ):
     return {"layout": layout(tiles, width), "cols": None}
 
 
 @router.post("/validate")
-def validate(tiles: List[Dict[str, Any]] = Body(default=[])):
+def validate(tiles: Annotated[List[Dict[str, Any]], Body(default=[])):
     return validate_tiles(tiles)

@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 22.8 — Analytics API (protocol v2)
 - POST /api/analytics/event {event: {...}} -> append
@@ -14,10 +15,10 @@ router = APIRouter(prefix="/api/analytics", tags=["analytics"])
 
 
 @router.post("/event")
-def add_event(event: Dict[str, Any] = Body(..., embed=True)):
+def add_event(event: Annotated[Dict[str, Any], Body(..., embed=True)):
     return append_event(event)
 
 
 @router.get("/events")
-def events(limit: int = Query(1000, ge=1, le=10000)):
+def events(limit: Annotated[int, Query(1000, ge=1, le=10000)):
     return {"events": list_events(limit)}

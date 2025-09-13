@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 24.8 — Error routes (protocol v2)
 """
@@ -11,5 +12,5 @@ router = APIRouter(prefix="/api/errors", tags=["errors"])
 
 
 @router.get("/page", response_class=HTMLResponse)
-def page(code: int = Query(404)) -> str:
+def page(code: Annotated[int, Query(404)) -> str:
     return load_error_page(code)

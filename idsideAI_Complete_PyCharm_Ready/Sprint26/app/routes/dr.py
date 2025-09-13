@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 25.6 — DR routes (protocol v2)
 """
@@ -13,11 +14,11 @@ router = APIRouter(prefix="/api/dr", tags=["disaster-recovery"])
 
 @router.post("/backup")
 def backup(
-    db_path: str = Body("data/app.db"), out_dir: str = Body("backups")
+    db_path: Annotated[str, Body("data/app.db"), out_dir: Annotated[str, Body("backups")
 ) -> Dict[str, Any]:
     return backup_sqlite(db_path, out_dir)
 
 
 @router.post("/restore")
-def restore(bak_zip: str = Body(...), dest_dir: str = Body("data")) -> Dict[str, Any]:
+def restore(bak_zip: Annotated[str, Body(...), dest_dir: Annotated[str, Body("data")) -> Dict[str, Any]:
     return restore_sqlite(bak_zip, dest_dir)

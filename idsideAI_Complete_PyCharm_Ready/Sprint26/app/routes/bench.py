@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 21.8 — Benchmark API (protocol v2)
 - POST /api/bench/run { scenarios: [{name, delay_ms}] } -> runs simple synthetic benchmarks
@@ -13,7 +14,7 @@ router = APIRouter(prefix="/api/bench", tags=["bench"])
 
 
 @router.post("/run")
-def run(scenarios: List[Dict[str, Any]] = Body(..., embed=True)):
+def run(scenarios: Annotated[List[Dict[str, Any]], Body(..., embed=True)):
     return run_bench(scenarios)
 
 

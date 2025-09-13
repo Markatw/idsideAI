@@ -129,7 +129,7 @@ def derive_why(sample):
         (
             e
             for e in edges
-            if e.get("type", "").upper() == "CHOSEN" or e.get("chosen") == True
+            if e.get("type", "").upper() == "CHOSEN" or e.get("chosen")  is True
         ),
         None,
     )

@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 25.2 — SCIM routes (protocol v2)
 """
@@ -29,21 +30,21 @@ def list_users() -> Dict[str, Any]:
 
 @router.post("/Users", status_code=201)
 def create_user(
-    userName: str = Body(...),
-    givenName: str = Body(""),
-    familyName: str = Body(""),
-    email: str = Body(""),
+    userName: Annotated[str, Body(...),
+    givenName: Annotated[str, Body(""),
+    familyName: Annotated[str, Body(""),
+    email: Annotated[str, Body(""),
 ):
     return user_skeleton(userName, givenName, familyName, True, email)
 
 
 @router.patch("/Users/{user_id}")
-def patch_user(user_id: str = Path(...), active: bool = Body(True)):
+def patch_user(user_id: Annotated[str, Path(...), active: Annotated[bool, Body(True)):
     u = user_skeleton(userName=user_id, active=active)
     u["id"] = user_id
     return u
 
 
 @router.delete("/Users/{user_id}")
-def delete_user(user_id: str = Path(...)):
+def delete_user(user_id: Annotated[str, Path(...)):
     return JSONResponse(status_code=status.HTTP_204_NO_CONTENT, content=None)

@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 25.5 — DB crypto routes (protocol v2)
 """
@@ -19,6 +20,6 @@ def status() -> Dict[str, Any]:
 
 
 @router.post("/setkey")
-def setkey(key: str = Body(...)) -> Dict[str, Any]:
+def setkey(key: Annotated[str, Body(...)) -> Dict[str, Any]:
     os.environ["DB_ENC_KEY"] = key
     return {"ok": True, "enabled": True}

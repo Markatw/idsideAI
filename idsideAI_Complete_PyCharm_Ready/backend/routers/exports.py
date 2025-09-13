@@ -1,3 +1,4 @@
+from typing import Annotated
 import json
 import os
 import time
@@ -48,7 +49,7 @@ def _derive_why(graph):
         (
             e
             for e in edges
-            if e.get("type", "").upper() == "CHOSEN" or e.get("chosen") == True
+            if e.get("type", "").upper() == "CHOSEN" or e.get("chosen")  is True
         ),
         None,
     )
@@ -87,7 +88,7 @@ def _derive_why(graph):
 
 
 @router.post("/export/audit")
-def export_audit(graph_id: str, frm: str = Query(...), to: str = Query(...)):
+def export_audit(graph_id: str, frm: Annotated[str, Query(...), to: Annotated[str, Query(...)):
     data = _load_snapshots(graph_id)
     a = next((s for s in data.get("snapshots", []) if s["id"] == frm), None)
     b = next((s for s in data.get("snapshots", []) if s["id"] == to), None)
@@ -119,7 +120,7 @@ def export_audit(graph_id: str, frm: str = Query(...), to: str = Query(...)):
 
 
 @router.post("/export/why")
-def export_why(graph_id: str, decision: str = Query(...), to: str = Query(None)):
+def export_why(graph_id: str, decision: Annotated[str, Query(...), to: Annotated[str, Query(None)):
     # Use snapshot 'to' if provided; else materialize live
     if to:
         s = _load_snapshot_for(graph_id, to)

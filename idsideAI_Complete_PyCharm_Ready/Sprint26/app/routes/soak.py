@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 26.5 — Soak control routes (protocol v2)
 """
@@ -10,7 +11,7 @@ router = APIRouter(prefix="/api/soak", tags=["soak"])
 
 
 @router.post("/start")
-def start(interval: int = Body(60), url: str = Body(None)):
+def start(interval: Annotated[int, Body(60), url: Annotated[str, Body(None)):
     ok = soak.start(interval, url)
     return {"started": ok}
 

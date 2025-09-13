@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 21.9 — Learning API (protocol v2)
 - POST /api/learning/feedback {event_id, feedback_type, notes} -> log feedback
@@ -13,9 +14,9 @@ router = APIRouter(prefix="/api/learning", tags=["learning"])
 
 @router.post("/feedback")
 def feedback(
-    event_id: str = Body(..., embed=True),
-    feedback_type: str = Body(..., embed=True),
-    notes: str = Body(default="", embed=True),
+    event_id: Annotated[str, Body(..., embed=True),
+    feedback_type: Annotated[str, Body(..., embed=True),
+    notes: Annotated[str, Body(default="", embed=True),
 ):
     return log_feedback(event_id, feedback_type, notes)
 
@@ -33,7 +34,7 @@ def all_feedback(limit: int = 100):
 
 
 @router.post("/tags")
-def tag_update(event_id: str, tags: list[str] = Body(default=[])):
+def tag_update(event_id: str, tags: Annotated[list[str], Body(default=[])):
     from app.utils.learning import add_feedback_tags
 
     return add_feedback_tags(event_id, tags)
@@ -47,7 +48,7 @@ def stats(limit: int = 1000):
 
 
 @router.post("/export")
-def export_all(limit: int = Body(1000, embed=True)):
+def export_all(limit: Annotated[int, Body(1000, embed=True)):
     from app.utils.learning import export_feedback_csv
 
     return {"csv": export_feedback_csv(limit)}

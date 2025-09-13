@@ -1,3 +1,4 @@
+from typing import Annotated
 import hashlib
 import json
 import os
@@ -149,7 +150,7 @@ def _read_snapshot_payload(
 def subgraph(
     graph_id: str,
     request: Request,
-    root: str | None = Query(default=None),
+    root: Annotated[str | None, Query(default=None),
     depth: int = 3,
 ):
     return _materialize_subgraph(
@@ -168,7 +169,7 @@ def snapshots(graph_id: str, request: Request):
 def create_snapshot(
     graph_id: str,
     request: Request,
-    root: str | None = Query(default=None),
+    root: Annotated[str | None, Query(default=None),
     depth: int = 3,
 ):
     return _store_snapshot_neo4j(

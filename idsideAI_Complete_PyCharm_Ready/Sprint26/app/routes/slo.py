@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 26.6 — SLO routes (protocol v2)
 """
@@ -10,7 +11,7 @@ router = APIRouter(prefix="/api/slo", tags=["slo"])
 
 
 @router.post("/record")
-def record(success: bool = Body(...)):
+def record(success: Annotated[bool, Body(...)):
     slo.record(success)
     return {"ok": True}
 

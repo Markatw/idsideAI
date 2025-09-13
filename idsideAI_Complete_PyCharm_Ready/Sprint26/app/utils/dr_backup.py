@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 25.6 — DR backup/restore helpers (protocol v2)
 """
@@ -7,8 +8,7 @@ import zipfile
 from pathlib import Path
 
 
-def backup_sqlite(db_path: str, out_dir: str) -> dict:
-    p = Path(db_path)
+def backup_sqlite(db_path: str, out_dir: str) -> dict: Annotated[p, Path(db_path)
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     ts = time.strftime("%Y%m%d_%H%M%S")
@@ -24,8 +24,7 @@ def backup_sqlite(db_path: str, out_dir: str) -> dict:
     return {"ok": True, "backup": str(bak), "source_exists": p.exists()}
 
 
-def restore_sqlite(bak_zip: str, dest_dir: str) -> dict:
-    bz = Path(bak_zip)
+def restore_sqlite(bak_zip: str, dest_dir: str) -> dict: Annotated[bz, Path(bak_zip)
     dest = Path(dest_dir)
     dest.mkdir(parents=True, exist_ok=True)
     if not bz.exists():

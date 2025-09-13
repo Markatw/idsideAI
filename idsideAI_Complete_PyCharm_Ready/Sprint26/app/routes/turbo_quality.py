@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 21.3 — Turbo quality monitoring API (protocol v2)
 - POST /api/turbo/quality/classify  -> failure classification for a single event
@@ -15,13 +16,13 @@ router = APIRouter(prefix="/api/turbo/quality", tags=["turbo_quality"])
 
 
 @router.post("/classify")
-def classify(event: Dict[str, Any] = Body(..., embed=True)):
+def classify(event: Annotated[Dict[str, Any], Body(..., embed=True)):
     return classify_failure(event)
 
 
 @router.post("/check")
 def check(
-    metrics: Dict[str, float] = Body(..., embed=True),
-    thresholds: Dict[str, float] = Body(..., embed=True),
+    metrics: Annotated[Dict[str, float], Body(..., embed=True),
+    thresholds: Annotated[Dict[str, float], Body(..., embed=True),
 ):
     return {"alerts": check_thresholds(metrics, thresholds)}

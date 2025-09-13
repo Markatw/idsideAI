@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 22.2 — Telemetry API (protocol v2)
 - POST /api/telemetry/export -> CSV export
@@ -14,12 +15,12 @@ router = APIRouter(prefix="/api/telemetry", tags=["telemetry"])
 
 
 @router.post("/export")
-def export(events: List[Dict[str, Any]] = Body(..., embed=True)):
+def export(events: Annotated[List[Dict[str, Any]], Body(..., embed=True)):
     return {"csv": export_events_csv(events)}
 
 
 @router.post("/summary")
-def summary(events: List[Dict[str, Any]] = Body(..., embed=True)):
+def summary(events: Annotated[List[Dict[str, Any]], Body(..., embed=True)):
     return summarize_events(events)
 
 

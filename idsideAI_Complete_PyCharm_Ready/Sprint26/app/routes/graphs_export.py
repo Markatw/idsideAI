@@ -1,3 +1,4 @@
+from typing import Annotated
 from typing import Any, Dict, Literal
 
 from fastapi import APIRouter, Body, HTTPException
@@ -10,8 +11,8 @@ router = APIRouter(prefix="/api/graphs", tags=["graphs"])
 
 @router.post("/export", response_class=PlainTextResponse)
 def export_graph(
-    fmt: Literal["graphml", "svg", "png"] = Body(..., embed=True),
-    graph: Dict[str, Any] = Body(..., embed=True),
+    fmt: Annotated[Literal["graphml", "svg", "png"], Body(..., embed=True),
+    graph: Annotated[Dict[str, Any], Body(..., embed=True),
 ) -> str:
     fmt = (fmt or "svg").lower()
     if fmt == "graphml":

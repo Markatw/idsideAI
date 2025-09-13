@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 24.5 — Theme endpoints (protocol v2)
 """
@@ -12,12 +13,12 @@ router = APIRouter(prefix="/api/theme", tags=["theme"])
 
 
 @router.post("/tokens")
-def tokens(mode: str = Body("light")) -> Dict[str, Any]:
+def tokens(mode: Annotated[str, Body("light")) -> Dict[str, Any]:
     return get_tokens(mode)
 
 
 @router.post("/toggle")
-def toggle(pref: str = Body("auto")) -> Dict[str, Any]:
+def toggle(pref: Annotated[str, Body("auto")) -> Dict[str, Any]:
     next_mode = toggle_mode(pref)
     return {
         "next_mode": next_mode,

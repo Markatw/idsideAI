@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 25.4 — PII crypto endpoints (protocol v2)
 """
@@ -12,10 +13,10 @@ router = APIRouter(prefix="/api/crypto/pii", tags=["pii-crypto"])
 
 
 @router.post("/encrypt")
-def encrypt(value: str = Body(""), key: str = Body(...)) -> Dict[str, Any]:
+def encrypt(value: Annotated[str, Body(""), key: Annotated[str, Body(...)) -> Dict[str, Any]:
     return {"token": encrypt_pii(value, key)}
 
 
 @router.post("/decrypt")
-def decrypt(token: str = Body(""), key: str = Body(...)) -> Dict[str, Any]:
+def decrypt(token: Annotated[str, Body(""), key: Annotated[str, Body(...)) -> Dict[str, Any]:
     return {"value": decrypt_pii(token, key)}

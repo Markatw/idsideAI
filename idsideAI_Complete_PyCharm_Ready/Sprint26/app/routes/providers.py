@@ -1,3 +1,4 @@
+from typing import Annotated
 """
 Sprint 21.4: Providers API (protocol v2)
 - POST /api/providers/complete { provider, config, prompt } -> adapter output (echo by default)
@@ -25,8 +26,8 @@ def health(provider: str = "echo"):
 @router.post("/complete")
 def complete(
     provider: str = "echo",
-    prompt: str = Body(..., embed=True),
-    config: Dict[str, Any] = Body(default=None, embed=True),
+    prompt: Annotated[str, Body(..., embed=True),
+    config: Annotated[Dict[str, Any], Body(default=None, embed=True),
 ):
     p = create(provider, {})
     return p.complete(prompt)
