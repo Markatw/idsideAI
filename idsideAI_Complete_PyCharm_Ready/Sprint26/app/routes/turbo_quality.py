@@ -5,23 +5,29 @@ Sprint 21.3 — Turbo quality monitoring API (protocol v2)
 Router wiring via include_router can be added separately to avoid startup coupling.
 """
 
-from typing import Any, Dict
+from typing import Dict
+from fastapi import APIRouter
 
-from fastapi import APIRouter, Body
+router = APIRouter(prefix="/turbo-quality", tags=["turbo-quality"])
 
-from app.utils.turbo_quality import check_thresholds, classify_failure
+from ..utils.turbo_quality import check_thresholds
 
-router = APIRouter(prefix="/api/turbo/quality", tags=["turbo_quality"])
+from typing import Annotated
+from fastapi import Body  # (should already be there, keep it)
 
+@router.post("/check")
+def check(
+    metrics: Annotated[Dict[str, float], Body(..., embed=True)],
+    thresholds: Annotated[Dict[str, float], Body(..., embed=True)],
+):
 
-@router.post("/classify")
-def classify(event: Dict[str, Any] = Body(..., embed=True)):
-    return classify_failure(event)
+    return check_thresholds(metrics, thresholds)
+
 
 
 @router.post("/check")
 def check(
-    metrics: Dict[str, float] = Body(..., embed=True),
-    thresholds: Dict[str, float] = Body(..., embed=True),
+    metrics: Annotated[Dict[str, float], Body(..., embed=True)],
+    thresholds: Annotated[Dict[str, float], Body(..., embed=True)],
 ):
     return {"alerts": check_thresholds(metrics, thresholds)}
