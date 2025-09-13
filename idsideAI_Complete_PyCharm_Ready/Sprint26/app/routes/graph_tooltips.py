@@ -1,3 +1,5 @@
+from fastapi import Body
+from typing import Annotated
 """
 Sprint 24.4 — Graph tooltip routes (protocol v2)
 """
@@ -12,5 +14,5 @@ router = APIRouter(prefix="/api/graphs", tags=["graphs-tooltips"])
 
 
 @router.post("/tooltips")
-def tooltips(svg: str = Body(""), tooltips: Dict[str, Any] = Body(default={})):
+def tooltips(svg: Annotated[str , Body("")], tooltips: Annotated[Dict[str, Any] , Body(default={})]):
     return {"svg": add_tooltips(svg, tooltips)}
